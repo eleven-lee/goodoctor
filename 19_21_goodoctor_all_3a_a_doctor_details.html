@@ -116,8 +116,8 @@
             </div>
         </div>
         <div id="body" class="doctor-detail-wrapper" style="font-family: liheipro;">
-            <div class="share" style="background: white; width: 40px; height: 120px; position: absolute;
-        right: 0px; top: 200px; position: fixed; text-align: center; border-top-left-radius: 16px; border-bottom-left-radius: 16px;">
+            <!----------------右侧固定分享-------------------->
+            <div class="share" style="background: white; width: 40px; height: 120px; right: 0; top: 200px; position: fixed; text-align: center; border-top-left-radius: 16px; border-bottom-left-radius: 16px;">
                 <a href="">
                     <div class="border-bottom box-shaw1">
                         <span style="color: #334F8D; margin-top: 15px;"><img
@@ -138,7 +138,9 @@
                     </div>
                 </a>
             </div>
+            <!----------------内容部分-------------------->
             <div class="home-top-bg-diagonal pb-5" style="border-bottom: none; padding-bottom: 20px;padding-top: 15px;">
+                <!----------------头部导航-------------------->
                 <div class="container">
                     <div class="container-nav" style="font-size:15px;color: #676766;">
                         <img src="./images/icon/grey_home_icon.png" alt
@@ -610,12 +612,14 @@
                                         <ul class="tab-pane-list">
                                             <li class="tab-pane-item">
                                                 <div class="left">
-                                                        <div  class="item-avatar-icon"></div>
-                                                        <span style="margin-left: -20px;">Amber</span> <br>
-                                                        <span style="margin-left: -20px;">共1篇醫評</span>
+                                                    <div  class="item-avatar-icon"></div>
+                                                    <div class="tab-item-name">
+                                                        <p>Amber</p>
+                                                        <p>共1篇醫評</p>
                                                     </div>
-                                                <div class="right">
-                                                        <div class="d-flex">
+                                                    </div>
+                                                <div class="right left-arrow-bigbox">
+                                                        <div class="d-flex right-content">
                                                             <div class="right-left mr-4 big-div-left-width">
                                                                 <div class="row1 d-flex position-relative">
                                                                     <span>疾病/求診原因:</span>
@@ -626,11 +630,10 @@
                                                                         <span>2015/11/01</span>
                                                                     </div>
                                                                 </div>
-
                                                                 <span style="color: #48ccc5; font-size: 1.3em;">病毒性腸胃炎</span>
                                                                 <br><br>
-                                                                <span style="color: #4c4d4e;">用心的醫生</span> <br>
-                                                                <p style="font-size:13px;">家母大約在2012期間接受陳醫生治療。陳醫生外科手術經驗豐富
+                                                                <span class="comment-title">用心的醫生</span> <br>
+                                                                <p class="comment-text">家母大約在2012期間接受陳醫生治療。陳醫生外科手術經驗豐富
                                                                     ,手法利落。家母在最短時間可以重新行走。
                                                                     陳醫生有點古板, 不會講好話,也不太會氹人開心。會 comprehensiven treatment
                                                                     其他:$700 的知識也不太多,
@@ -638,11 +641,10 @@
                                                                 </p>
                                                             </div>
                                                             <div class="right-right big-div-right-width">
-                                                                <div class="border-bottom-1px-dotted-lightgray pb-1"
-                                                                     style="width: 100%;">
-                                                                    <span><img src="./images/p19/item1-heartlisten@2x.png"
-                                                                               alt="" style="width: 15px;"></span> <span>醫療效果</span>
-                                                                    <span>
+                                                                <div class="border-bottom-1px-dotted-lightgray pb-1" style="width: 100%;">
+                                                                    <span class="icon-type"><img src="./images/p19/item1-heartlisten@2x.png"
+                                                                               alt=""></span> <span>醫療效果</span>
+                                                                    <span class="icon-star">
                                                                                 <img src="./images/search-image/star@3x.png"
                                                                                      alt="" style="width: 10px;">
                                                                                 <img src="./images/search-image/star@3x.png"
@@ -657,56 +659,54 @@
                                                                 </div>
                                                                 <div class="border-bottom-1px-dotted-lightgray pb-1"
                                                                      style="width: 100%;">
-                                                                    <span><img
+                                                                    <span class="icon-type"><img
                                                                             src="./images/p19/item1-serviceattitude@2x.png"
-                                                                            alt style="width:15px;"></span>
+                                                                            alt ></span>
                                                                     <span>服務態度</span>
-                                                                    <span>
-                                                                                    <img src="./images/search-image/star@3x.png"
-                                                                                         alt="" style="width: 10px;">
-                                                                                    <img src="./images/search-image/star@3x.png"
-                                                                                         alt="" style="width: 10px;">
-                                                                                    <img src="./images/search-image/star@3x.png"
-                                                                                         alt="" style="width: 10px;">
-                                                                                    <img src="./images/search-image/star@3x.png"
-                                                                                         alt="" style="width: 10px;">
-                                                                                    <img src="./images/search-image/star@3x.png"
-                                                                                         alt="" style="width: 10px;">
-                                                                                </span>
+                                                                    <span class="icon-star">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                            </span>
                                                                 </div>
                                                                 <div class="border-bottom-1px-dotted-lightgray pb-1"
                                                                      style="width: 100%;">
-                                                                    <span><img src="./images/p19/item1-knowledge@2x.png"
-                                                                               style="width:15px;"></span> <span>專業知識</span>
-                                                                    <span>
-                                                                                    <img src="./images/search-image/star@3x.png"
-                                                                                         alt="" style="width: 10px;">
-                                                                                    <img src="./images/search-image/star@3x.png"
-                                                                                         alt="" style="width: 10px;">
-                                                                                    <img src="./images/search-image/star@3x.png"
-                                                                                         alt="" style="width: 10px;">
-                                                                                    <img src="./images/search-image/star@3x.png"
-                                                                                         alt="" style="width: 10px;">
-                                                                                    <img src="./images/search-image/star@3x.png"
-                                                                                         alt="" style="width: 10px;">
-                                                                                </span>
+                                                                    <span class="icon-type"><img src="./images/p19/item1-knowledge@2x.png"></span> <span>專業知識</span>
+                                                                    <span class="icon-star">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                            </span>
 
                                                                 </div>
                                                                 <div class="" style="width: 100%;">
-                                                                    <span><img src="./images/p19/item1-cost@2x.png" alt
-                                                                               style="width:15px;"></span> <span>費用恰當</span>
-                                                                    <span>
-                                                                                    <img src="./images/search-image/star@3x.png"
-                                                                                         alt="" style="width: 10px;">
-                                                                                    <img src="./images/search-image/star@3x.png"
-                                                                                         alt="" style="width: 10px;">
-                                                                                    <img src="./images/search-image/star@3x.png"
-                                                                                         alt="" style="width: 10px;">
-                                                                                    <img src="./images/search-image/star@3x.png"
-                                                                                         alt="" style="width: 10px;">
-                                                                                    <img src="./images/search-image/star@3x.png"
-                                                                                         alt="" style="width: 10px;">
-                                                                                </span>
+                                                                    <span class="icon-type"><img src="./images/p19/item1-cost@2x.png" alt></span> <span>費用恰當</span>
+                                                                    <span class="icon-star">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                            </span>
                                                                 </div>
                                                                 <div style="margin-top:10px;">
                                                                     <span style="color:#4c4d4e;">求诊日期:</span><span>2018-5-20</span><br>
@@ -715,8 +715,6 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <img src="./images/p19/thankyoubottom.png" alt=""
-                                                             style="width: 105%; margin-left: -15px; ">
                                                         <div class="huifu-div1">
                                                             <div class="input-group mb-3 mt-2 height-30px">
                                                                 <div class="input-group-prepend">
@@ -734,11 +732,13 @@
                                             <li class="tab-pane-item">
                                                 <div class="left">
                                                         <div  class="item-avatar-icon"></div>
-                                                        <span style="margin-left: -20px;">Amber</span> <br>
-                                                        <span style="margin-left: -20px;">共1篇醫評</span>
+                                                    <div class="tab-item-name">
+                                                        <p>Amber</p>
+                                                        <p>共1篇醫評</p>
                                                     </div>
-                                                <div class="right">
-                                                        <div class="d-flex">
+                                                    </div>
+                                                <div class="right left-arrow-bigbox">
+                                                        <div class="d-flex right-content">
                                                             <div class="right-left mr-4 big-div-left-width">
                                                                 <div class="row1 d-flex position-relative">
                                                                     <span>疾病/求診原因:</span>
@@ -751,8 +751,8 @@
                                                                 </div>
                                                                 <span style="color: #48ccc5; font-size: 1.3em;">病毒性腸胃炎</span>
                                                                 <br><br>
-                                                                <span style="color: #4c4d4e;">用心的醫生</span> <br>
-                                                                <p style="font-size:13px;">家母大約在2012期間接受陳醫生治療。陳醫生外科手術經驗豐富
+                                                                <span class="comment-title">用心的醫生</span> <br>
+                                                                <p class="comment-text">家母大約在2012期間接受陳醫生治療。陳醫生外科手術經驗豐富
                                                                     ,手法利落。家母在最短時間可以重新行走。
                                                                     陳醫生有點古板, 不會講好話,也不太會氹人開心。會 comprehensiven treatment
                                                                     其他:$700 的知識也不太多,
@@ -760,30 +760,10 @@
                                                                 </p>
                                                             </div>
                                                             <div class="right-right big-div-right-width">
-                                                                <div class="border-bottom-1px-dotted-lightgray pb-1"
-                                                                     style="width: 100%;">
-                                                                <span><img src="./images/p19/item1-heartlisten@2x.png"
-                                                                           alt="" style="width: 15px;"></span> <span>醫療效果</span>
-                                                                    <span>
-                                                                            <img src="./images/search-image/star@3x.png"
-                                                                                 alt="" style="width: 10px;">
-                                                                            <img src="./images/search-image/star@3x.png"
-                                                                                 alt="" style="width: 10px;">
-                                                                            <img src="./images/search-image/star@3x.png"
-                                                                                 alt="" style="width: 10px;">
-                                                                            <img src="./images/search-image/star@3x.png"
-                                                                                 alt="" style="width: 10px;">
-                                                                            <img src="./images/search-image/star@3x.png"
-                                                                                 alt="" style="width: 10px;">
-                                                                        </span>
-                                                                </div>
-                                                                <div class="border-bottom-1px-dotted-lightgray pb-1"
-                                                                     style="width: 100%;">
-                                                                <span><img
-                                                                        src="./images/p19/item1-serviceattitude@2x.png"
-                                                                        alt style="width:15px;"></span>
-                                                                    <span>服務態度</span>
-                                                                    <span>
+                                                                <div class="border-bottom-1px-dotted-lightgray pb-1" style="width: 100%;">
+                                                                    <span class="icon-type"><img src="./images/p19/item1-heartlisten@2x.png"
+                                                                                                 alt=""></span> <span>醫療效果</span>
+                                                                    <span class="icon-star">
                                                                                 <img src="./images/search-image/star@3x.png"
                                                                                      alt="" style="width: 10px;">
                                                                                 <img src="./images/search-image/star@3x.png"
@@ -798,9 +778,27 @@
                                                                 </div>
                                                                 <div class="border-bottom-1px-dotted-lightgray pb-1"
                                                                      style="width: 100%;">
-                                                                <span><img src="./images/p19/item1-knowledge@2x.png"
-                                                                           style="width:15px;"></span> <span>專業知識</span>
-                                                                    <span>
+                                                                    <span class="icon-type"><img
+                                                                            src="./images/p19/item1-serviceattitude@2x.png"
+                                                                            alt ></span>
+                                                                    <span>服務態度</span>
+                                                                    <span class="icon-star">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                            </span>
+                                                                </div>
+                                                                <div class="border-bottom-1px-dotted-lightgray pb-1"
+                                                                     style="width: 100%;">
+                                                                    <span class="icon-type"><img src="./images/p19/item1-knowledge@2x.png"></span> <span>專業知識</span>
+                                                                    <span class="icon-star">
                                                                                 <img src="./images/search-image/star@3x.png"
                                                                                      alt="" style="width: 10px;">
                                                                                 <img src="./images/search-image/star@3x.png"
@@ -815,9 +813,8 @@
 
                                                                 </div>
                                                                 <div class="" style="width: 100%;">
-                                                                <span><img src="./images/p19/item1-cost@2x.png" alt
-                                                                           style="width:15px;"></span> <span>費用恰當</span>
-                                                                    <span>
+                                                                    <span class="icon-type"><img src="./images/p19/item1-cost@2x.png" alt></span> <span>費用恰當</span>
+                                                                    <span class="icon-star">
                                                                                 <img src="./images/search-image/star@3x.png"
                                                                                      alt="" style="width: 10px;">
                                                                                 <img src="./images/search-image/star@3x.png"
@@ -837,8 +834,6 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <img src="./images/p19/thankyouitem2@2x.png" alt=""
-                                                             style="width:105%; margin-left: -15px; margin-top: -25px;">
                                                         <div class="huifu-div2">
                                                             <div class="input-group mb-3 mt-2 height-30px">
                                                                 <div class="input-group-prepend">
@@ -857,251 +852,242 @@
                                             <li class="tab-pane-item">
                                                 <div class="left">
                                                     <div  class="item-avatar-icon"></div>
-                                                    <span style="margin-left: -20px;">Amber</span> <br>
-                                                    <span style="margin-left: -20px;">共1篇醫評</span>
+                                                    <div class="tab-item-name">
+                                                        <p>Amber</p>
+                                                        <p>共1篇醫評</p>
                                                     </div>
-                                                <div class="right">
-                                                        <div class="d-flex">
-                                                            <div class="right-left mr-4 big-div-left-width">
-                                                                <div class="row1 d-flex position-relative">
-                                                                    <span>疾病/求診原因:</span>
-                                                                    <div style="position: absolute; right: 0px;">
+                                                </div>
+                                                <div class="right left-arrow-bigbox">
+                                                    <div class="d-flex right-content">
+                                                        <div class="right-left mr-4 big-div-left-width">
+                                                            <div class="row1 d-flex position-relative">
+                                                                <span>疾病/求診原因:</span>
+                                                                <div style="position: absolute; right: 0px;">
                                                                     <span><img src="./images/p19/item1-clock@2x.png"
                                                                                alt=""
                                                                                style="width: 15px; margin-top: -5px;"></span>
-                                                                        <span>2015/11/01</span>
-                                                                    </div>
-                                                                </div>
-                                                                <span style="color: #48ccc5; font-size: 1.3em;">病毒性腸胃炎</span>
-                                                                <br><br>
-                                                                <span style="color: #4c4d4e;">用心的醫生</span> <br>
-                                                                <p style="font-size:13px;">家母大約在2012期間接受陳醫生治療。陳醫生外科手術經驗豐富
-                                                                    ,手法利落。家母在最短時間可以重新行走。
-                                                                    陳醫生有點古板, 不會講好話,也不太會氹人開心。會 comprehensiven treatment
-                                                                    其他:$700 的知識也不太多,
-                                                                    但是如果你要找一個實事求是、收費合理、實 幹型的手術醫生,陳醫生是不二之選。
-                                                                </p>
-                                                                <img src="./images/p19/thanksforyourcare@2x.png" alt=""
-                                                                     style="width: 662px; margin-left: -15px; margin-top: -25px">
-
-                                                            </div>
-                                                            <div class="right-right big-div-right-width">
-                                                                <div class="border-bottom-1px-dotted-lightgray pb-1"
-                                                                     style="width: 100%;">
-                                                                <span><img src="./images/p19/item1-heartlisten@2x.png"
-                                                                           alt="" style="width: 15px;"></span> <span>醫療效果</span>
-                                                                    <span>
-                                                                            <img src="./images/search-image/star@3x.png"
-                                                                                 alt="" style="width: 10px;">
-                                                                            <img src="./images/search-image/star@3x.png"
-                                                                                 alt="" style="width: 10px;">
-                                                                            <img src="./images/search-image/star@3x.png"
-                                                                                 alt="" style="width: 10px;">
-                                                                            <img src="./images/search-image/star@3x.png"
-                                                                                 alt="" style="width: 10px;">
-                                                                            <img src="./images/search-image/star@3x.png"
-                                                                                 alt="" style="width: 10px;">
-                                                                        </span>
-                                                                </div>
-                                                                <div class="border-bottom-1px-dotted-lightgray pb-1"
-                                                                     style="width: 100%;">
-                                                                <span><img
-                                                                        src="./images/p19/item1-serviceattitude@2x.png"
-                                                                        alt style="width:15px;"></span>
-                                                                    <span>服務態度</span>
-                                                                    <span>
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                            </span>
-                                                                </div>
-                                                                <div class="border-bottom-1px-dotted-lightgray pb-1"
-                                                                     style="width: 100%;">
-                                                                <span><img src="./images/p19/item1-knowledge@2x.png"
-                                                                           style="width:15px;"></span> <span>專業知識</span>
-                                                                    <span>
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                            </span>
-
-                                                                </div>
-                                                                <div class="" style="width: 100%;">
-                                                                <span><img src="./images/p19/item1-cost@2x.png" alt
-                                                                           style="width:15px;"></span> <span>費用恰當</span>
-                                                                    <span>
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                            </span>
-                                                                </div>
-                                                                <div style="margin-top:10px;">
-                                                                    <span style="color:#4c4d4e;">求诊日期:</span><span>2018-5-20</span><br>
-                                                                    <span style="color:#4c4d4e;">费用($)：</span><span>$700</span><br>
-                                                                    <span style="color:#4c4d4e;">其他：$700</span><span>$700</span>
+                                                                    <span>2015/11/01</span>
                                                                 </div>
                                                             </div>
+                                                            <span style="color: #48ccc5; font-size: 1.3em;">病毒性腸胃炎</span>
+                                                            <br><br>
+                                                            <span class="comment-title">用心的醫生</span> <br>
+                                                            <p class="comment-text">家母大約在2012期間接受陳醫生治療。陳醫生外科手術經驗豐富
+                                                                ,手法利落。家母在最短時間可以重新行走。
+                                                                陳醫生有點古板, 不會講好話,也不太會氹人開心。會 comprehensiven treatment
+                                                                其他:$700 的知識也不太多,
+                                                                但是如果你要找一個實事求是、收費合理、實 幹型的手術醫生,陳醫生是不二之選。
+                                                            </p>
                                                         </div>
-                                                        <div class="huifu-div1">
-                                                            <div class="input-group mb-3 mt-2 height-30px">
-                                                                <div class="input-group-prepend">
-                                                                <span class="input-group-text"
-                                                                      style="background: #ffe455;"><img
-                                                                        src="./images/p19/messagebox.png" alt=""
-                                                                        width="20px;"></span>
-                                                                </div>
-                                                                <input type="text" class="form-control" placeholder="回覆..."
-                                                                       id="usr" name="username">
+                                                        <div class="right-right big-div-right-width">
+                                                            <div class="border-bottom-1px-dotted-lightgray pb-1" style="width: 100%;">
+                                                                    <span class="icon-type"><img src="./images/p19/item1-heartlisten@2x.png"
+                                                                                                 alt=""></span> <span>醫療效果</span>
+                                                                <span class="icon-star">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                            </span>
+                                                            </div>
+                                                            <div class="border-bottom-1px-dotted-lightgray pb-1"
+                                                                 style="width: 100%;">
+                                                                    <span class="icon-type"><img
+                                                                            src="./images/p19/item1-serviceattitude@2x.png"
+                                                                            alt ></span>
+                                                                <span>服務態度</span>
+                                                                <span class="icon-star">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                            </span>
+                                                            </div>
+                                                            <div class="border-bottom-1px-dotted-lightgray pb-1"
+                                                                 style="width: 100%;">
+                                                                <span class="icon-type"><img src="./images/p19/item1-knowledge@2x.png"></span> <span>專業知識</span>
+                                                                <span class="icon-star">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                            </span>
+
+                                                            </div>
+                                                            <div class="" style="width: 100%;">
+                                                                <span class="icon-type"><img src="./images/p19/item1-cost@2x.png" alt></span> <span>費用恰當</span>
+                                                                <span class="icon-star">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                            </span>
+                                                            </div>
+                                                            <div style="margin-top:10px;">
+                                                                <span style="color:#4c4d4e;">求诊日期:</span><span>2018-5-20</span><br>
+                                                                <span style="color:#4c4d4e;">费用($)：</span><span>$700</span><br>
+                                                                <span style="color:#4c4d4e;">其他：$700</span><span>$700</span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                            </li>
-                                            <li class="tab-pane-item">
-                                                    <div class="left"
-                                                         style="width: 12%; text-align: center; color: lightgray;">
-                                                        <div class=""
-                                                             style="width: 60px; height: 60px; background: #f4f4f4 url(./images/icon/doctor-male-icon.png) no-repeat center; border-radius: 100%; background-size: 40px 40px; "></div>
-                                                        <span style="margin-left: -20px;">Amber</span> <br>
-                                                        <span style="margin-left: -20px;">共1篇醫評</span>
-                                                    </div>
-                                                    <div class="right">
-                                                        <div class="d-flex">
-                                                            <div class="right-left mr-4 big-div-left-width">
-                                                                <div class="row1 d-flex position-relative">
-                                                                    <span>疾病/求診原因:</span>
-                                                                    <div style="position: absolute; right: 0;">
-                                                                    <span><img src="./images/p19/item1-clock@2x.png"
-                                                                               alt=""
-                                                                               style="width: 15px; margin-top: -5px;"></span>
-                                                                        <span>2015/11/01</span>
-                                                                    </div>
-                                                                </div>
-                                                                <span style="color: #48ccc5; font-size: 1.3em;">病毒性腸胃炎</span>
-                                                                <br><br>
-                                                                <span style="color: #4c4d4e;">用心的醫生</span> <br>
-                                                                <p style="font-size:14px;">家母大約在2012期間接受陳醫生治療。陳醫生外科手術經驗豐富
-                                                                    ,手法利落。家母在最短時間可以重新行走。
-                                                                    陳醫生有點古板, 不會講好話,也不太會氹人開心。會comprehensiven treatment
-                                                                    其他:$700 的知識也不太多,
-                                                                    但是如果你要找一個實事求是、收費合理、實 幹型的手術醫生,陳醫生是不二之選。
-                                                                </p>
-                                                                <img src="./images/p19/thankyoublue@2x.png" alt=""
-                                                                     style="width: 662px; margin-left: -15px; margin-top: -10px;">
-                                                            </div>
-                                                            <div class="right-right big-div-right-width">
-                                                                <div class="border-bottom-1px-dotted-lightgray pb-1"
-                                                                     style="width:100%;">
-                                                                <span><img src="./images/p19/item1-heartlisten@2x.png"
-                                                                           alt="" style="width: 15px;"></span> <span>醫療效果</span>
-                                                                    <span>
-                                                                            <img src="./images/search-image/star@3x.png"
-                                                                                 alt="" style="width: 10px;">
-                                                                            <img src="./images/search-image/star@3x.png"
-                                                                                 alt="" style="width: 10px;">
-                                                                            <img src="./images/search-image/star@3x.png"
-                                                                                 alt="" style="width: 10px;">
-                                                                            <img src="./images/search-image/star@3x.png"
-                                                                                 alt="" style="width: 10px;">
-                                                                            <img src="./images/search-image/star@3x.png"
-                                                                                 alt="" style="width: 10px;">
-                                                                        </span>
-                                                                </div>
-                                                                <div class="border-bottom-1px-dotted-lightgray pb-1"
-                                                                     style="width:100%;">
-                                                                <span><img
-                                                                        src="./images/p19/item1-serviceattitude@2x.png"
-                                                                        alt style="width:15px;"></span>
-                                                                    <span>服務態度</span>
-                                                                    <span>
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                            </span>
-                                                                </div>
-                                                                <div class="border-bottom-1px-dotted-lightgray pb-1"
-                                                                     style="width: 100%;">
-                                                                <span><img src="./images/p19/item1-knowledge@2x.png"
-                                                                           style="width:15px;"></span> <span>專業知識</span>
-                                                                    <span>
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                            </span>
-
-                                                                </div>
-                                                                <div class="" style="width: 100%;">
-                                                                <span><img src="./images/p19/item1-cost@2x.png" alt
-                                                                           style="width:15px;"></span> <span>費用恰當</span>
-                                                                    <span>
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                                <img src="./images/search-image/star@3x.png"
-                                                                                     alt="" style="width: 10px;">
-                                                                            </span>
-                                                                </div>
-                                                                <div style="margin-top:10px;">
-                                                                    <span style="color:#4c4d4e;">求诊日期:</span><span>2018-5-20</span><br>
-                                                                    <span style="color:#4c4d4e;">费用($)：</span><span>$700</span><br>
-                                                                    <span style="color:#4c4d4e;">其他：$700</span><span>$700</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="huifu-div2">
-                                                            <div class="input-group mb-3 mt-2 height-30px">
-                                                                <div class="input-group-prepend">
+                                                    <div class="huifu-div2">
+                                                        <div class="input-group mb-3 mt-2 height-30px">
+                                                            <div class="input-group-prepend">
                                                                 <span class="input-group-text"
                                                                       style="background: #48ccc5;"><img
                                                                         src="./images/p19/messagebox.png" alt=""
                                                                         width="20px;"></span>
+                                                            </div>
+                                                            <input type="text" class="form-control" placeholder="回覆..."
+                                                                   id="usr" name="username">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+                                            <li class="tab-pane-item">
+                                                <div class="left">
+                                                    <div  class="item-avatar-icon"></div>
+                                                    <div class="tab-item-name">
+                                                        <p>Amber</p>
+                                                        <p>共1篇醫評</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right left-arrow-bigbox">
+                                                    <div class="d-flex right-content">
+                                                        <div class="right-left mr-4 big-div-left-width">
+                                                            <div class="row1 d-flex position-relative">
+                                                                <span>疾病/求診原因:</span>
+                                                                <div style="position: absolute; right: 0px;">
+                                                                    <span><img src="./images/p19/item1-clock@2x.png"
+                                                                               alt=""
+                                                                               style="width: 15px; margin-top: -5px;"></span>
+                                                                    <span>2015/11/01</span>
                                                                 </div>
-                                                                <input type="text" class="form-control" placeholder="回覆..."
-                                                                       id="usr" name="username">
+                                                            </div>
+                                                            <span style="color: #48ccc5; font-size: 1.3em;">病毒性腸胃炎</span>
+                                                            <br><br>
+                                                            <span class="comment-title">用心的醫生</span> <br>
+                                                            <p class="comment-text">家母大約在2012期間接受陳醫生治療。陳醫生外科手術經驗豐富
+                                                                ,手法利落。家母在最短時間可以重新行走。
+                                                                陳醫生有點古板, 不會講好話,也不太會氹人開心。會 comprehensiven treatment
+                                                                其他:$700 的知識也不太多,
+                                                                但是如果你要找一個實事求是、收費合理、實 幹型的手術醫生,陳醫生是不二之選。
+                                                            </p>
+                                                        </div>
+                                                        <div class="right-right big-div-right-width">
+                                                            <div class="border-bottom-1px-dotted-lightgray pb-1" style="width: 100%;">
+                                                                    <span class="icon-type"><img src="./images/p19/item1-heartlisten@2x.png"
+                                                                                                 alt=""></span> <span>醫療效果</span>
+                                                                <span class="icon-star">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                            </span>
+                                                            </div>
+                                                            <div class="border-bottom-1px-dotted-lightgray pb-1"
+                                                                 style="width: 100%;">
+                                                                    <span class="icon-type"><img
+                                                                            src="./images/p19/item1-serviceattitude@2x.png"
+                                                                            alt ></span>
+                                                                <span>服務態度</span>
+                                                                <span class="icon-star">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                            </span>
+                                                            </div>
+                                                            <div class="border-bottom-1px-dotted-lightgray pb-1"
+                                                                 style="width: 100%;">
+                                                                <span class="icon-type"><img src="./images/p19/item1-knowledge@2x.png"></span> <span>專業知識</span>
+                                                                <span class="icon-star">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                            </span>
+
+                                                            </div>
+                                                            <div class="" style="width: 100%;">
+                                                                <span class="icon-type"><img src="./images/p19/item1-cost@2x.png" alt></span> <span>費用恰當</span>
+                                                                <span class="icon-star">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                                <img src="./images/search-image/star@3x.png"
+                                                                                     alt="" style="width: 10px;">
+                                                                            </span>
+                                                            </div>
+                                                            <div style="margin-top:10px;">
+                                                                <span style="color:#4c4d4e;">求诊日期:</span><span>2018-5-20</span><br>
+                                                                <span style="color:#4c4d4e;">费用($)：</span><span>$700</span><br>
+                                                                <span style="color:#4c4d4e;">其他：$700</span><span>$700</span>
                                                             </div>
                                                         </div>
-
-
                                                     </div>
+                                                    <div class="huifu-div2">
+                                                        <div class="input-group mb-3 mt-2 height-30px">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text"
+                                                                      style="background: #48ccc5;"><img
+                                                                        src="./images/p19/messagebox.png" alt=""
+                                                                        width="20px;"></span>
+                                                            </div>
+                                                            <input type="text" class="form-control" placeholder="回覆..."
+                                                                   id="usr" name="username">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
                                             </li>
                                             <li class="tab-pane-more text-align-center mt-2 color-name-blue font-size-12em"
                                                  style="text-decoration: underline;">
@@ -1601,33 +1587,25 @@
                             </div>
                         </div>
                         <div class="part3" style="width: 100%; height: 360px; margin-top: 40px; margin-bottom: 40px;">
-
                             <div class="part3-1" style="width: 49%; height: 360px; 
                             background: white url(./images/p19/boby.png) no-repeat center;  border: 5px solid #8dbce8;margin-right: 2%;
                             border-radius: 8px; float: left; position: relative;">
-
-
                                 <div style="text-align: center; border-top: 1px solid #8dbce8;
                                                 border-bottom: 2px solid #8dbce8;  color: #679bca;
                                                width: 100px; margin: 20px auto;">兒科專區
                                 </div>
-
                                 <div style="padding:0px 30px;">
-
                                     <div style="font-size: 1.2em; color: gray;">
                                         嬰兒<br>爬行學行問題?
                                     </div>
                                     <div style="width: 80px; height:2px; border-top: 2px solid #8dbce8;
                                         margin-top: 20px; margin-bottom: 20px;"></div>
-
                                     <div style="font-size: 0.8em; color: gray;">
                                         大部份懷孕中的婦女都會透過均衡飲食或服用營養
                                         補充品,支持身體有足夠的營養為胎兒健全發展做
                                         好營養準備。
                                     </div>
-
                                 </div>
-
                                 <div style="text-align: center;  margin-top: 80px;color:#676766;">
                                     <span style="margin-bottom: 5px;">了解更多</span>
                                     <!-- <div><img  style="width: 7em; margin-top: -20px; " src="" alt=""></div> -->
@@ -1635,7 +1613,6 @@
                                               src="./images/index-image/hook.png" alt=""></div>
                                 </div>
                             </div>
-
 
                             <div class="part3-preg" style="width: 49%; height: 360px;background: white url(./images/p19/preg.png) no-repeat center;border: 5px solid #e5bdd4;
                             border-radius: 8px; float: left;">
@@ -1659,7 +1636,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <!---->
                     <div class="right" style="width:28%;margin-left: -20px;">

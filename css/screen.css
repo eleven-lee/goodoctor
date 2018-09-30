@@ -90,7 +90,7 @@ html{
 
 .home-top-bg-diagonal .home-search-box, .home-top-bg-diagonal .home-hot-specialists {
     width: 100% !important;
-
+    margin-bottom:0 !important;
 }
 
 .home-top-bg-diagonal .home-hot-specialists {
@@ -551,6 +551,7 @@ html{
 .doctor-detail-wrapper .share-part{
     border-width: 5px 0 0 0 !important;
     border-radius:0 !important;
+    padding-bottom:0 !important;
 }
 .doctor-detail-wrapper .doctor-info .doctor-servers .colum2{
     font-size:0;
@@ -627,7 +628,71 @@ html{
 }
 .tab-pane-list .tab-pane-item{
     flex-wrap:wrap;
+    font-size: 1.6rem;
+}
+.tab-pane-item .left{
+    text-align:left !important;
 }
 .tab-pane-item .left, .tab-pane-item .right{
     width:100% !important;
+}
+.tab-pane-item .left .item-avatar-icon,
+.tab-pane-item .left .tab-item-name{
+    display:inline-block;
+}
+.tab-pane-item .left .tab-item-name{
+    vertical-align: top;
+    margin-top:5px;
+}
+.left-arrow-bigbox::before{
+    border-width:0;
+}
+.tab-pane-item .right .d-flex{
+    flex-wrap:wrap;
+}
+.tab-pane-item .right .d-flex .right-left,
+.tab-pane-item .right .d-flex  .right-right{
+    width:100%;
+    margin-right: 0 !important;
+    font-size: 1.8rem;
+}
+.tab-pane-list .tab-pane-item:nth-child(4n+1) .right .right-content,
+.tab-pane-list .tab-pane-item:first-child .right .right-content,
+.tab-pane-list .tab-pane-item:nth-child(4n+4) .right .right-content,
+.tab-pane-list .tab-pane-item:nth-child(4) .right .right-content,
+.tab-pane-list .tab-pane-item:nth-child(4n+2) .right .right-content,
+.tab-pane-list .tab-pane-item:nth-child(2) .right .right-content,
+.tab-pane-list .tab-pane-item:nth-child(4n+3) .right .right-content,
+.tab-pane-list .tab-pane-item:nth-child(3) .right-content {
+    padding-bottom: 40px;
+}
+
+.tab-pane-item .right-left .comment-title{
+   font-size:20px;
+}
+.tab-pane-item .right-left .comment-text{
+    font-size:16px;
+}
+.tab-pane-item .right-right .icon-type img{
+    width:20px !important;
+    vertical-align: top;
+    margin-top:3px;
+}
+.tab-pane-item .right-right .icon-star{
+    float: right;
+}
+.tab-pane-item .right-right .icon-star img{
+    width:16px !important;
+    vertical-align: top;
+    margin-top:5px;
+}
+.tab-pane-more{
+    display:none;
+}
+.doctor-detail-wrapper .part3{
+    margin-top:0 !important;
+    display:none;
+}
+.doctor-detail-wrapper .right .home-popular-search-box{
+    margin-top:0 !important;
 }
