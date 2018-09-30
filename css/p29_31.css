@@ -1,0 +1,183 @@
+.up-arrow-bigbox {
+    width: 100%;
+    height: 200px;
+    /* line-height: 25px; */
+    border-radius: 10px;
+    border: 1px solid #48ccc5;
+    text-align: center;
+    position: relative;
+}
+.up-arrow-bigbox::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    bottom: 200px;
+    margin-top: -0px;
+    border-width: 16px 8px 16px 8px;
+    border-style: solid;
+    border-color: transparent transparent #48ccc5 transparent;
+}
+.titihaoping {
+    text-shadow: 0px -1px 0.5em #96bbe7, 0px -2px 0.05em #96bbe7, 1px -1px 0.05em #96bbe7, 1px -2px 0.05em #96bbe7, 
+                -1px -1px 0.5em #96bbe7, -1px -2px 0.05em #96bbe7,2px -1px 0.05em #96bbe7, 2px -2px 0.05em #96bbe7, 
+                -2px -1px 0.5em #96bbe7, -2px -2px 0.05em #96bbe7,1px 1px 0.05em #96bbe7, 1px 2px 0.05em #96bbe7, 
+                -1px 1px 0.5em #96bbe7, -1px 2px 0.05em #96bbe7,2px 1px 0.05em #96bbe7, 2px 2px 0.05em #96bbe7, 
+                -2px 1px 0.5em #96bbe7, -2px 2px 0.05em #96bbe7,0px -1px 0.05em #96bbe7, 0px -2px 0.05em #96bbe7, 
+                1px -1px 0.5em #96bbe7, 1px -2px 0.05em #96bbe7,-1px -1px 0.05em #96bbe7, -1px -2px 0.05em #96bbe7, 
+                2px -1px 0.5em #96bbe7, 2px -2px 0.05em #96bbe7,-2px -1px 0.05em #96bbe7, -2px -2px 0.05em #96bbe7, 
+                1px 1px 0.05em #96bbe7, 1px 2px 0.05em #96bbe7,-1px 1px 0.05em #96bbe7, -1px 2px 0.05em #96bbe7, 
+                2px 1px 0.5em #96bbe7, 2px 2px 0.05em #96bbe7,-2px 1px 0.05em #96bbe7, -2px 2px 0.05em #96bbe7, 
+                0px -1px 0.05em #96bbe7, 0px -2px 0.05em #96bbe7, 1px -1px 0.05em #96bbe7, 1px -2px 0.05em #96bbe7, 
+                -1px -1px 0.05em #96bbe7, -1px -2px 0.05em #96bbe7,2px -1px 0.05em #96bbe7, 2px -2px 0.05em #96bbe7, 
+                -2px -1px 0.05em #96bbe7, -2px -2px 0.05em #96bbe7,1px 1px 0.05em #96bbe7, 1px 2px 0.05em #96bbe7, 
+                -1px 1px 0.05em #96bbe7, -1px 2px 0.05em #96bbe7,2px 1px 0.05em #96bbe7, 2px 2px 0.05em #96bbe7, 
+                -2px 1px 0.05em #96bbe7, -2px 2px 0.05em #96bbe7,0px -1px 0.05em #96bbe7, 0px -2px 0.05em #96bbe7, 
+                1px -1px 0.05em #96bbe7, 1px -2px 0.05em #96bbe7,-1px -1px 0.05em #96bbe7, -1px -2px 0.05em #96bbe7, 
+                2px -1px 0.05em #96bbe7, 2px -2px 0.05em #96bbe7,-2px -1px 0.05em #96bbe7, -2px -2px 0.05em #96bbe7, 
+                1px 1px 0.05em #96bbe7, 1px 2px 0.05em #96bbe7,-1px 1px 0.05em #96bbe7, -1px 2px 0.05em #96bbe7, 
+                2px 1px 0.05em #96bbe7, 2px 2px 0.05em #96bbe7,-2px 1px 0.05em #96bbe7, -2px 2px 0.05em #96bbe7, 
+                0px -1px 0.05em #96bbe7, 0px -2px 0.05em #96bbe7,1px -1px 0.05em #96bbe7, 1px -2px 0.05em #96bbe7, 
+                -1px -1px 0.05em #96bbe7, -1px -2px 0.05em #96bbe7,2px -1px 0.05em #96bbe7, 2px -2px 0.05em #96bbe7, 
+                -2px -1px 0.05em #96bbe7, -2px -2px 0.05em #96bbe7, 1px 1px 0.05em #96bbe7, 1px 2px 0.05em #96bbe7, 
+                -1px 1px 0.05em #96bbe7, -1px 2px 0.05em #96bbe7, 2px 1px 0.05em #96bbe7, 2px 2px 0.05em #96bbe7, 
+                -2px 1px 0.05em #96bbe7, -2px 2px 0.05em #96bbe7;
+  }
+  .Qdiv {
+    width: 80px; 
+    height: 80px; 
+    position: absolute; 
+    bottom: 0px; 
+    right: 0px;
+    background: #e4f4f9;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 10px;
+  }
+  .Adiv{
+    width: 80px; 
+    height: 80px; 
+    position: absolute; 
+    bottom: 0px; 
+    right: 0px;
+    background: #fcf4e8;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 10px;
+  }
+
+/* 轮播css */
+.p29-lunbo-border{
+    width:94%;float: left;height: 400px;background: repeating-linear-gradient(-45deg, #a1c2e9, #a1c2e9 8px, #96bbe7 8px, #96bbe7 16px);margin-left: 9.5%
+}
+  .lunbo-title-img{
+    position: absolute;width: 35px;height: 35px;left: 115px;top: -25px;
+  }
+  .lunbo-content{
+    margin-top:10px;width:97%;margin-left:1.5%;position: relative;
+  }
+  .img-radius{
+    border-radius: 8px;
+  }
+  .lunbo-left-anniu{
+    width: 40px;height: 50px;background-color: white;opacity: 0.8;padding-top: 15px;margin-left: -110px;
+  }
+  .lunbo-right-anniu{
+    width: 40px;height: 50px;background-color: white;opacity: 0.8;padding-top: 15px;margin-right: -110px;
+  }
+  .lunbo-left-anniu span{
+    width: 10px;height: 15px;transform:rotate(180deg);
+  }
+  .lunbo-right-anniu span{
+    width: 10px;height: 15px;
+  }
+  .lunobo-img{
+      width: 100%;
+      height: 375px;
+      margin-top: 3px;
+  }
+  .text-shadow-slider {
+      text-shadow: 0px -1px 0.5em white, 0px -2px 0.05em white, 1px -1px 0.05em white, 1px -2px 0.05em white, 
+                  -1px -1px 0.5em white, -1px -2px 0.05em white,2px -1px 0.05em white, 2px -2px 0.05em white, 
+                  -2px -1px 0.5em white, -2px -2px 0.05em white,1px 1px 0.05em white, 1px 2px 0.05em white, 
+                  -1px 1px 0.5em white, -1px 2px 0.05em white,2px 1px 0.05em white, 2px 2px 0.05em white, 
+                  -2px 1px 0.5em white, -2px 2px 0.05em white,0px -1px 0.05em white, 0px -2px 0.05em white, 
+                  1px -1px 0.5em white, 1px -2px 0.05em white,-1px -1px 0.05em white, -1px -2px 0.05em white, 
+                  2px -1px 0.5em white, 2px -2px 0.05em white,-2px -1px 0.05em white, -2px -2px 0.05em white, 
+                  1px 1px 0.05em white, 1px 2px 0.05em white,-1px 1px 0.05em white, -1px 2px 0.05em white, 
+                  2px 1px 0.5em white, 2px 2px 0.05em white,-2px 1px 0.05em white, -2px 2px 0.05em white, 
+                  0px -1px 0.05em white, 0px -2px 0.05em white, 1px -1px 0.05em white, 1px -2px 0.05em white, 
+                  -1px -1px 0.05em white, -1px -2px 0.05em white,2px -1px 0.05em white, 2px -2px 0.05em white, 
+                  -2px -1px 0.05em white, -2px -2px 0.05em white,1px 1px 0.05em white, 1px 2px 0.05em white, 
+                  -1px 1px 0.05em white, -1px 2px 0.05em white,2px 1px 0.05em white, 2px 2px 0.05em white, 
+                  -2px 1px 0.05em white, -2px 2px 0.05em white,0px -1px 0.05em white, 0px -2px 0.05em white, 
+                  1px -1px 0.05em white, 1px -2px 0.05em white,-1px -1px 0.05em white, -1px -2px 0.05em white, 
+                  2px -1px 0.05em white, 2px -2px 0.05em white,-2px -1px 0.05em white, -2px -2px 0.05em white, 
+                  1px 1px 0.05em white, 1px 2px 0.05em white,-1px 1px 0.05em white, -1px 2px 0.05em white, 
+                  2px 1px 0.05em white, 2px 2px 0.05em white,-2px 1px 0.05em white, -2px 2px 0.05em white, 
+                  0px -1px 0.05em white, 0px -2px 0.05em white,1px -1px 0.05em white, 1px -2px 0.05em white, 
+                  -1px -1px 0.05em white, -1px -2px 0.05em white,2px -1px 0.05em white, 2px -2px 0.05em white, 
+                  -2px -1px 0.05em white, -2px -2px 0.05em white, 1px 1px 0.05em white, 1px 2px 0.05em white, 
+                  -1px 1px 0.05em white, -1px 2px 0.05em white, 2px 1px 0.05em white, 2px 2px 0.05em white, 
+                  -2px 1px 0.05em white, -2px 2px 0.05em white;
+      position: absolute;
+      top: 45%;
+      left: 35%;
+      font-size: 30px;
+      color: #676766;
+    }
+    .carousel-indicators {
+      position: absolute;
+      right: 0;
+      bottom: 5px;
+      left: 0;
+      z-index: 15;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding-left: 0;
+      margin-right: 5%;
+      margin-left: 85%;
+      list-style: none;
+    }
+    .carousel-indicators li {
+      position: relative;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      margin-right: 3px;
+      margin-left: 3px;
+      text-indent: -999px;
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    .carousel-indicators li::before {
+      position: absolute;
+      top: -10px;
+      left: 0;
+      display: inline-block;
+      width: 100%;
+      height: 10px;
+      content: "";
+    }
+    .carousel-indicators li::after {
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      display: inline-block;
+      width: 100%;
+      height: 10px;
+      content: "";
+    }
+    .carousel-indicators .active {
+      background-color: #679bca;
+    }
+    .lunbo-bottom-div{
+      width:97%;height: 80px;position: absolute;top: 77%;opacity:0.8;margin-left: 1.5%;background:linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,0.1));border-bottom-left-radius: 8px;border-bottom-right-radius: 8px;
+    }
+    .lunbo-bottom-div-span{
+      color: #679bca;margin-left: 20px;position:relative;top: 15px;
+    }
+    .lunbo-bottom-div div{
+      margin-left: 20px;position:relative;top: 10px;
+    }

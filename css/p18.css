@@ -1,0 +1,98 @@
+.popular-search-box > .title:before,
+.popular-search-box > .title:after {
+  content: '';
+  position: absolute;
+  background-color:#FDE480;
+  width: 20px;
+  top: 0;
+  bottom: -5px;
+  z-index: 1;
+}
+.bg-doctor-interview {
+    background: repeating-linear-gradient(-45deg, #FDE480, #FDE480 8px, #FDE999 8px, #FDE999 16px);
+}
+
+.text-outline-hospital-address-color{
+    text-shadow: 0px -1px 0.05em #52b2de, 0px -2px 0.05em #52b2de, 1px -1px 0.05em #52b2de, 1px -2px 0.05em #52b2de, -1px -1px 0.05em #52b2de, -1px -2px 0.05em #52b2de, 2px -1px 0.05em #52b2de, 2px -2px 0.05em #52b2de, -2px -1px 0.05em #52b2de, -2px -2px 0.05em #52b2de, 1px 1px 0.05em #52b2de, 1px 2px 0.05em #52b2de, -1px 1px 0.05em #52b2de, -1px 2px 0.05em #52b2de, 2px 1px 0.05em #52b2de, 2px 2px 0.05em #52b2de, -2px 1px 0.05em #52b2de, -2px 2px 0.05em #52b2de, 0px -1px 0.05em #52b2de, 0px -2px 0.05em #52b2de, 1px -1px 0.05em #52b2de, 1px -2px 0.05em #52b2de, -1px -1px 0.05em #52b2de, -1px -2px 0.05em #52b2de, 2px -1px 0.05em #52b2de, 2px -2px 0.05em #52b2de, -2px -1px 0.05em #52b2de, -2px -2px 0.05em #52b2de, 1px 1px 0.05em #52b2de, 1px 2px 0.05em #52b2de, -1px 1px 0.05em #52b2de, -1px 2px 0.05em #52b2de, 2px 1px 0.05em #52b2de, 2px 2px 0.05em #52b2de, -2px 1px 0.05em #52b2de, -2px 2px 0.05em #52b2de, 0px -1px 0.05em #52b2de, 0px -2px 0.05em #52b2de, 1px -1px 0.05em #52b2de, 1px -2px 0.05em #52b2de, -1px -1px 0.05em #52b2de, -1px -2px 0.05em #52b2de, 2px -1px 0.05em #52b2de, 2px -2px 0.05em #52b2de, -2px -1px 0.05em #52b2de, -2px -2px 0.05em #52b2de, 1px 1px 0.05em #52b2de, 1px 2px 0.05em #52b2de, -1px 1px 0.05em #52b2de, -1px 2px 0.05em #52b2de, 2px 1px 0.05em #52b2de, 2px 2px 0.05em #52b2de, -2px 1px 0.05em #52b2de, -2px 2px 0.05em #52b2de, 0px -1px 0.05em #52b2de, 0px -2px 0.05em #52b2de, 1px -1px 0.05em #52b2de, 1px -2px 0.05em #52b2de, -1px -1px 0.05em #52b2de, -1px -2px 0.05em #52b2de, 2px -1px 0.05em #52b2de, 2px -2px 0.05em #52b2de, -2px -1px 0.05em #52b2de, -2px -2px 0.05em #52b2de, 1px 1px 0.05em #52b2de, 1px 2px 0.05em #52b2de, -1px 1px 0.05em #52b2de, -1px 2px 0.05em #52b2de, 2px 1px 0.05em #52b2de, 2px 2px 0.05em #52b2de, -2px 1px 0.05em #52b2de, -2px 2px 0.05em #52b2de, 0px -1px 0.05em #52b2de, 0px -2px 0.05em #52b2de, 1px -1px 0.05em #52b2de, 1px -2px 0.05em #52b2de, -1px -1px 0.05em #52b2de, -1px -2px 0.05em #52b2de, 2px -1px 0.05em #52b2de, 2px -2px 0.05em #52b2de, -2px -1px 0.05em #52b2de, -2px -2px 0.05em #52b2de, 1px 1px 0.05em #52b2de, 1px 2px 0.05em #52b2de, -1px 1px 0.05em #52b2de, -1px 2px 0.05em #52b2de, 2px 1px 0.05em #52b2de, 2px 2px 0.05em #52b2de, -2px 1px 0.05em #52b2de, -2px 2px 0.05em #52b2de;
+  }
+  .allbox{
+    color: white;
+    background-color: #48ccc5;
+  }
+  .box-shadow-4side-1px{
+    box-shadow:1px 1px 5px #ebebeb,1px -1px 5px #ebebeb,-1px 1px 5px #ebebeb,-1px -1px 5px #ebebeb;
+    background-color: #48ccc5;
+    color: white;
+    border-radius: 5px;
+  }
+  .box-shadow-4side-1px1{
+    box-shadow:1px 1px 5px #ebebeb,1px -1px 5px #ebebeb,-1px 1px 5px #ebebeb,-1px -1px 5px #ebebeb;
+    background-color: white;
+    color: #48ccc5;
+    border-radius: 5px;
+  }
+  .popular-search-box .popular-search-item .rank1 {
+    position: absolute;
+    top: 50%;
+    left: -21px;
+    margin-top: -12px;
+    height: 24px;
+    padding: 0 15px;
+    background-color: #F1C310;
+    color: #FFFFFF;
+  }
+  .popular-search-box .popular-search-item .rank1:before {
+    content: '';
+    border-color: #D48228 transparent transparent transparent;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    position: absolute;
+    top: 100%;
+    left: 3px;
+  }
+  .popular-search-box .popular-search-item .rank1:after {
+    content: '';
+    border-color: transparent #FFFFFF transparent transparent;
+    border-style: solid;
+    border-width: 12px 6px 12px 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .xian{
+    width: 100px;  
+    padding-top: 2px;
+    margin-left: 30px;
+    border-right: 1px solid #dddddd;
+    height: 24px;margin-top: 8px;
+  }
+ 
+.icon-border-doctor.icon, .icon-border-specialist-center.icon {
+  background: #FFFFFF;
+  width: 30px;
+  height: 30px;
+  display:inline-block;
+}
+
+.icon-border-doctor.icon::after, .icon-border-specialist-center.icon::after {
+  width: 30px;
+  height: 30px;
+  background-size: 32px 32px;
+}
+
+
+.condition-select-right .doctor-item{
+  width:100%;
+  border-radius: 5px;
+  margin-top: -40px;
+  padding-bottom:5px;
+}
+
+.input-name{
+  font-size: 12px;
+}
+
+.icon-checkbox .icon-tick.icon{
+  right:8px;
+}

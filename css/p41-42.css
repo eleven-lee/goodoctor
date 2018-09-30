@@ -1,0 +1,47 @@
+.font-color{
+    color: #52b2de;
+}
+.leftimg{
+    width: 15px;
+    height: 25px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.leftfont{
+    color: #48ccc5;
+    margin-top: 5px;
+    font-size: 16px;
+}
+.leftfont1{
+    margin-top: 5px;
+    font-size: 16px;
+    color: #676766;
+}
+/* .tab:active{
+    background-color: white;
+}
+.tab:focus{
+    background-color: white;
+} */
+
+/*控制列表选项卡活动状态时的背景颜色*/
+.tab-header1 .active{
+    background-color: white;
+}
+/*控制列表切换内容的显示与隐藏*/
+.first-content, .second-content{
+    display: none;
+}
+.first-content.active, .second-content.active {
+    display: block;
+}
+li {
+    list-style: none;
+    border-bottom: 1px solid #eeefef;
+}
+.border-theme-color-2px {
+    border: 1px solid #48ccc5;
+}
+.border-radius {
+    border-radius: 8px;
+}

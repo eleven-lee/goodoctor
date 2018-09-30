@@ -1,0 +1,53 @@
+.border-theme-color-2px {
+    border: 2px solid #48ccc5;
+}
+.border-radius {
+    border-radius: 8px;
+}
+.huo{
+    text-align: center; 
+    font-size:15px; 
+    margin-top: -10px;
+    margin-bottom: 5px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.huozuodiv{
+    float: left;
+    border-top: 1px dashed #e8e8e8;
+    width: 130px;
+    margin-top: 30px;
+}
+.huoyoudiv{
+    float: left;
+    border-top: 1px dashed #e8e8e8;
+    width: 130px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.box-shaw1{
+    box-shadow:-2px -2px 2px #d6dee1;
+    width: 40px; 
+    height: 40px; 
+    border-top-left-radius: 10px;
+}
+.box-shaw2{
+    box-shadow:-2px 0px 2px #d6dee1;
+    width: 40px; 
+    height: 40px;
+}
+.box-shaw3{
+    box-shadow:-2px 2px 2px #d6dee1;
+    width: 40px;
+    height: 40px;border-bottom-left-radius: 10px;
+}
+.border-theme-color-2px {
+    border: 2px solid #48ccc5;
+}
+.border-radius {
+    border-radius: 8px;
+}
+.inputborder{
+    border: 1px solid #48ccc5;
+}

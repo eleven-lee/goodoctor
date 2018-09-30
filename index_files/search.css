@@ -1,0 +1,293 @@
+* {margin: 0px; padding:0px;}
+
+
+.lightgraygray {
+    color: lightgray;
+}
+
+.further-search-1 {
+    width:100%;
+    height: 200px;
+    margin:0px;
+    background-color: #fffffd;
+    /* background-color: green; */
+    border: 1px solid #888888;
+    border-radius: 5px;
+    /* box-shadow: 0 10 20 20;
+    box-shadow: -2px -2px 1px 1px #888888; */
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.further-search-1 .keywords {
+    margin-bottom: 0px;
+}
+
+.further-search-1 .margin-left {
+    margin-left: 15px;
+}
+.margin-left {
+    margin-left: 15px;
+}
+
+
+.border-gray-color
+ {
+  border-color: lightgray !important;
+}
+text-gray-color {
+    color: gray;
+}
+
+
+.further-search-1 .search-input {
+    width: 70%;
+    height: 40px;
+
+}
+.search-input-placeholder {
+    color: gray;
+    font-size: 1rem;
+}
+
+
+.specialistselect {
+    width:100%;
+    height: 200px;
+    margin:0px;
+    background-color: #fffffd;
+    /* background-color: green; */
+    /* border: 1px solid #888888; */
+    border-radius: 5px;
+    /* box-shadow: 0 10 20 20;
+    box-shadow: -2px -2px 1px 1px #888888; */
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.icon-general-medicine-search {
+
+}
+
+.icon-general-medicine-search .icon-text-color-default,
+.icon-general-medicine-search.icon-text-color-default {
+  color: lightgray !important;
+}
+
+.icon-general-medicine-search .icon-border-color-default,
+.icon-general-medicine-search.icon-border-color-default {
+  border-color: lightgray !important;
+}
+
+.icon-general-medicine-search .icon,
+.icon-general-medicine-search.icon {
+  background: #FFFFFF;
+  width: 33px;
+  height: 33px;
+}
+
+.icon-general-medicine-search .icon::after,
+.icon-general-medicine-search.icon::after {
+  background-image: url(./images/icon/general_medicine_icon.png);
+  background-color: #2CB7DF;
+  width: 33px;
+  height: 33px;
+  background-size: 35px 35px;
+}
+
+.test {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* background-color: 
+    background-image: ;
+    background-repeat: no-repeat; */
+    background: lightgrey url(images/icon/white_general_medicine_icon.png) no-repeat center ;
+}
+
+.specialist1 {
+    float: left;
+    margin-right: 30px;
+}
+
+.specialist1 .text {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.doctor-select {
+    width: 55px;
+    height:48px;
+    background-color: lightgray; 
+    background-image:  url(images/icon/border_doctor_icon.png)  ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.selected-item {
+    
+    display: none;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #48ccc5 url(images/icon/white_tick_icon.png) no-repeat center;
+    background-size: 10px;
+}
+
+.specialist-select {
+    width: 55px;
+    height:48px;
+    background-color: lightgray; 
+    background-image:  url(images/icon/border_specialist_center_icon.png)  ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 56px;
+}
+.specialist-selected {
+    
+    width: 55px;
+    height:48px;
+    background-color: #48ccc5; 
+    background-image:  url(images/icon/border_specialist_center_icon.png)  ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 56px;
+}
+
+.specialist-selected-item {
+    
+    display: none;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #48ccc5 url(images/icon/white_tick_icon.png) no-repeat center;
+    background-size: 10px;
+}
+
+
+
+
+.sex-male-select {
+    width: 55px;
+    height:48px;
+    background-color: lightgray; 
+    background-image:  url(images/icon/border_doctor_icon.png)  ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sex-male-selected-item {
+    
+    display: none;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #48ccc5 url(images/icon/white_tick_icon.png) no-repeat center;
+    background-size: 10px;
+}
+
+.sex-female-select {
+    width: 56px;
+    height:48px;
+    background-color: lightgray; 
+    background-image:  url(images/search-image/female.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid lightgray;
+    border-radius: 1px;
+    
+}
+
+.sex-female-selected-item {
+    
+    display: none;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #48ccc5 url(images/icon/white_tick_icon.png) no-repeat center;
+    background-size: 10px;
+}
+
+.medical-quan-select {
+    width: 55px;
+    height:48px;
+    background-color: lightgray; 
+    background-image:  url(images/search-image/quan.png)  ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.medical-quan-selected-item {
+    
+    display: none;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #48ccc5 url(images/icon/white_tick_icon.png) no-repeat center;
+    background-size: 10px;
+}
+
+.width25 {
+    width: 25%;
+}
+
+.bg-lightgray {
+    background: lightgray;
+}
+
+.aa {
+    background: #fafafa;
+    color: gray;
+    height: 40px;
+    margin-right: 10px;
+    display: inline-block;
+    padding-top:10px;
+    padding-left: 20px;  
+} 
+
+  .labelactive{
+    font-size:120% !important;
+	color:red !important;
+    /* color: #48ccc5 !important; */
+}
+
+
+ .aa input {
+    margin-right: 5px;
+    float: right;
+    margin-top: 5px;
+} 
+
+.further-search-category .dropdown-menu .tabs {
+    color: gray !important;
+  }
+
+.further-search-category .dropdown-menu .tabs .tab.active,
+.further-search-category .dropdown-menu .tabs .tab:hover {
+  border-bottom: 5px solid #FFFFFF;
+}
+
+
+.further-search-category .dropdown-menu .tab-content label .active,
+ {
+  
+  color: #48ccc5;
+}
+

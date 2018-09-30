@@ -1,0 +1,15 @@
+.uptop{
+    margin-top: 10px;
+}
+.erleft{
+    margin-left: 10px;
+}
+.sanleft{
+    margin-left: 10px;
+}
+.imgsize{
+    width: 15px; height:15px; background-size: 25px 26px;    
+}
+.box-shadow-4side-1px {
+    box-shadow:1px 1px 5px #ebebeb,1px -1px 5px #ebebeb,-1px 1px 5px #ebebeb,-1px -1px 5px #ebebeb;
+}
