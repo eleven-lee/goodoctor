@@ -534,6 +534,7 @@ color: #679bca;
     font-size: 25px;
     color: gray;
     margin-top: -5px;
+    font-style:normal;
 }
 .tab-pane .tab-pane-top{
     padding: 10px; border-bottom: 1px dotted lightgray;font-size:16px;
