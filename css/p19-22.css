@@ -531,43 +531,94 @@ color: #679bca;
 }
 
 .share-part .tab-up-num{
-    font-size: 25px;
+    font-size: 18px;
     color: gray;
-    margin-top: -5px;
     font-style:normal;
 }
 .tab-pane .tab-pane-top{
+    display:flex;
     padding: 10px; border-bottom: 1px dotted lightgray;font-size:16px;
 }
 .tab-pane-top input{
     font-size:16px;
 }
-.tab-pane .tab-pane-top .tab-up,
-.tab-pane .tab-pane-top .tab-sort,
-.tab-pane .tab-pane-top .tab-search{
-    width:33.3%;
+.tab-pane .tab-pane-top .tab-up{
+    width:40%;
+    text-align: center;
 }
+.tab-up .color-name-blue{
+    font-size:26px;
+}
+.tab-pane .tab-pane-top .tab-down{
+    flex:1;
+    display:flex;
+    text-align: right;
+    padding-right:10px;
+}
+
 .tab-pane-top .tab-up{
     font-size: 30px;margin-top: -10px;
 }
 .tab-up .tab-more{
-    text-decoration: underline;color: #679bca;font-size:16px;
+    text-decoration: underline;color: #679bca;font-size:14px;
 }
 .tab-pane-top .tab-sort{
-    color: lightgray; text-align:right; line-height: 2.6;
+    flex:1;
+    color: lightgray; line-height: 2.6;
 }
 .tab-sort .tab-sort-item{
-    color:#e5696a; margin-right: 20px;
+    color:#e5696a;
 }
 .tab-pane-top .tab-search{
-    width: 200px; height: 40px; border: 2px solid #e5696a; border-radius: 6px;
+    width:200px;
+    margin-left:20px;
+    margin-top:2px;
+     height: 40px; border: 2px solid #e5696a; border-radius: 6px;
 }
 .tab-pane-list{
     padding:10px;
 }
+.tab-pane-list2{
+    padding:10px 0 20px;
+}
 .tab-pane-list .tab-pane-item{
     display:flex;
     margin-bottom:20px;
+}
+.tab-pane-list2 .tab-pane-item2{
+    border-bottom:1px dotted lightgray;
+    padding-bottom:20px;
+}
+.tab-pane-item2 .tab-item-question{
+    padding:20px;
+    margin: 0 20px;
+    border-bottom: 1px dotted lightgray;
+}
+.tab-pane-item2 .tab-item-answer{
+    padding:20px 40px;
+}
+.tab-pane-item2 .up-avatar{
+    width: 60px; height: 60px;
+    padding:4px;
+    background-color: transparent; border-radius: 100%;
+    /*border: 1px solid #48ccc5;*/
+}
+.tab-pane-item2 .up-avatar img{
+    width: 52px; height: 52px;
+}
+.tab-pane-item2 .fa-clock{
+    color: #48ccc5; margin-right:5px;
+}
+.tab-pane-item2 .icon-question{
+    width: 40px; position: absolute; bottom: 10px; right: 10px; z-index: 2;
+}
+.tab-pane-item2 .bg-right-bottom,
+.tab-pane-item2 .bg-right-bottom-answer{
+    width: 90px; height: 90px; position: absolute; bottom: 0; right: 0;background: #e4f4f9;border-top-left-radius: 100%;border-bottom-right-radius: 10px;
+    z-index: -1;
+}
+.tab-pane-item2 .bg-right-bottom-answer{
+    background:#fcf4e8;
 }
 .tab-pane-list .tab-pane-item .left{
     width: 12%; text-align: center; color: lightgray;
@@ -581,25 +632,25 @@ color: #679bca;
     border-color: transparent #fffcdc transparent transparent;
 }
 .tab-pane-list .tab-pane-item:nth-child(even) .right{
-    background: #EBFAFC;
+    /*background: #EBFAFC;*/
 }
 .tab-pane-list .tab-pane-item:nth-child(even) .left-arrow-bigbox::before{
     border-color: transparent #EBFAFC transparent transparent;
 }
-.tab-pane-list .tab-pane-item:nth-child(4n+1) .right,
-.tab-pane-list .tab-pane-item:first-child .right{
+#appreciation .tab-pane-list .tab-pane-item:nth-child(4n+1) .right,
+#appreciation .tab-pane-list .tab-pane-item:first-child .right{
     background: #fffcdc url("../images/p19/thankyoubottom.png") no-repeat bottom 53px left;
 }
-.tab-pane-list .tab-pane-item:nth-child(4n+2) .right,
-.tab-pane-list .tab-pane-item:nth-child(2) .right{
+#appreciation .tab-pane-list .tab-pane-item:nth-child(4n+2) .right,
+#appreciation .tab-pane-list .tab-pane-item:nth-child(2) .right{
     background: #EBFAFC url("../images/p19/thankyouitem2@2x.png") no-repeat bottom 53px left;
 }
-.tab-pane-list .tab-pane-item:nth-child(4n+3) .right,
-.tab-pane-list .tab-pane-item:nth-child(3) .right{
+#appreciation .tab-pane-list .tab-pane-item:nth-child(4n+3) .right,
+#appreciation .tab-pane-list .tab-pane-item:nth-child(3) .right{
     background: #fffcdc url("../images/p19/thanksforyourcare@2x.png") no-repeat bottom 53px left;
 }
-.tab-pane-list .tab-pane-item:nth-child(4n+4) .right,
-.tab-pane-list .tab-pane-item:nth-child(4) .right{
+#appreciation .tab-pane-list .tab-pane-item:nth-child(4n+4) .right,
+#appreciation .tab-pane-list .tab-pane-item:nth-child(4) .right{
     background: #EBFAFC url("../images/p19/thankyoublue@2x.png") no-repeat bottom 53px left;
 }
 
@@ -636,4 +687,17 @@ color: #679bca;
 }
 .tab-pane-item .right-left .comment-text{
     font-size:13px;
+}
+.tab-pane .tab-pane-top .select_li .btn{
+    background-color: white;color: #676766;border:1px solid gainsboro;border-radius: 5px;height: 40px;width: 105px;
+}
+
+.tab-pane-item:nth-child(even) .right .tab-right-content{
+    width: 100%;  padding: 15px; text-align: left; background: #f6fcfe;
+    border: 1px solid #48ccc5;
+}
+.tab-pane-item:nth-child(odd) .right .tab-right-content{
+    width: 100%;  padding: 15px; text-align: left;
+    background: #fefcf6;
+    border: 1px solid orange;
 }

@@ -348,17 +348,55 @@ li {
     flex-wrap:wrap;
 }
 .home-disease-decoding .tab-content .right .part-down-up{
+    width:100%;
     background: transparent;font-weight: bold;color: #679bca;
 }
 .home-disease-decoding .tab-content .right .part-down-up .part-item{
-    width:calc(50% - 10px);
-    margin:0 10px 10px 0;
-    padding: 0 0 10px 10px;
+    width:49%;
+    margin:0 2% 2% 0;
+    padding: 5px;
     position: relative;
     float: left;
+    font-size:0.8rem;
     border-radius: 8px;
     background: linear-gradient(to right, rgba(35, 240, 226, 0.1) , white);
 }
+.home-disease-decoding .tab-content .right .part-down-up .part-item:nth-child(2n){
+    margin-right:0;
+}
+.part-down-up .part-item .title{
+    font-family: liheipro;
+}
+.part-down-up .part-item .span-102{
+    color:pink;
+}
+
+.part-down-up .part-item .img2{
+    float: left;
+    width: 45px;
+    height: 45px;
+    background-color: #f4f4f4;
+    border-radius: 100%;
+    position: relative;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.part-down-up .part-item .img1 {
+    width: 18px;
+    height: 18px;
+}
+.part-down-up .part-item .img3 {
+    width: 27px;
+    height: 20px;
+}
+.img2 img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
 .home-part4{
     width:100%;
     display:flex;

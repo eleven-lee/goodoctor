@@ -127,7 +127,7 @@ html{
     width: 80px;
 }
 .icon-specialist .label{
-    margin:10px 0;
+    margin:5px 0;
 }
 
 .bookmark{
@@ -181,7 +181,7 @@ html{
     flex-wrap:wrap;
 }
 .home-bg-bottom .d-flex span{
-    font-size:1.3rem !important;
+    /*font-size:1.3rem !important;*/
 }
 
 .home-bg-bottom .home-news{
@@ -318,8 +318,13 @@ html{
     font-size:1.2rem;
 }
 .home-read-good-reviews-box .home-read-good-reviews-item .details .review-content{
-    line-height: 1.5;
-    height: 50px;
+    line-height: 1.6;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
 }
 
 .icon-white-general-medicine .icon::after, .icon-white-general-medicine.icon::after{
@@ -342,6 +347,8 @@ html{
 }
 .home-disease-decoding .tab-content .right .part-down-up .part-item{
     width:100%;
+    padding:10px;
+    font-size:1.8rem;
 }
 .home-part4 .banner{
     width:100%;
@@ -486,6 +493,29 @@ html{
 .doctor-detail-wrapper .container{
     overflow: hidden;
 }
+.doctor-detail-wrapper .container .right{
+    width:100% !important;
+    font-size:1.6rem;
+    /*text-align: center;*/
+}
+.doctor-detail-wrapper .container .right .part1,
+.doctor-detail-wrapper .container .right .part5,
+.doctor-detail-wrapper .container .right .home-news{
+    display:none;
+}
+.doctor-detail-wrapper .container .right .part2{
+    margin-top:80px !important;
+}
+.doctor-detail-wrapper .container .right .part2,
+.doctor-detail-wrapper .container .right .part4{
+    text-align: left;
+    border-width: 8px 0 0 0 !important;
+    border-radius: 0 !important;
+}
+.doctor-detail-wrapper .container .right .part5{
+    /*width:80% !important;*/
+    /*margin:20px auto !important;*/
+}
 .doctor-detail-wrapper .doctor-info{
     position:relative;
     font-size:1.6rem;
@@ -551,6 +581,7 @@ html{
     margin-top:12px;
     margin-left:30px;
 }
+
 .doctor-info .doctor-servers .colum2 .colum2-item{
     width:47%;
     margin-right:6%;
@@ -566,6 +597,15 @@ html{
     margin-left: 5px;
     margin-top:2px;
 }
+.doctor-info .doctor-profile .colum2.on,
+.doctor-info .doctor-title-content .doctor-content.on{
+   display:flex;
+}
+.doctor-info .doctor-profile .colum2,
+.doctor-info .doctor-title-content .doctor-content{
+    transition: all 0.5s ease-in;
+    display:none;
+}
 .doctor-detail-wrapper .home-top-bg-diagonal{
     background:none;
 }
@@ -574,6 +614,14 @@ html{
     border-width: 5px 0 0 0 !important;
     border-radius:0 !important;
     padding-bottom:0 !important;
+}
+.doctor-detail-wrapper .share-part .nav-tabs{
+    height: 50px;
+    line-height: 50px;
+}
+.share-part .nav-tabs .nav-tabs-item{
+    padding:0;
+    font-size:1.6rem;
 }
 .doctor-detail-wrapper .doctor-info .doctor-servers .colum2{
     font-size:0;
@@ -656,8 +704,15 @@ html{
     text-align: left;
 }
 .tab-pane-top .tab-search{
-    width:50% !important;
+    width:42% !important;
     text-align: center;
+    margin-left:0;
+}
+.tab-pane .tab-pane-top .tab-down{
+    padding-right:0;
+}
+.tab-pane .tab-pane-top .select_li .btn{
+    width:80px;
 }
 .doctor-info .doctor-introduce{
     width:100%;
@@ -682,6 +737,9 @@ html{
 .tab-pane-item .left .tab-item-name{
     vertical-align: top;
     margin-top:5px;
+}
+#doctor-case-share .tab-pane-item .left .tab-item-name{
+    margin-top:20px;
 }
 .left-arrow-bigbox::before{
     border-width:0;
@@ -734,4 +792,17 @@ html{
 }
 .doctor-detail-wrapper .right .home-popular-search-box{
     margin-top:0 !important;
+}
+
+.tab-pane-list2 .tab-pane-item2{
+    font-size:1.8rem;
+}
+.tab-pane-item2 .tab-item-question{
+    padding:20px 0;
+}
+.tab-pane-item2 .tab-item-answer{
+    padding:20px;
+}
+.tab-pane-list .tab-pane-item .right{
+    padding-top:0;
 }
