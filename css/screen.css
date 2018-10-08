@@ -599,12 +599,13 @@ html{
 }
 .doctor-info .doctor-profile .colum2.on,
 .doctor-info .doctor-title-content .doctor-content.on{
-   display:flex;
+    max-height: 600px;
 }
 .doctor-info .doctor-profile .colum2,
 .doctor-info .doctor-title-content .doctor-content{
-    transition: all 0.5s ease-in;
-    display:none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
 }
 .doctor-detail-wrapper .home-top-bg-diagonal{
     background:none;
@@ -791,7 +792,7 @@ html{
     display:none;
 }
 .doctor-detail-wrapper .right .home-popular-search-box{
-    margin-top:0 !important;
+    /*margin-top:0 !important;*/<span style="color:#679bca;">陳國強 Chan Kwok Keung, Aldous</span>
 }
 
 .tab-pane-list2 .tab-pane-item2{
@@ -805,4 +806,7 @@ html{
 }
 .tab-pane-list .tab-pane-item .right{
     padding-top:0;
+}
+.date-font{
+    margin-top:10px;
 }

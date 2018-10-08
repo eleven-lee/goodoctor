@@ -48,9 +48,10 @@ var page = {
 
         //P19-21 responsive screen down click
         $('.doctor-info').find('.fa-chevron-down').on('click',function () {
-          var content = $(this).parent('div').siblings('div');
-          content.toggleClass('on');
-        })
+           var content = $(this).parent('div').siblings('div');
+           content.toggleClass('on');
+        });
+
     },
 
     // 下拉提示层
