@@ -24,8 +24,8 @@
     height:68px; 
     color: white; 
     text-align: center;
-    position: relative;
-   left: 130px;
+    position: absolute;
+    right: 1%;
 }
 .renqi1::after {
     content: "";

@@ -12429,9 +12429,10 @@ the second part assign text-outline-right
 }
 
 .popular-search-box > .box-border {
-  position: absolute;
-  top: 45px;
-  bottom: 0;
+  position: relative;
+  /*top: 45px;*/
+  bottom: auto;
+  margin-bottom: 20px;
   width: 100%;
   padding: 10px;
   background: repeating-linear-gradient(-45deg, #FDE480, #FDE480 8px, #FDE999 8px, #FDE999 16px);
@@ -12606,6 +12607,7 @@ the second part assign text-outline-right
 
 #footer {
   border-top: 7px solid #48ccc5;
+  margin-top: -10px;
 }
 
 #footer #footer-back-to-top {
@@ -13060,7 +13062,7 @@ the second part assign text-outline-right
 }
 
 .home-news .news-swiper .swiper-container {
-  width: 600px;
+  width:600px;
   padding: 30px 0;
 }
 

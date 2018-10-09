@@ -17,6 +17,7 @@
     <meta name="theme-color" content="#000000">
     <title>Good Doctor - 找個好醫生</title>
 
+    <link rel="stylesheet" href="./css/default-huanxing.css">
     <link rel="stylesheet" href="./index_files/frontend-p47tab.css">
     <link rel="stylesheet" href="./css/p39-40.css">
     <link rel="stylesheet" href="./css/all.css">
@@ -25,7 +26,7 @@
     <link rel="stylesheet" href="./css/p43.css">
 
     <!--圓形進度條js -->
-    <link rel="stylesheet" href="./css/default-huanxing.css">
+
     <link rel="stylesheet" href="./css/jquery.classycountdown.css">
     <script src="./index_files/huanxing/jquery.min.js"></script>
     <script src="./index_files/huanxing/jquery.knob.js"></script>
@@ -48,6 +49,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
           integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/home.css">
+    <!--移动端css引入-->
+    <link rel="stylesheet" href="./css/mobilescreen.css" media="screen and (max-width:768px)">
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -66,49 +69,73 @@
                 <div class="nav-functions">
                     <a href="./p35login.html">
                         <img src="images/icon/login_icon.png" alt="">
-
                         <span class="align-top">登入/註冊</span>
                     </a>
                     <a href="./p36register.html">
                         <img src="images/icon/edit_icon.png" alt="">
-
                         <span class="align-top">撰寫醫評</span>
                     </a>
                 </div>
-
-                <div class="test"></div>
-                <a class="logo" href="http://goodoctor.html5.company/#">
-                </a>
-
+                <a class="logo" href="http://goodoctor.html5.company/#"></a>
                 <div class="header-menu">
                     <div class="mb-2">
                         <span class="text-theme-color font-weight-bold">GOODOCTOR</span> 綜合各科醫生資料，為大眾提供求醫經驗及醫評
                     </div>
                     <ul class="inline-list d-flex justify-content-around">
-                        <li><a href="./index.html"> <img src="images/header/home_icon.png" alt=""
-                                                         style="margin-bottom: 2px;"><br>
-                            首頁
-                        </a></li>
-                        <li><a href="./search.html"><img src="images/header/search_icon.png" alt=""
-                                                         style="margin-bottom: 2px;"><br>
-                            進階搜尋</a></li>
-                        <li><a href="./index.p23artical-index.html"><img src="images/header/feature_articles_icon.png"
-                                                                         alt="" style="margin-bottom: 2px;"><br>
-                            專題文章</a></li>
-                        <li><a href="./index.p31.html"><img src="images/header/read_good_reviews_icon.png" alt=""
-                                                            style="margin-bottom: 2px;"><br>
-                            睇睇好評</a></li>
-                        <li><a href="./index.p32.html"><img src="images/header/doctor_leaderboard_icon.png" alt=""
-                                                            style="margin-bottom: 2px;"><br>
-                            醫生排行榜</a></li>
-                        <li><a href="./index.p35.html"><img src="images/header/doctor_mailbox_icon.png" alt=""
-                                                            style="margin-bottom: 2px;"><br>
-                            醫生信箱</a></li>
-                        <li><a href="http://goodoctor.html5.company/#"><img src="images/header/patient_voice_icon.png"
-                                                                            alt="" style="margin-bottom: 2px;"><br>
-                            病人心聲</a></li>
-
+                        <li>
+                            <a href="./index.html">
+                                <img src="images/header/home_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                首頁
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./search.html">
+                                <img src="images/header/search_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                進階搜尋
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.p23artical-index.html">
+                                <img src="images/header/feature_articles_icon.png" alt=""
+                                     style="margin-bottom: 2px;"><br>
+                                專題文章
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.p31.html">
+                                <img src="images/header/read_good_reviews_icon.png" alt=""
+                                     style="margin-bottom: 2px;"><br>
+                                睇睇好評
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.p32.html">
+                                <img src="images/header/doctor_leaderboard_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                醫生排行榜
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.p35.html">
+                                <img src="images/header/doctor_mailbox_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                醫生信箱
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://goodoctor.html5.company/#">
+                                <img src="images/header/patient_voice_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                病人心聲
+                            </a>
+                        </li>
                     </ul>
+                </div>
+                <div class="header-search" style="display:none;">
+                    <div class="search">
+                        <div class="search-content">
+                            <input class="search-input" type="search" autofocus  placeholder="輸入關鍵字..." />
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+                    <i class="fa fa-list fa-2x" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
@@ -135,24 +162,23 @@
                     </div>
                 </a>
             </div>
-            <div class="home-top-bg-diagonal pb-5" style="padding-top: 50px;">
+            <div class="home-top-bg-diagonal pb-5 specialist-swrapper" style="padding-top: 50px;">
                 <div class="container">
                     <div class="up">
                         <img src="./images/icon/grey_home_icon.png" alt style="width: 10px;height: 12px">
-                        <span class="all">&nbsp;>&nbsp;</span>
+                        <span class="all">></span>
                         <span>進階搜尋</span>
-                        <span class="all">&nbsp;>&nbsp;</span>
+                        <span class="all">></span>
                         <span class="up-last">醫生集中地</span>
                     </div>
                     <div class="div-border bordercolor">
                         <span class="text-outline-yishengxinxiang-color"
                               style="font-size:30px;color: white;position: absolute;left:-5px;top: -45px;font-family:MElleHK-Medium;">醫生集中地</span>
-                        <img src="./images/p43/1@2x.png" alt=""
-                             style="width: 35px; position: absolute; top: -32px; left: 145px;">
-                        <div style="width: 100%;height: 300px;position: relative;background-color:#e2f2d1; ">
+                        <img src="./images/p43/1@2x.png" alt=""style="width: 35px; position: absolute; top: -32px; left: 145px;">
+                        <div style="width: 100%;height: 300px;background-color:#e2f2d1; ">
                             <!-- <div style="width:100px;height: 100;background-color: black;position: absolute;top: 50px;right: 50px;"></div> -->
                             <img src="./images/p43/22@2x.png" alt
-                                 style="position: absolute;right: 0px;bottom:0px;width: 300px;height: 200px;">
+                                 style="position: absolute;right: 0px;bottom:0px;width:30%;height: 60%;">
                             <span style="color:#669900;font-size: 25px;position: absolute;top: 45%;left: 5%;">醫生集團   </span>
                             <span style="font-size: 12px;color: black;position: absolute; top: 55%; left: 5%;">香港私人執業西醫及牙醫大部分集中在九龍油尖旺區及港島中西區。以下列出香港著名的醫生集中地，
                                 <br>有些大廈就聚集了超過一百名醫生。</span>
@@ -173,11 +199,10 @@
                 <div class="container d-flex justify-content-between">
                     <div class="home-search-box " style="width:69%; margin: 60px 0px 30px 50px; ">
                         <div class="left">
-                            <div style="width: 100%;height: 200px;border: 8px solid #d8c1b0;background-color: white;border-radius: 10px;margin-top: -40px;margin-bottom: 15px;">
+                            <div class="specialist-center-swrapper">
                                 <div class="further-search-category box-border border-radius bg-white"
                                      style="width: 95%;height: 80%;margin-top: 5px;margin-left: 18px;">
-                                    <div class="specialistselect box-shadow-4side-5px bg-color-white brder-radius-8px padding-10px "
-                                         style="position: relative;">
+                                    <div class="specialistselect box-shadow-4side-5px bg-color-white brder-radius-8px padding-10px "style="position: relative;">
                                         <div class="specialistselect-intro margin-30px"> 
                                             <span class="fa fa-caret-right"
                                                   style="color: #48ccc5;margin-left: -30px;"></span>
@@ -1590,13 +1615,13 @@
                                     <img src="./images/p19/635975249796105593.png" alt="" class="nihaoimg">
                                     <span class="nihaospan">讚好</span>
                                 </div>
-                                <div class="clearfix">
-                                    <div style="float: left;width: 50%;height: 300px;">
+                                <div class="clearfix specialist-center-wrapper">
+                                    <div class="specialist-center-wrapper-part" style="float: left;width: 50%;height: 300px;">
                                         <img src="./images/45/514931972719593274.png" alt
                                              style="width: 360px;margin-left: 20px;">
                                         <img src="./images/47/7@2x.png" alt="" style="width: 140%;height: 105%;">
                                     </div>
-                                    <div style="float: left;width: 50%;">
+                                    <div class="specialist-center-wrapper-part" style="float: left;width: 50%;">
                                         <div>
                                             <img src="./images/45/1@2x.png" alt style="width: 20px;height: 20px;">
                                             <span style="color: #676766;">中心醫生醫評總數</span>
@@ -1669,7 +1694,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- <hr style="margin-top: 120px;"> -->
                                         <div class="colum1 d-flex" style="width: 100%;">
                                             <div class="left text-align-center"
                                                  style="width: 40%;border-right: 1px dashed #e8e8e8;margin-top: 10px;margin-bottom: 10px;padding-top: 20px;">
@@ -1690,10 +1714,7 @@
                                                         <span>黃斑點病變 </span><span class="color-name-blue">(2)</span> <br>
                                                     </div>
                                                 </div>
-                                                <div class="row2"
-                                                     style="height: 25px; width: 160px; text-align: center; background: #c1dfa6;color: white; border-radius: 5px; margin-bottom: 10px;margin-top: 10px;">
-                                                    <span>查看所有</span>
-                                                </div>
+                                                <div class="row2"style="height: 25px; width: 160px; text-align: center; background: #c1dfa6;color: white; border-radius: 5px; margin-bottom: 10px;margin-top: 10px;">查看所有 </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1701,7 +1722,7 @@
                                 <!-- <br> --><!-- <br> -->
                                 <div class="d-flex justify-content-between">
                                     <!---->
-                                    <div class="home-news">
+                                    <div class="home-news specialist-center-wrapper-swiper">
                                         <div class="tabs" style="font-family: MElleHK-Medium;">
                                             <div class="tab active icon-doctor-interview icon-bg-default icon-border-color-default icon-text-color-default"
                                                  data-slide-index="0">
@@ -1748,12 +1769,10 @@
                                             <div class="icon icon-circle icon-white-arrow-right icon-wrapper-20x20 btn-next" style="width: 25px;height: 25px;margin-right:  15px;" ></div> -->
                                             <div class="swiper-border">
                                                 <div class="w-100 bg-white">
-                                                    <div class="swiper-container swiper-container-horizontal"
-                                                         style="width: 100%;color:#9f9d9d;">
+                                                    <div class="swiper-container swiper-container-horizontal"style="width: 100%;color:#9f9d9d;">
                                                         <div class="swiper-wrapper">
                                                             <!-- Slides -->
-                                                            <div class="swiper-slide swiper-slide-active"
-                                                                 style="width: 600px;padding-left: 50px;">
+                                                            <div class="swiper-slide swiper-slide-active specialist-center-wrapper-swiper-slide" style="width: 600px;padding-left: 50px;">
                                                                 <div style="width: 100%;">
                                                                     <div class="borderbottom">
                                                                         <img src="./images/p18/left/p18-left-3@2x-8.png"
@@ -1769,21 +1788,19 @@
                                                                         <span style="color: #676766;">&nbsp;診所電話&nbsp;&nbsp;&nbsp;&nbsp;</span>
                                                                         <span>3955 8113</span>
                                                                     </div>
-                                                                    <div class="borderbottom">
-                                                                        <span><img src="./images/45/11@2x.png" alt=""
-                                                                                   class="width-20px mt--5px mr-1"></span>
-                                                                        <span style="color: #676766;">中心特色&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                                                        <p style="width: 75%;margin-left: 18%;margin-top: -25px;">
-                                                                            從公立醫院走到自己開設眼科中心，陳凱怡醫生已執業十五年。選擇私人執業的原
-                                                                            因，大概從中心門口旁邊一大堆的感謝卡可以略知一二。「公立醫院限定每日處理
-                                                                            多少病人，故此花在每名病人的時間相對少。私家的時間較彈性，可以和病人建立
-                                                                            良好關係。而且當遇到緊急病例，病人不用排期等待治療。」<br>
-                                                                            香港專業眼科手術及激光中心。中心設備齊全，不但有手術室，更有多種先進儀器
-                                                                            ，以便進行激光治療和檢查眼睛。<br>
-                                                                            隸屬養和醫療集團的養和醫健正是本港日間醫療中心的佼佼者，一向積極發展社區
-                                                                            醫療網絡，早年已於中環、太古和港島西等地區提供基層醫療及專科護理服務。
-
-                                                                        </p>
+                                                                    <div class="d-flex mt-2 doctor-profile">
+                                                                        <div class="colum1"> <span><img src="./images/45/11@2x.png" alt="" class="width-20px mt--5px mr-1"></span>
+                                                                            <span class="p19-font-color">中心特色</span>
+                                                                        </div>
+                                                                        <div class="colum2 font-size-09em" >
+                                                                            <p class="search-wrapper-item-show">從公立醫院走到自己開設眼科中心,陳凱怡醫生已執業十五年。選 擇私人執業的原因,大概從中心門口旁邊一大堆的感謝卡可以略知
+                                                                                一二。「公立醫院限定每日處理多少病人,故此花在每名病人的時 間相對少。私家的時間較彈性,可以和病人建立良好關係。而且當
+                                                                                遇到緊急病例,病人不用排期等待治療。」
+                                                                                香港專業眼科手術及激光中心。中心設備齊全,不但有手術室,更
+                                                                                有多種先進儀器,以便進行激光治療和檢查眼睛。
+                                                                            </p>
+                                                                            <div class="search-wrapper-click fa fa-chevron-down "style="display: none;">展開</div>
+                                                                        </div>
                                                                     </div>
                                                                     <div>
                                                                         <div style="height: 300px;">
@@ -1796,28 +1813,23 @@
                                                                             </div>
                                                                             <div class="home-hot-specialists position-relative"
                                                                                  style="margin-left:80px;height:130px;;width: 85%;  ">
-                                                                                <div class="d-flex flex-wrap box-lg bg-white box"
+                                                                                <div class="d-flex flex-wrap box-lg bg-white box specialist-center-wrapper-swiper-home-hot-specialists"
                                                                                      style="margin-left: -50px; ">
                                                                                     <!---->
-                                                                                    <div class="icon-specialist icon-pediatrics icon-bg-default keshibox">
+                                                                                    <div class="icon-specialist  icon-pediatrics icon-bg-default keshibox specialist-center-box-active">
                                                                                         <div class="icon-wrapper-65x65 icon-circle icon icon-w-bg icon-65x65">
                                                                                             <div class="icon icon-grey-cross icon-bg-transparent bg-transparent"></div>
                                                                                         </div>
                                                                                         <div class="label icon-text-color-default">
                                                                                             兒科
                                                                                         </div>
-                                                                                        <div class="search-box"
-                                                                                             style="width:120%; margin-left: -110px;">
+                                                                                        <div class="search-box" style="width:120%; margin-left: -110px;">
                                                                                             <div class="w-100 icon-bg-default d-flex py-2 px-3 text-left icon-text-color-default"
                                                                                                  style="background-color: white;border-top: 5px solid #fffbda;border-bottom: 5px solid #fffbda;">
-                                                                                                <div class="d-flex"
-                                                                                                     style="width: 80%; padding-bottom: 10px;margin-top: 5px;">
+                                                                                                <div class="d-flex specialist-center-wrapper-swiper-box  " style="width: 80%; padding-bottom: 10px;margin-top: 5px;">
                                                                                                     <div class="colum1"
                                                                                                          style="width: 28%;margin-left: -20px;">
-                                                                                                        <span><img
-                                                                                                                src="./images/p18/left/p18-left-6@2x-8.png"
-                                                                                                                alt=""
-                                                                                                                class="width-20px mt--5px"></span>
+                                                                                                        <span><img src="./images/p18/left/p18-left-6@2x-8.png"alt=""class="width-20px mt--5px"></span>
                                                                                                         <span style="color:#676766;">專業治療及服務</span>
                                                                                                     </div>
                                                                                                     <div class="colum2 color-name-blue"
@@ -1936,7 +1948,7 @@
                                                                                         </div>
                                                                                     </div>
                                                                                     <!---->
-                                                                                    <div class="icon-specialist icon-gynecology icon-bg-default keshibox">
+                                                                                    <div class="icon-specialist icon-gynecology icon-bg-default keshibox ">
                                                                                         <div class="icon-wrapper-65x65 icon-circle icon icon-w-bg icon-65x65">
                                                                                             <div class="icon icon-grey-cross icon-bg-transparent bg-transparent"></div>
                                                                                         </div>
@@ -2357,7 +2369,7 @@
                                                                                         <div class="search-box"
                                                                                              style="width:120%; margin-left: -110px;margin-top: -125px;">
                                                                                             <div class="w-100 icon-bg-default d-flex py-2 px-3 text-left icon-text-color-default"
-                                                                                                 style="background-color: white;border-top: 5px solid #d6f7ff;border-bottom: 5px solid #d6f7ff;height:150px;">
+                                                                                                 style="background-color: white;border-top: 5px solid #d6f7ff;border-bottom: 5px solid #d6f7ff;">
                                                                                                 <div class="d-flex"
                                                                                                      style="width: 80%; padding-bottom: 10px;margin-top: 5px;">
                                                                                                     <div class="colum1"
@@ -2486,7 +2498,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div>
+                                                                        <div class="d-flex center-page">
                                                                             <div style="margin-top: -10px;float: left;">
                                                                                 <img src="./images/45/14@2x.png" alt
                                                                                      style="width: 20px;height: 20px;">
@@ -2504,7 +2516,7 @@
                                                                 </div>
                                                             </div>
                                                             <!-- Slides -->
-                                                            <div class="swiper-slide"
+                                                            <div class="swiper-slide specialist-center-wrapper-swiper-slide"
                                                                  style="width: 600px;padding-left: 50px;">
                                                                 <div style="width: 100%;">
                                                                     <div class="left-part121">
@@ -3373,7 +3385,7 @@
                                                                 </div>
                                                             </div>
                                                             <!-- Slides -->
-                                                            <div class="swiper-slide"
+                                                            <div class="swiper-slide specialist-center-wrapper-swiper-slide"
                                                                  style="width: 600px;padding-left: 50px;">
                                                                 <div style="width: 100%;">
                                                                     <img src="./images/47/1@2x.png" alt=""
@@ -3395,7 +3407,7 @@
                                                                 </div>
                                                             </div>
                                                             <!-- Slides -->
-                                                            <div class="swiper-slide"
+                                                            <div class="swiper-slide specialist-center-wrapper-swiper-slide"
                                                                  style="width: 600px;padding-left: 50px;">
                                                                 <div style="width: 100%;">
                                                                     <img src="./images/47/1@2x.png" alt=""
@@ -3417,7 +3429,7 @@
                                                                 </div>
                                                             </div>
                                                             <!-- Slides -->
-                                                            <div class="swiper-slide"
+                                                            <div class="swiper-slide specialist-center-wrapper-swiper-slide"
                                                                  style="width: 600px;padding-left: 50px;">
                                                                 <div style="width: 100%;">
                                                                     <div class="left-part121">
@@ -4286,7 +4298,7 @@
                                                                 </div>
                                                             </div>
                                                             <!-- Slides -->
-                                                            <div class="swiper-slide"
+                                                            <div class="swiper-slide specialist-center-wrapper-swiper-slide"
                                                                  style="width: 600px;padding-left: 50px;">
                                                                 <div style="width: 100%;">
                                                                     <div class="borderbottom">
@@ -5038,8 +5050,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <span class="swiper-notification" aria-live="assertive"
-                                                              aria-atomic="true"></span>
+                                                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -5518,22 +5529,21 @@
                                 <span style="font-family: MElleHK-Medium;">我要發問</span>
                             </div>
                         </div>
-                        <div class="part5" style="width: 100%; height: 250px; background: #ffffff;
-                    margin-left: 20px; margin-top:20px; margin-bottom:120px;">
-                            <img style="width: 100%; height: 250px;" src="./images/search-image/adss.png" alt="">
-
+                        <div class="part5" style="width: 100%; background: #ffffff;  margin-left: 20px; margin-top:20px; margin-bottom:120px;">
+                            <img style="width: 100%;" src="./images/search-image/adss.png" alt="">
                         </div>
                     </div>
                     <!---->
                 </div>
             </div>
         </div>
-        <div id="footer" style="margin-top: -20px;">
+        <div id="footer">
             <div class="top">
                 <!---->
                 <div class="container pt-4">
                     <!---->
-                    <div class="bg-theme-color text-white rounded-top d-flex cursor-pointer" id="footer-back-to-top">
+                    <div class="bg-theme-color text-white rounded-top d-flex cursor-pointer"
+                         id="footer-back-to-top">
                         <span class="icon icon-white-arrow-top d-inline-flex mr-2"></span>
                         置頂
                     </div>
@@ -5564,20 +5574,22 @@
                         <div class="pl-3 d-flex align-items-center">
                             <a href="http://goodoctor.html5.company/#">
                                 <div class="icon icon-footer-write-review"></div>
-                                <div class="text-center w-100 p-2">撰寫醫評</div>
+                                <div class="text-center w-100 p-2"
+                                     style="color: black;font-weight: bold;font-size: 15px;">撰寫醫評
+                                </div>
                             </a>
                         </div>
                         <!---->
                     </div>
                 </div>
                 <!---->
-                <div class="container d-flex justify-content-between py-3">
+                <div class="container d-flex justify-content-between py-3 copyright-info">
                     <div class="font-size-em-09">
                         GooDoctor.com.hk會員所發表的全部內容均屬個人意見，並不代表GooDoctor.com.hk之言論及立場。
                         <br>
                         如從而引起任何損失或法律糾紛，GooDoctor.com.hk概不負責。
                     </div>
-                    <div>
+                    <div class="footer-share">
                         <a href="http://goodoctor.html5.company/"
                            class="icon icon-footer-fb d-inline-block opacity-5"></a>
                         <a href="http://goodoctor.html5.company/"
@@ -5611,7 +5623,6 @@
         </div>
     </div>
 </div>
-
 <!-- Loading screen -->
 <div id="loading">
     <div class="inner">
@@ -5623,5 +5634,12 @@
 </div>
 <!--<script src="./index_files/home.js"></script>-->
 <script src="./index_files/main.js"></script>
+<script>
+    //点击展开和收起
+    $(".search-wrapper-click").click(function () {
+        $(".search-wrapper-item-show").slideToggle();
+        $(".search-wrapper-click").removeClass("fa-chevron-down ").addClass("fa-chevron-up").text("收起");
+    });
+</script>
 </body>
 </html>

@@ -3,7 +3,6 @@
     float: right;
     margin-top: -40px;
 }
-
 .up-last {
     color: #48ccc5;
 }
@@ -17,7 +16,7 @@
     border-radius: 10px;
     background-color: #ffffff;
     width: 98%;
-    height: 360px;
+    padding-bottom: 10px;
     position: relative;
 }
 
@@ -176,7 +175,7 @@
 
 .part-content .part-item {
     width: 48%;
-    height: 205px;
+    /*height: 205px;*/
     background-color: white;
     margin-right: 2%;
     margin-bottom: 2%;
@@ -340,7 +339,7 @@
 
 .logotable img {
     width: 95%;
-    height: 80px;
+    height: auto;
 }
 
 .logotable div {
@@ -705,4 +704,28 @@
 }
 .tooltip1:hover .tooltiptext {
     visibility: visible;
+}
+    .doctor-profile>.colum1{
+        width: 80%;
+    }
+.doctor-profile>.colum1 span{
+    color: #676766;
+}
+.specialist-center-swrapper{
+    width: 100%;padding: 10px 0; border: 8px solid #d8c1b0;background-color: white;border-radius: 10px;margin-top: -40px;margin-bottom: 15px;
+}
+.doctor-building-swrapper>.justify-content-between>.home-search-box>.left>.left-part1>.left-part11>.details>.address{
+    float: left;
+}
+.doctor-building-swrapper>.justify-content-between>.home-search-box>.left>.left-part1>.left-part11>.details{
+    margin-left: 40px;margin-top: 10px;
+    border-bottom:  0.5px #e8e8e8 dashed;
+    padding:10px 0 30px 0;
+    width: 90%;
+}
+.left-part11>div:nth-child(2)>.address:nth-child(2){
+    margin-left: 10%;
+}
+.left-part11>div:nth-child(3)>.address:nth-child(2){
+    margin-left: 6%;
 }

@@ -30,8 +30,10 @@
 
     <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
     <script src="./index_files/bootstrap.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!--移动端css引入-->
+    <link rel="stylesheet" href="./css/mobilescreen.css" media="screen and (max-width:768px)">
+
 
 </head>
 <body class="" id="page-default">
@@ -39,53 +41,76 @@
     <div id="content-container">
         <div id="header">
             <div class="container position-relative d-flex align-items-end">
-
                 <div class="nav-functions">
                     <a href="./p35login.html">
                         <img src="images/icon/login_icon.png" alt="">
-
                         <span class="align-top">登入/註冊</span>
                     </a>
                     <a href="./p36register.html">
                         <img src="images/icon/edit_icon.png" alt="">
-
                         <span class="align-top">撰寫醫評</span>
                     </a>
                 </div>
-
-                <div class="test"></div>
-                <a class="logo" href="http://goodoctor.html5.company/#">
-                </a>
-
+                <a class="logo" href="http://goodoctor.html5.company/#"></a>
                 <div class="header-menu">
                     <div class="mb-2">
                         <span class="text-theme-color font-weight-bold">GOODOCTOR</span> 綜合各科醫生資料，為大眾提供求醫經驗及醫評
                     </div>
                     <ul class="inline-list d-flex justify-content-around">
-                        <li><a href="./index.html"> <img src="images/header/home_icon.png" alt=""
-                                                         style="margin-bottom: 2px;"><br>
-                            首頁
-                        </a></li>
-                        <li><a href="./search.html"><img src="images/header/search_icon.png" alt=""
-                                                         style="margin-bottom: 2px;"><br>
-                            進階搜尋</a></li>
-                        <li><a href="./index.p23artical-index.html"><img src="images/header/feature_articles_icon.png"
-                                                                         alt="" style="margin-bottom: 2px;"><br>
-                            專題文章</a></li>
-                        <li><a href="./index.p31.html"><img src="images/header/read_good_reviews_icon.png" alt=""
-                                                            style="margin-bottom: 2px;"><br>
-                            睇睇好評</a></li>
-                        <li><a href="./index.p32.html"><img src="images/header/doctor_leaderboard_icon.png" alt=""
-                                                            style="margin-bottom: 2px;"><br>
-                            醫生排行榜</a></li>
-                        <li><a href="./index.p35.html"><img src="images/header/doctor_mailbox_icon.png" alt=""
-                                                            style="margin-bottom: 2px;"><br>
-                            醫生信箱</a></li>
-                        <li><a href="http://goodoctor.html5.company/#"><img src="images/header/patient_voice_icon.png"
-                                                                            alt="" style="margin-bottom: 2px;"><br>
-                            病人心聲</a></li>
-
+                        <li>
+                            <a href="./index.html">
+                                <img src="images/header/home_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                首頁
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./search.html">
+                                <img src="images/header/search_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                進階搜尋
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.p23artical-index.html">
+                                <img src="images/header/feature_articles_icon.png" alt=""
+                                     style="margin-bottom: 2px;"><br>
+                                專題文章
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.p31.html">
+                                <img src="images/header/read_good_reviews_icon.png" alt=""
+                                     style="margin-bottom: 2px;"><br>
+                                睇睇好評
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.p32.html">
+                                <img src="images/header/doctor_leaderboard_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                醫生排行榜
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.p35.html">
+                                <img src="images/header/doctor_mailbox_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                醫生信箱
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://goodoctor.html5.company/#">
+                                <img src="images/header/patient_voice_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                病人心聲
+                            </a>
+                        </li>
                     </ul>
+                </div>
+                <div class="header-search" style="display:none;">
+                    <div class="search">
+                        <div class="search-content">
+                            <input class="search-input" type="search" autofocus  placeholder="輸入關鍵字..." />
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+                    <i class="fa fa-list fa-2x" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
@@ -94,9 +119,7 @@
         right: 0px; top: 200px; position: fixed; text-align: center; border-top-left-radius: 16px; border-bottom-left-radius: 16px;">
                 <a href="">
                     <div class="border-bottom box-shaw1">
-                        <span style="color: #334F8D; margin-top: 15px;"><img
-                                src="./images/p41-42/349342156289048425.png" alt=""
-                                style="width: 12px;height: 15px;margin-top: 10px;"></span>
+                        <span style="color: #334F8D; margin-top: 15px;"><img src="./images/p41-42/349342156289048425.png" alt="" style="width: 12px;height: 15px;margin-top: 10px;"></span>
                     </div>
                 </a>
                 <a href="">
@@ -112,7 +135,7 @@
                     </div>
                 </a>
             </div>
-            <div class="home-top-bg-diagonal pb-5" style="padding-top: 50px;font-family: liheipro;">
+            <div class="home-top-bg-diagonal pb-5 doctor-group-swrapper" style="padding-top: 50px;font-family: liheipro;">
                 <div class="container">
                     <div class="up">
                         <img src="./images/icon/grey_home_icon.png" alt style="width: 10px;height: 12px">
@@ -127,7 +150,6 @@
                         <img src="./images/p43/1@2x.png" alt=""
                              style="width: 35px; position: absolute; top: -32px; left: 145px;">
                         <div style="width: 100%;height: 300px;position: relative;background-color:#e2f2d1; ">
-                            <!-- <div style="width:100px;height: 100;background-color: black;position: absolute;top: 50px;right: 50px;"></div> -->
                             <img src="./images/p43/22@2x.png" alt
                                  style="position: absolute;right: 0px;bottom:0px;width: 300px;height: 200px;">
                             <span style="color:#669900;font-size: 25px;position: absolute;top: 45%;left: 5%;">醫生集團   </span>
@@ -150,7 +172,7 @@
                 <div class="container d-flex justify-content-between">
                     <div class="home-search-box home-left-box">
                         <div class="left">
-                            <div class="left-part1" style="padding: 20px 50px;height: 1580px;">
+                            <div class="left-part1" style="padding: 20px 50px;">
                                 <div>
                                     <div style="font-size: 35px;color: #676766;">醫生集團</div>
                                 </div>
@@ -265,33 +287,29 @@
                                 </table>
                             </div>
                         </div>
-                        <div style="width:100%;height: 270px;border: 8px solid #c96ca1;margin-top: 30px;border-radius: 10px;background-color: white;">
-                            <div class="item-show-part3 mt-4 d-flex box-shadow-4side-5px"
-                                 style=" border-radius: 10px; width: 95%;height: 80%;margin-left: 15px;">
+                        <div style="width:100%;border: 8px solid #c96ca1;margin-top: 30px;border-radius: 10px;background-color: white;">
+                            <div class="item-show-part3 d-flex box-shadow-4side-5px" style=" border-radius: 10px; width: 95%;margin-left: 15px;margin: 10px 20px;">
                                 <div class="left mr-4" style="width: 40%; margin-left: -15px;">
-                                    <img src="./images/p16/p16-4@2x.png" alt=""
-                                         style="height: 210px; background:transparent;">
+                                    <img src="./images/p16/p16-4@2x.png" alt="" style="height: 210px; background:transparent;">
                                 </div>
                                 <div class="right pl-4" style="width: 60%; color: #6db868;">
-                                    <div class="up mt-2 mr-4 pb-2"
-                                         style="border-bottom: 2px dotted #6db868;margin-left: 20px;">
-                                        <img src="./images/p16/p16-hand-right@2x.png" alt="" style="width: 50px;"> <span
-                                            style="font-size: 2em;">皮膚科專題</span> <br>
+                                    <div class="up mt-2 mr-4 pb-2" style="border-bottom: 2px dotted #6db868;margin-left: 20px;">
+                                        <img src="./images/p16/p16-hand-right@2x.png" alt="" style="width: 50px;">
+                                        <span  style="font-size: 2em;">皮膚科專題</span> <br>
                                         <span>春回大地,萬物滋長,立春,代表即將踏入春季。往後的天
                                             氣會逐漸回暖潮濕,人體容易因聚濕而減慢身體機能,衍生
                                             各種身體毛病。</span>
                                     </div>
-                                    <div style="float: left;margin-left: 20px;">
-                                        <span style="font-size: 1.2em; color: #4c4c4c;">皮膚及性病科</span> <br>
-                                        <span style="font-size: 1.2em; color: #8d8c8c;">陳厚毅醫生</span>
-                                        <span><img src="./images/icon/good.png" alt="" style="width: 35px;"></span>
-                                        <span style="font-size: 1em; color: #4c4c4c;">分享</span>
-                                        <span class="color-name-blue">(12)</span>
-                                    </div>
-                                    <div class="right pl-4 pt-2" style="float: left;margin-top: 10px;">
-                                        <div class="button"
-                                             style="text-align: center; width: 110px; height: 40px; border-radius: 10px; background: #6db868;color: white; padding-top: 8px;">
-                                            查看更多
+                                    <div>
+                                        <div style="float: left;margin-left: 20px;">
+                                            <span style="font-size: 1.2em; color: #4c4c4c;">皮膚及性病科</span> <br>
+                                            <span style="font-size: 1.2em; color: #8d8c8c;">陳厚毅醫生</span>
+                                            <span><img src="./images/icon/good.png" alt="" style="width: 35px;"></span>
+                                            <span style="font-size: 1em; color: #4c4c4c;">分享</span>
+                                            <span class="color-name-blue">(12)</span>
+                                        </div>
+                                        <div class="right pl-4 pt-2" style="float: left;margin-top: 10px;">
+                                            <div class="button"style="text-align: center; width: 110px; height: 40px; border-radius: 10px; background: #6db868;color: white; padding-top: 8px;">查看更多</div>
                                         </div>
                                     </div>
                                 </div>
@@ -421,8 +439,7 @@
                         </div>
                     </div>
                     <div class="right" style="width:27%;">
-                        <div style="width: 100%;border: 8px solid #c1dfa6;margin-top: 60px;border-radius: 5px;margin-left: 20px;
-                        background-color: white;padding: 15px;flex-direction: column;">
+                        <div style="width: 100%;border: 8px solid #c1dfa6;margin-top: 60px;border-radius: 5px;margin-left: 20px;background-color: white;padding: 15px;flex-direction: column;">
                             <div>
                                 <div class="d-flex">
                                     <img src="./images/p43/2@2x.png" alt style="width:30px; height:30px;">
@@ -1184,12 +1201,13 @@
                 </div>
             </div>
         </div>
-        <div id="footer" style="margin-top: -20px;">
+        <div id="footer">
             <div class="top">
                 <!---->
                 <div class="container pt-4">
                     <!---->
-                    <div class="bg-theme-color text-white rounded-top d-flex cursor-pointer" id="footer-back-to-top">
+                    <div class="bg-theme-color text-white rounded-top d-flex cursor-pointer"
+                         id="footer-back-to-top">
                         <span class="icon icon-white-arrow-top d-inline-flex mr-2"></span>
                         置頂
                     </div>
@@ -1220,20 +1238,22 @@
                         <div class="pl-3 d-flex align-items-center">
                             <a href="http://goodoctor.html5.company/#">
                                 <div class="icon icon-footer-write-review"></div>
-                                <div class="text-center w-100 p-2">撰寫醫評</div>
+                                <div class="text-center w-100 p-2"
+                                     style="color: black;font-weight: bold;font-size: 15px;">撰寫醫評
+                                </div>
                             </a>
                         </div>
                         <!---->
                     </div>
                 </div>
                 <!---->
-                <div class="container d-flex justify-content-between py-3">
+                <div class="container d-flex justify-content-between py-3 copyright-info">
                     <div class="font-size-em-09">
                         GooDoctor.com.hk會員所發表的全部內容均屬個人意見，並不代表GooDoctor.com.hk之言論及立場。
                         <br>
                         如從而引起任何損失或法律糾紛，GooDoctor.com.hk概不負責。
                     </div>
-                    <div>
+                    <div class="footer-share">
                         <a href="http://goodoctor.html5.company/"
                            class="icon icon-footer-fb d-inline-block opacity-5"></a>
                         <a href="http://goodoctor.html5.company/"

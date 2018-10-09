@@ -12860,8 +12860,6 @@ the second part assign text-outline-right
 }
 
 .home-hot-specialists {
-  height: 200px;
-  width: 490px;
   margin: 120px 0 0 20px;
   position: relative;
 }
@@ -12869,14 +12867,13 @@ the second part assign text-outline-right
 .home-hot-specialists .title {
   bottom: 100%;
 }
-
 .home-hot-specialists .box {
   padding: 10px;
 }
 
 .home-hot-specialists .icon-specialist {
   cursor: pointer;
-  margin: 0 0 5px 10px;
+  margin: 0 0 5px 5px;
   -webkit-transition: opacity 0.3s ease-in;
   transition: opacity 0.3s ease-in;
 }

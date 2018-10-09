@@ -28,8 +28,11 @@
     <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
     <script src="./index_files/swiper.min.js"></script>
     <script src="./index_files/bootstrap.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!--移动端css引入-->
+    <link rel="stylesheet" href="./css/mobilescreen.css" media="screen and (max-width:768px)">
+
+
 </head>
 
 <body class="" id="page-default">
@@ -37,53 +40,76 @@
     <div id="content-container">
         <div id="header">
             <div class="container position-relative d-flex align-items-end">
-
                 <div class="nav-functions">
                     <a href="./p35login.html">
                         <img src="images/icon/login_icon.png" alt="">
-
                         <span class="align-top">登入/註冊</span>
                     </a>
                     <a href="./p36register.html">
                         <img src="images/icon/edit_icon.png" alt="">
-
                         <span class="align-top">撰寫醫評</span>
                     </a>
                 </div>
-
-                <div class="test"></div>
-                <a class="logo" href="http://goodoctor.html5.company/#">
-                </a>
-
+                <a class="logo" href="http://goodoctor.html5.company/#"></a>
                 <div class="header-menu">
                     <div class="mb-2">
                         <span class="text-theme-color font-weight-bold">GOODOCTOR</span> 綜合各科醫生資料，為大眾提供求醫經驗及醫評
                     </div>
                     <ul class="inline-list d-flex justify-content-around">
-                        <li><a href="./index.html"> <img src="images/header/home_icon.png" alt=""
-                                                         style="margin-bottom: 2px;"><br>
-                            首頁
-                        </a></li>
-                        <li><a href="./search.html"><img src="images/header/search_icon.png" alt=""
-                                                         style="margin-bottom: 2px;"><br>
-                            進階搜尋</a></li>
-                        <li><a href="./index.p23artical-index.html"><img src="images/header/feature_articles_icon.png"
-                                                                         alt="" style="margin-bottom: 2px;"><br>
-                            專題文章</a></li>
-                        <li><a href="./index.p31.html"><img src="images/header/read_good_reviews_icon.png" alt=""
-                                                            style="margin-bottom: 2px;"><br>
-                            睇睇好評</a></li>
-                        <li><a href="./index.p32.html"><img src="images/header/doctor_leaderboard_icon.png" alt=""
-                                                            style="margin-bottom: 2px;"><br>
-                            醫生排行榜</a></li>
-                        <li><a href="./index.p35.html"><img src="images/header/doctor_mailbox_icon.png" alt=""
-                                                            style="margin-bottom: 2px;"><br>
-                            醫生信箱</a></li>
-                        <li><a href="http://goodoctor.html5.company/#"><img src="images/header/patient_voice_icon.png"
-                                                                            alt="" style="margin-bottom: 2px;"><br>
-                            病人心聲</a></li>
-
+                        <li>
+                            <a href="./index.html">
+                                <img src="images/header/home_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                首頁
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./search.html">
+                                <img src="images/header/search_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                進階搜尋
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.p23artical-index.html">
+                                <img src="images/header/feature_articles_icon.png" alt=""
+                                     style="margin-bottom: 2px;"><br>
+                                專題文章
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.p31.html">
+                                <img src="images/header/read_good_reviews_icon.png" alt=""
+                                     style="margin-bottom: 2px;"><br>
+                                睇睇好評
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.p32.html">
+                                <img src="images/header/doctor_leaderboard_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                醫生排行榜
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.p35.html">
+                                <img src="images/header/doctor_mailbox_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                醫生信箱
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://goodoctor.html5.company/#">
+                                <img src="images/header/patient_voice_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                病人心聲
+                            </a>
+                        </li>
                     </ul>
+                </div>
+                <div class="header-search" style="display:none;">
+                    <div class="search">
+                        <div class="search-content">
+                            <input class="search-input" type="search" autofocus  placeholder="輸入關鍵字..." />
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+                    <i class="fa fa-list fa-2x" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
@@ -110,7 +136,7 @@
                     </div>
                 </a>
             </div>
-            <div class="home-top-bg-diagonal pb-5" style="padding-top: 50px;">
+            <div class="home-top-bg-diagonal pb-5 doctor-building-swrapper" style="padding-top: 50px;">
                 <div class="container">
                     <div class="up">
                         <img src="./images/icon/grey_home_icon.png" alt style="width: 10px;height: 12px">
@@ -147,31 +173,36 @@
                             <div class="left-part1">
                                 <div class="left-part11">
                                     <div style="font-size: 30px;margin-top:20px;margin-left: 40px;">嘉賓商業大廈醫生</div>
-                                    <div style="margin-left: 40px;margin-top: 10px;">
-                                        <img src="./images/p43/3@2x.png" alt style="width: 18px;height: 18px;">
-                                        <span>&nbsp;地址&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                        <img src="./images/p43/4@2x.png" alt style="width: 13px;height: 18px;">
-                                        <span style="color: #908f8f">&nbsp;香港中環皇后大道中36號興瑋大廈11樓01室(港鐵D2出口)</span>
+                                    <div class="details">
+                                        <div class="address">
+                                            <img src="./images/p43/3@2x.png" alt style="width: 18px;height: 18px;">
+                                            <span>&nbsp;地址</span>
+                                        </div>
+                                        <div class="address">
+                                            <img src="./images/p43/4@2x.png" alt style="width: 13px;height: 18px;">
+                                            <span style="color: #908f8f">&nbsp;香港中環皇后大道中36號興瑋大廈11樓01室(港鐵D2出口)</span>
+                                        </div>
                                     </div>
-                                    <div style="width: 75%;height:0px;border: 0.5px #e8e8e8 dashed;margin-left: 40px;margin-top: 10px"></div>
-                                    <div style="margin-left: 40px;margin-top: 5px;">
-                                        <img src="./images/p43/5@2x.png" alt style="width: 18px;height: 18px;">
-                                        <span>&nbsp;醫生資料&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                        <span style="color:#908f8f;">&nbsp;醫生總數</span>
-                                        <span class="all" style="color: #48ccc5">&nbsp;121</span>
-                                        <span class="all">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                                        <span style="color:#908f8f;">專科醫生</span>
-                                        <span class="all" style="color: #48ccc5">&nbsp;107</span>
-                                        <span class="all">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                                        <span style="color:#908f8f;">普通科醫生</span>
-                                        <span class="all" style="color: #48ccc5">&nbsp;14</span>
+                                    <div class="details">
+                                        <div class="address">
+                                            <img src="./images/p43/5@2x.png" alt style="width: 18px;height: 18px;">
+                                            <span>&nbsp;醫生資料</span>
+                                        </div>
+                                       <div class="address">
+                                           <span style="color:#908f8f;">醫生總數</span>
+                                           <span class="all" style="color: #48ccc5">&nbsp;121</span>
+                                           <span class="all">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                           <span style="color:#908f8f;">專科醫生</span>
+                                           <span class="all" style="color: #48ccc5">&nbsp;107</span>
+                                           <span class="all">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                           <span style="color:#908f8f;">普通科醫生</span>
+                                           <span class="all" style="color: #48ccc5">&nbsp;14</span>
+                                       </div>
+
                                     </div>
-                                    <div style="width: 75%;height:0px;border: 0.5px dashed #e8e8e8 ;margin-left:40px;margin-top: 10px"></div>
                                 </div>
                                 <!-- --><!-- --><!-- -->
-                                <div class="left-part12"
-                                     style="width: 90%;height: 310px;border: 1px solid #e8e8e8;margin: 0 auto;margin-top:30px;border-radius: 10px;">
-
+                                <div class="left-part12" style="width: 90%;height: 310px;border: 1px solid #e8e8e8;margin: 0 auto;margin-top:30px;border-radius: 10px;">
                                     <div style="margin-top: -100px;height: 180px;">
                                         <div class="left-part121" style="margin-left: 20px;margin-top: 35px;">
                                             <div style="font-size: 20px;">選擇專科</div>
@@ -299,7 +330,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div style="margin-left: 30px;margin-top: 20px;">
+                                    <div  class="clearfix" style="margin-left: 30px;margin-top: 20px;">
                                         <div style="float: left; font-size: 20px;">搜尋選項</div>
                                         <div class="input py-0" style="float: left;margin-left: 20px;">
                                             <label class="cursor-pointer icon-checkbox mb-0" for="search_is_doctor">
@@ -325,18 +356,12 @@
                                                 <div style=" width: 12em; float: left; height: 43px; border-radius: 5px;margin-right: 20px; ">
                                                     <div class="input-group mb-3" style="border:none;height: 42px">
                                                         <div class="input-group-prepend " style="border:none;">
-                                                            <span class="input-group-text bg-theme-color"
-                                                                  style="border:none;"> <span
-                                                                    class="fa fa-search color-white"></span> </span>
+                                                            <span class="input-group-text bg-theme-color" style="border:none;"> <span class="fa fa-search color-white"></span> </span>
                                                         </div>
-                                                        <input type="text" class="form-control" placeholder="輸入疾病關鍵字"
-                                                               id="usr" name="username"
-                                                               style="border: 1px solid #48ccc5;">
+                                                        <input type="text" class="form-control" placeholder="輸入疾病關鍵字"id="usr" name="username" style="border: 1px solid #48ccc5;">
                                                     </div>
                                                 </div>
-                                                <button class="btn btn-theme-half px-4 btn-with-magnifier py-2 btnstyle"
-                                                        type="button">搜尋
-                                                </button>
+                                                <button class="btn btn-theme-half px-4 btn-with-magnifier py-2 btnstyle"type="button">搜尋</button>
                                             </form>
                                         </div>
                                     </div>
@@ -1731,16 +1756,15 @@
                                 　
                             </div>
                         </div>
-                        <div class="part3" style="width: 100%; height: 690px; background: #ffffff;
+                        <div class="part3" style="width: 100%;background: #ffffff;
                 margin-left: 20px; margin-top:20px; border: 8px solid #e5bdd4; border-radius: 8px;
                 position: relative;">
                             <div class="header" style="margin:15px;">
                                 <img src="./images/p43/16@2x.png" alt="" style="width: 30px; height: 30px;">
                                 <span style="font-size: 20px;color:#676766;">附的專科中心</span>
                             </div>
-                            <div class="item1 box-shadow-4side-5px"
-                                 style="border:1px solid #fffffe; margin:15px; border-radius:8px; padding:5px;">
-                                <div class="">
+                            <div class="item1 box-shadow-4side-5px" style="border:1px solid #fffffe; margin:12px;border-radius:8px;padding:10px 4px; ">
+                                <div class="clearfix">
                                     <img src="./images/search-image/rqzx-2@3x.png" alt=""
                                          style="margin-right: 10px; float: left; width:70px;">
                                     <div>
@@ -1750,7 +1774,7 @@
                                                  style="width: 20px;height: 20px;margin-top: -5px;">
                                             <span class="aaa">102</span>
                                         </div>
-                                        <div style="font-size: 15px;margin-top: 3px;">
+                                        <div style="font-size: 14px;margin-top: 3px;">
                                             <span><img src="./images/icon/good.png" alt="" style="width:22px;"></span>
                                             <span>分享</span>
                                             <span style="margin-right: 0px;  color: #679bca;">(12)</span>
@@ -1759,15 +1783,14 @@
                                             <img src="./images/search-image/star@3x.png" alt="" style="width:15px; ">
                                             <img src="./images/search-image/star@3x.png" alt="" style="width:15px; ">
                                             <img src="./images/search-image/star-w@3x.png" alt="" style="width:15px; ">
-
                                         </div>
                                     </div>
                                 </div>
-                                <div style="margin-top: -5px;margin-left: 5px;">
+                                <div style="margin-top: 5px;margin-left: 5px;font-size: 14px;">
                                     <img src="./images/search-image/plus@3x.png" alt="" style="width:18px;">
                                     <span>專科治療服務</span>
                                 </div>
-                                <div style="font-size: 15px;margin-top:5px;margin-left: 5px;">
+                                <div style="font-size: 14px;margin-top:5px;margin-left: 5px;">
                                     <img src="./images/search-image/crown@3x.png" alt=""
                                          style="width:20px;margin-top: -5px;">
                                     <span style="color:#679bca;">濕疹</span>
@@ -1784,10 +1807,8 @@
                                     <span class="aaa">10</span>
                                 </div>
                             </div>
-                            <div class="item1 box-shadow-4side-5px"
-                                 style="border:1px solid #fffffe; margin:15px; border-radius:8px; padding:5px;">
-
-                                <div class="">
+                            <div class="item1 box-shadow-4side-5px" style="border:1px solid #fffffe; margin:12px;border-radius:8px;padding:10px 4px; ">
+                                <div class="clearfix">
                                     <img src="./images/search-image/rqzx-2@3x.png" alt=""
                                          style="margin-right: 10px; float: left; width:70px;">
                                     <div>
@@ -1797,7 +1818,7 @@
                                                  style="width: 20px;height: 20px;margin-top: -5px;">
                                             <span class="aaa">102</span>
                                         </div>
-                                        <div style="font-size: 15px;margin-top: 3px;">
+                                        <div style="font-size: 14px;margin-top: 3px;">
                                             <span><img src="./images/icon/good.png" alt="" style="width:22px;"></span>
                                             <span>分享</span>
                                             <span style="margin-right: 0px;  color: #679bca;">(12)</span>
@@ -1806,15 +1827,14 @@
                                             <img src="./images/search-image/star@3x.png" alt="" style="width:15px; ">
                                             <img src="./images/search-image/star@3x.png" alt="" style="width:15px; ">
                                             <img src="./images/search-image/star-w@3x.png" alt="" style="width:15px; ">
-
                                         </div>
                                     </div>
                                 </div>
-                                <div style="margin-top: -5px;margin-left: 5px;">
+                                <div style="margin-top: 5px;margin-left: 5px;font-size: 14px;">
                                     <img src="./images/search-image/plus@3x.png" alt="" style="width:18px;">
                                     <span>專科治療服務</span>
                                 </div>
-                                <div style="font-size: 15px;margin-top:5px;margin-left: 5px;">
+                                <div style="font-size: 14px;margin-top:5px;margin-left: 5px;">
                                     <img src="./images/search-image/crown@3x.png" alt=""
                                          style="width:20px;margin-top: -5px;">
                                     <span style="color:#679bca;">濕疹</span>
@@ -1831,10 +1851,8 @@
                                     <span class="aaa">10</span>
                                 </div>
                             </div>
-                            <div class="item1 box-shadow-4side-5px"
-                                 style="border:1px solid #fffffe; margin:15px; border-radius:8px; padding:5px;">
-
-                                <div class="">
+                            <div class="item1 box-shadow-4side-5px" style="border:1px solid #fffffe; margin:12px;border-radius:8px;padding:10px 4px; ">
+                                <div class="clearfix">
                                     <img src="./images/search-image/rqzx-2@3x.png" alt=""
                                          style="margin-right: 10px; float: left; width:70px;">
                                     <div>
@@ -1844,7 +1862,7 @@
                                                  style="width: 20px;height: 20px;margin-top: -5px;">
                                             <span class="aaa">102</span>
                                         </div>
-                                        <div style="font-size: 15px;margin-top: 3px;">
+                                        <div style="font-size: 14px;margin-top: 3px;">
                                             <span><img src="./images/icon/good.png" alt="" style="width:22px;"></span>
                                             <span>分享</span>
                                             <span style="margin-right: 0px;  color: #679bca;">(12)</span>
@@ -1853,15 +1871,14 @@
                                             <img src="./images/search-image/star@3x.png" alt="" style="width:15px; ">
                                             <img src="./images/search-image/star@3x.png" alt="" style="width:15px; ">
                                             <img src="./images/search-image/star-w@3x.png" alt="" style="width:15px; ">
-
                                         </div>
                                     </div>
                                 </div>
-                                <div style="margin-top: -5px;margin-left: 5px;">
+                                <div style="margin-top: 5px;margin-left: 5px;font-size: 14px;">
                                     <img src="./images/search-image/plus@3x.png" alt="" style="width:18px;">
                                     <span>專科治療服務</span>
                                 </div>
-                                <div style="font-size: 15px;margin-top:5px;margin-left: 5px;">
+                                <div style="font-size: 14px;margin-top:5px;margin-left: 5px;">
                                     <img src="./images/search-image/crown@3x.png" alt=""
                                          style="width:20px;margin-top: -5px;">
                                     <span style="color:#679bca;">濕疹</span>
@@ -1878,10 +1895,8 @@
                                     <span class="aaa">10</span>
                                 </div>
                             </div>
-                            <div class="item1 box-shadow-4side-5px"
-                                 style="border:1px solid #fffffe; margin:15px; border-radius:8px; padding:5px;">
-
-                                <div class="">
+                            <div class="item1 box-shadow-4side-5px" style="border:1px solid #fffffe; margin:12px;border-radius:8px;padding:10px 4px; ">
+                                <div class="clearfix">
                                     <img src="./images/search-image/rqzx-2@3x.png" alt=""
                                          style="margin-right: 10px; float: left; width:70px;">
                                     <div>
@@ -1891,7 +1906,7 @@
                                                  style="width: 20px;height: 20px;margin-top: -5px;">
                                             <span class="aaa">102</span>
                                         </div>
-                                        <div style="font-size: 15px;margin-top: 3px;">
+                                        <div style="font-size: 14px;margin-top: 3px;">
                                             <span><img src="./images/icon/good.png" alt="" style="width:22px;"></span>
                                             <span>分享</span>
                                             <span style="margin-right: 0px;  color: #679bca;">(12)</span>
@@ -1900,15 +1915,14 @@
                                             <img src="./images/search-image/star@3x.png" alt="" style="width:15px; ">
                                             <img src="./images/search-image/star@3x.png" alt="" style="width:15px; ">
                                             <img src="./images/search-image/star-w@3x.png" alt="" style="width:15px; ">
-
                                         </div>
                                     </div>
                                 </div>
-                                <div style="margin-top: -5px;margin-left: 5px;">
+                                <div style="margin-top: 5px;margin-left: 5px;font-size: 14px;">
                                     <img src="./images/search-image/plus@3x.png" alt="" style="width:18px;">
                                     <span>專科治療服務</span>
                                 </div>
-                                <div style="font-size: 15px;margin-top:5px;margin-left: 5px;">
+                                <div style="font-size: 14px;margin-top:5px;margin-left: 5px;">
                                     <img src="./images/search-image/crown@3x.png" alt=""
                                          style="width:20px;margin-top: -5px;">
                                     <span style="color:#679bca;">濕疹</span>
@@ -2079,21 +2093,22 @@
                                 <span style="font-family: MElleHK-Medium;">我要發問</span>
                             </div>
                         </div>
-                        <div class="part5" style="width: 100%; height: 250px; background: #ffffff;
+                        <div class="part5" style="width: 100%; background: #ffffff;
                     margin-left: 20px; margin-top:20px; margin-bottom:120px;">
-                            <img style="width: 100%; height: 250px;" src="./images/search-image/adss.png" alt="">
+                            <img style="width: 100%;" src="./images/search-image/adss.png" alt="">
                         </div>
                     </div>
                     <!---->
                 </div>
             </div>
         </div>
-        <div id="footer" style="margin-top: -20px;">
+        <div id="footer">
             <div class="top">
                 <!---->
                 <div class="container pt-4">
                     <!---->
-                    <div class="bg-theme-color text-white rounded-top d-flex cursor-pointer" id="footer-back-to-top">
+                    <div class="bg-theme-color text-white rounded-top d-flex cursor-pointer"
+                         id="footer-back-to-top">
                         <span class="icon icon-white-arrow-top d-inline-flex mr-2"></span>
                         置頂
                     </div>
@@ -2124,20 +2139,22 @@
                         <div class="pl-3 d-flex align-items-center">
                             <a href="http://goodoctor.html5.company/#">
                                 <div class="icon icon-footer-write-review"></div>
-                                <div class="text-center w-100 p-2">撰寫醫評</div>
+                                <div class="text-center w-100 p-2"
+                                     style="color: black;font-weight: bold;font-size: 15px;">撰寫醫評
+                                </div>
                             </a>
                         </div>
                         <!---->
                     </div>
                 </div>
                 <!---->
-                <div class="container d-flex justify-content-between py-3">
+                <div class="container d-flex justify-content-between py-3 copyright-info">
                     <div class="font-size-em-09">
                         GooDoctor.com.hk會員所發表的全部內容均屬個人意見，並不代表GooDoctor.com.hk之言論及立場。
                         <br>
                         如從而引起任何損失或法律糾紛，GooDoctor.com.hk概不負責。
                     </div>
-                    <div>
+                    <div class="footer-share">
                         <a href="http://goodoctor.html5.company/"
                            class="icon icon-footer-fb d-inline-block opacity-5"></a>
                         <a href="http://goodoctor.html5.company/"

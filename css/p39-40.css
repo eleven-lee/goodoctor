@@ -16,13 +16,13 @@
 .huozuodiv{
     float: left;
     border-top: 1px dashed #e8e8e8;
-    width: 130px;
+    width: 44%;
     margin-top: 30px;
 }
 .huoyoudiv{
     float: left;
     border-top: 1px dashed #e8e8e8;
-    width: 130px;
+    width: 44%;
     margin-left: 10px;
     margin-top: 30px;
 }
@@ -50,4 +50,7 @@
 }
 .inputborder{
     border: 1px solid #48ccc5;
+}
+.login-swrapper>.justify-content-between>.home-search-box>.box>.innerpart>form>div:last-child{
+    width: 46%;
 }

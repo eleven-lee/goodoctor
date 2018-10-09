@@ -197,14 +197,14 @@ a{
 .home-news .tabs{
     width:100%;
     overflow-x: scroll;
-    font-size:1.4rem;
+    font-size:1.6rem;
 }
 .home-news .tabs .tab{
     text-align: center;
 }
 
 .home-news .tabs .tab .icon{
-    display:none !important;
+    /*display:none !important;*/
 }
 .home-news .news-swiper .swiper-container{
     width:calc(100% - 20px) !important;
@@ -354,7 +354,7 @@ a{
 }
 .home-disease-decoding .tab-content .right .part-down-up .part-item{
     width:100%;
-    padding:10px;
+    padding:10px 10px 10px 20px;
     font-size:1.6rem;
 }
 .home-part4 .banner{
@@ -494,8 +494,8 @@ a{
 }
 .container-nav{
     text-align: left !important;
-    padding: 0 10px 20px;
-    font-size:1.2rem !important;
+    padding: 0 10px 10px;
+    font-size:1.4rem !important;
 }
 .doctor-detail-wrapper .container{
     overflow: hidden;
@@ -847,4 +847,7 @@ a{
 }
 .share-part-header .header-title span{
     font-size:1.8rem !important;
+}
+.home-news .news{
+    padding:10px;
 }
