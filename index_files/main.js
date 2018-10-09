@@ -47,11 +47,16 @@ var page = {
         });
 
         //P19-21 responsive screen down click
-        $('.doctor-info').find('.fa-chevron-down').on('click',function () {
-           var content = $(this).parent('div').siblings('div');
+        $('.doctor-title-content').on('click',function () {
+           var content = $(this).find('>div:nth-child(2)');
            content.toggleClass('on');
         });
 
+        // $('.slide-up-down').on('click',function () {
+        //   $(this).previousSibling('.doctor-info-content').css('height','auto');
+        //   $(this).find('.text').html('显示较少医生资料');
+        //   $(this).find('i').removeClass('fa-chevron-up')
+        // });
     },
 
     // 下拉提示层

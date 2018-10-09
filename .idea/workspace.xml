@@ -4,6 +4,7 @@
     <list default="true" id="d7901ac3-0010-4806-b717-10b47d168385" name="Default Changelist" comment="">
 <<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/01_08_goodoctor_all_1a_homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/01_08_goodoctor_all_1a_homepage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/19_21_goodoctor_all_3a_a_doctor_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/19_21_goodoctor_all_3a_a_doctor_details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/all.css" afterDir="false" />
@@ -13,6 +14,8 @@
       <change beforePath="$PROJECT_DIR$/index_files/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/index_files/main.js" afterDir="false" />
 =======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,22 +31,24 @@
     <session id="-658678145">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="5" />
-          <entry key="html" value="4" />
+          <entry key="css" value="7" />
+          <entry key="html" value="7" />
           <entry key="js" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="5" />
-          <entry key="HTML" value="4" />
+          <entry key="CSS" value="7" />
+          <entry key="HTML" value="7" />
           <entry key="JavaScript" value="1" />
         </counts>
       </usages-collector>
@@ -69,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/19_21_goodoctor_all_3a_a_doctor_details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="2349" column="26" lean-forward="true" selection-start-line="2349" selection-start-column="26" selection-end-line="2349" selection-end-column="26" />
+            <state relative-caret-position="477">
+              <caret line="2332" lean-forward="true" selection-start-line="2332" selection-end-line="2332" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -123,7 +128,6 @@
                 <element signature="n#div#1;n#div#3;n#div#1;n#div#2;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#div#1;n#div#2;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#3;n#div#1;n#div#2;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#div#2;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
 =======
       <file leaf-file-name="p19-22.css" pinned="false" current-in-tab="false">
@@ -141,13 +145,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index_files/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="51" column="36" lean-forward="true" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
-              <folding>
-                <element signature="e#1809#4542#0" />
-                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="478">
+              <caret line="52" column="10" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/all.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="13838">
+              <caret line="629" column="24" selection-start-line="629" selection-start-column="24" selection-end-line="629" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -155,6 +163,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01_08_goodoctor_all_1a_homepage.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="493">
               <caret line="7369" column="44" lean-forward="true" selection-start-line="7369" selection-start-column="44" selection-end-line="7369" selection-end-column="44" />
 =======
@@ -163,6 +172,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="598">
               <caret line="6711" column="27" lean-forward="false" selection-start-line="6711" selection-start-column="27" selection-end-line="6711" selection-end-column="27" />
+>>>>>>> Stashed changes
+=======
+            <state relative-caret-position="827">
+              <caret line="7369" column="44" selection-start-line="7369" selection-start-column="44" selection-end-line="7369" selection-end-column="44" />
 >>>>>>> Stashed changes
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -203,28 +216,10 @@
       </file>
 <<<<<<< Updated upstream
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/all.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-396">
-              <caret line="629" column="24" lean-forward="true" selection-start-line="629" selection-start-column="24" selection-end-line="629" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/p19-22.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2270">
-              <caret line="633" column="35" selection-start-line="633" selection-start-column="35" selection-end-line="633" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="346">
-              <caret line="356" column="14" selection-start-line="356" selection-start-column="14" selection-end-line="356" selection-end-column="14" />
+              <caret line="356" column="17" lean-forward="true" selection-start-line="356" selection-start-column="17" selection-end-line="356" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -232,6 +227,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/screen.css">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="202">
               <caret line="499" column="1" lean-forward="true" selection-start-line="499" selection-start-column="1" selection-end-line="499" selection-end-column="1" />
 =======
@@ -241,6 +237,10 @@
             <state relative-caret-position="546">
               <caret line="671" column="21" lean-forward="true" selection-start-line="671" selection-start-column="21" selection-end-line="671" selection-end-column="21" />
               <folding />
+>>>>>>> Stashed changes
+=======
+            <state relative-caret-position="280">
+              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
 >>>>>>> Stashed changes
             </state>
           </provider>
@@ -323,9 +323,12 @@
     </navigator>
     <panes>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <pane id="Scope" />
 =======
       <pane id="Scratches" />
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       <pane id="ProjectPane">
         <subPane>
@@ -334,11 +337,20 @@
               <item name="goodoctor" type="b2602c69:ProjectViewProjectNode" />
               <item name="goodoctor" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="goodoctor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goodoctor" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+      <pane id="Scope" />
+>>>>>>> Stashed changes
 =======
       <pane id="Scope" />
 >>>>>>> Stashed changes
@@ -378,23 +390,32 @@
       <workItem from="1538881430442" duration="508000" />
 <<<<<<< Updated upstream
       <workItem from="1538919332591" duration="9076000" />
+<<<<<<< Updated upstream
       <workItem from="1538964785864" duration="27768000" />
 =======
       <workItem from="1538919332591" duration="9363000" />
       <workItem from="1539007136466" duration="1260000" />
+>>>>>>> Stashed changes
+=======
+      <workItem from="1538964785864" duration="27905000" />
+      <workItem from="1539048846955" duration="1905000" />
 >>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="56889000" />
+=======
+    <option name="totallyTimeSpent" value="58931000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13487881" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13435195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -542,15 +563,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="414" column="45" lean-forward="true" selection-start-line="351" selection-start-column="39" selection-end-line="414" selection-end-column="45" />
-          <folding>
-            <element signature="n#li#0;n#ul#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/all.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         <state relative-caret-position="-396">
           <caret line="629" column="24" lean-forward="true" selection-start-line="629" selection-start-column="24" selection-end-line="629" selection-end-column="24" />
@@ -565,13 +583,31 @@
             <element signature="n#span#0;n#span#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
 >>>>>>> Stashed changes
+=======
+        <state relative-caret-position="13838">
+          <caret line="629" column="24" selection-start-line="629" selection-start-column="24" selection-end-line="629" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/p19-22.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13926">
+          <caret line="633" column="35" selection-start-line="633" selection-start-column="35" selection-end-line="633" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09_16_goodoctor_all_2b_a_Advanced_seearch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/01_08_goodoctor_all_1a_homepage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="7369" column="44" lean-forward="true" selection-start-line="7369" selection-start-column="44" selection-end-line="7369" selection-end-column="44" />
+        <state relative-caret-position="827">
+          <caret line="7369" column="44" selection-start-line="7369" selection-start-column="44" selection-end-line="7369" selection-end-column="44" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -608,17 +644,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index_files/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="52" column="10" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
-          <caret line="356" column="14" selection-start-line="356" selection-start-column="14" selection-end-line="356" selection-end-column="14" />
+          <caret line="356" column="17" lean-forward="true" selection-start-line="356" selection-start-column="17" selection-end-line="356" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/19_21_goodoctor_all_3a_a_doctor_details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="2349" column="26" lean-forward="true" selection-start-line="2349" selection-start-column="26" selection-end-line="2349" selection-end-column="26" />
+        <state relative-caret-position="477">
+          <caret line="2332" lean-forward="true" selection-start-line="2332" selection-end-line="2332" />
           <folding>
 <<<<<<< Updated upstream
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -672,6 +715,7 @@
             <element signature="n#div#1;n#div#3;n#div#1;n#div#2;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#div#1;n#div#2;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#3;n#div#1;n#div#2;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+<<<<<<< Updated upstream
             <element signature="n#style#0;n#div#5;n#div#2;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
 =======
             <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -746,6 +790,8 @@
             <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#span#0;n#span#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
@@ -753,6 +799,7 @@
     <entry file="file://$PROJECT_DIR$/css/screen.css">
 <<<<<<< Updated upstream
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="202">
           <caret line="499" column="1" lean-forward="true" selection-start-line="499" selection-start-column="1" selection-end-line="499" selection-end-column="1" />
 =======
@@ -781,6 +828,10 @@
             <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+=======
+        <state relative-caret-position="280">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>

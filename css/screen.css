@@ -13,6 +13,12 @@ html{
     background-size: 100% auto;
 }
 
+.font-size-em-09{
+    font-size:1.2rem;
+}
+a{
+    color:#676766;
+}
 #header .container {
     flex-wrap: wrap;
     width:100%;
@@ -92,7 +98,7 @@ html{
 
 .home-top-bg-diagonal .home-hot-specialists {
     padding: 10px;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .home-hot-specialists {
@@ -125,6 +131,7 @@ html{
 
 .mb-1 .text-grey {
     width: 80px;
+    line-height: 30px;
 }
 .icon-specialist .label{
     margin:5px 0;
@@ -348,7 +355,7 @@ html{
 .home-disease-decoding .tab-content .right .part-down-up .part-item{
     width:100%;
     padding:10px;
-    font-size:1.8rem;
+    font-size:1.6rem;
 }
 .home-part4 .banner{
     width:100%;
@@ -463,7 +470,7 @@ html{
     width:100% !important;
 }
 #home-bottom-third-container .home-disease-decoding .left div img{
-    margin-left:0 !important;
+    /*margin-left:0 !important;*/
 }
 .home-part4 .banner, .home-part4 .home-part4-baby{
     background-size:100% 100%;
@@ -504,13 +511,14 @@ html{
     display:none;
 }
 .doctor-detail-wrapper .container .right .part2{
-    margin-top:80px !important;
+    margin-top:40px !important;
 }
 .doctor-detail-wrapper .container .right .part2,
 .doctor-detail-wrapper .container .right .part4{
     text-align: left;
     border-width: 8px 0 0 0 !important;
     border-radius: 0 !important;
+    margin-top:20px !important;
 }
 .doctor-detail-wrapper .container .right .part5{
     /*width:80% !important;*/
@@ -518,7 +526,7 @@ html{
 }
 .doctor-detail-wrapper .doctor-info{
     position:relative;
-    font-size:1.6rem;
+    font-size:1.4rem;
 }
 .doctor-detail-wrapper .doctor-info .doctor-name{
     display:inline-block;
@@ -531,8 +539,8 @@ html{
     margin-top: 5px;
 }
 
-.doctor-detail-wrapper .doctor-info .mt-2 span:nth-child(5),
-.doctor-detail-wrapper .doctor-info .mt-2 span:nth-child(6){
+.doctor-detail-wrapper .star-wrapper img:nth-child(1),
+.doctor-detail-wrapper .star-wrapper span{
     display:none;
 }
 
@@ -617,12 +625,12 @@ html{
     padding-bottom:0 !important;
 }
 .doctor-detail-wrapper .share-part .nav-tabs{
-    height: 50px;
-    line-height: 50px;
+    height: 40px;
+    line-height: 38px;
 }
 .share-part .nav-tabs .nav-tabs-item{
     padding:0;
-    font-size:1.6rem;
+    font-size:1.4rem;
 }
 .doctor-detail-wrapper .doctor-info .doctor-servers .colum2{
     font-size:0;
@@ -642,10 +650,28 @@ html{
 .doctor-servers .colum1{
     width:100%;
 }
-.doctor-info .fa-chevron-down{
+.doctor-info .fa-chevron-down,
+.btn-thumbs-up{
     display:block;
 }
+.slide-up-down{
+    display:block;
+    padding-top:20px;
+    color: #48ccc5;
+    box-shadow:0 -10px 20px 5px #fff;
+    margin-top:-20px;
+    background:#ffffff;
+    padding-bottom:40px;
+}
+.slide-up-down .text{
+    margin-left:5px;
+}
 
+.doctor-info-content{
+    height:200px;
+    overflow: hidden;
+    z-index: -1;
+}
 
 .right1 .right-up-doctor{
     bottom:20px;
@@ -752,7 +778,7 @@ html{
 .tab-pane-item .right .d-flex  .right-right{
     width:100%;
     margin-right: 0 !important;
-    font-size: 1.8rem;
+    /*font-size: 1.8rem;*/
 }
 .tab-pane-list .tab-pane-item:nth-child(4n+1) .right .right-content,
 .tab-pane-list .tab-pane-item:first-child .right .right-content,
@@ -769,7 +795,7 @@ html{
    font-size:20px;
 }
 .tab-pane-item .right-left .comment-text{
-    font-size:16px;
+    /*font-size:16px;*/
 }
 .tab-pane-item .right-right .icon-type img{
     width:20px !important;
@@ -792,7 +818,7 @@ html{
     display:none;
 }
 .doctor-detail-wrapper .right .home-popular-search-box{
-    /*margin-top:0 !important;*/
+    display:none;
 }
 
 .tab-pane-list2 .tab-pane-item2{
@@ -805,8 +831,20 @@ html{
     padding:20px;
 }
 .tab-pane-list .tab-pane-item .right{
-    padding-top:0;
+    /*padding-top:0;*/
 }
 .date-font{
     margin-top:10px;
+}
+.doctor-detail-wrapper .home-top-bg-diagonal{
+    padding-top:0 !important;
+}
+.doctor-detail-wrapper .home-top-bg-diagonal .part1 .title{
+    margin-left:20px;
+}
+.doctor-detail-wrapper .home-top-bg-diagonal .part1 .title img{
+    left:140px !important;
+}
+.share-part-header .header-title span{
+    font-size:1.8rem !important;
 }
