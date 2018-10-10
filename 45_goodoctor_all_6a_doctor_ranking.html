@@ -24,9 +24,12 @@
     <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/lunbo.css">
     <link rel="stylesheet" href="./css/p43.css">
+    <link rel="stylesheet" href="./index_files/font-awesome.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <!--移动端css引入-->
+    <link rel="stylesheet" type="text/css" href="./css/screen.css" media="screen and (max-width:768px)">
 
     <!--圓形進度條js -->
-
     <link rel="stylesheet" href="./css/jquery.classycountdown.css">
     <script src="./index_files/huanxing/jquery.min.js"></script>
     <script src="./index_files/huanxing/jquery.knob.js"></script>
@@ -46,11 +49,10 @@
     <script src="./index_files/swiper.min.js"></script>
 
     <!--<link rel="stylesheet" href="./index_files/bootstrap.css">-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/home.css">
-    <!--移动端css引入-->
-    <link rel="stylesheet" href="./css/mobilescreen.css" media="screen and (max-width:768px)">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"-->
+          <!--integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">-->
+
+
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -64,6 +66,7 @@
 <body class="" id="page-default">
 <div id="body-container">
     <div id="content-container">
+        <!---------------- header头部内容 -------------------->
         <div id="header">
             <div class="container position-relative d-flex align-items-end">
                 <div class="nav-functions">
@@ -139,38 +142,34 @@
                 </div>
             </div>
         </div>
-        <div id="body" style="font-family: liheipro;">
-            <div class="share" style="background: white; width: 40px; height: 120px; position: absolute;
-        right: 0px; top: 200px; position: fixed; text-align: center; border-top-left-radius: 16px; border-bottom-left-radius: 16px;">
+        <!---------------- 中间部分 -------------------->
+        <div id="body">
+            <!---------------- 右侧固定分享 -------------------->
+            <div class="share-right-fixed">
                 <a href="">
                     <div class="border-bottom box-shaw1">
-                        <span style="color: #334F8D; margin-top: 15px;"><img
-                                src="./images/p41-42/349342156289048425.png" alt=""
-                                style="width: 12px;height: 15px;margin-top: 10px;"></span>
+                        <i class="fa fa-facebook"></i>
                     </div>
                 </a>
                 <a href="">
                     <div class="border-bottom box-shaw2">
-                        <span style="color: #5ea7dc;margin-top: 12px;"><img src="./images/p41-42/371701837094038651.png"
-                                                                            alt=""
-                                                                            style="width: 15px;height: 15px;margin-top: 10px;"></span>
+                        <i class="fa fa-twitter"></i>
                     </div>
                 </a>
                 <a href="">
                     <div class="box-shaw3">
-                        <span class="fab fa-youtube" style="color: #D74439; margin-top: 10px;"></span>
+                        <i class="fa fa-youtube-play"></i>
                     </div>
                 </a>
             </div>
-            <div class="home-top-bg-diagonal pb-5 specialist-swrapper" style="padding-top: 50px;">
-                <div class="container">
-                    <div class="up">
-                        <img src="./images/icon/grey_home_icon.png" alt style="width: 10px;height: 12px">
-                        <span class="all">></span>
-                        <span>進階搜尋</span>
-                        <span class="all">></span>
-                        <span class="up-last">醫生集中地</span>
-                    </div>
+            <div class="home-top-bg-diagonal specialist-swrapper bg-white">
+                <!---------------- 头部导航 -------------------->
+                <div class="container container-nav">
+                    <i class="fa fa-home fa-lg"></i>
+                    <i class="fa fa-angle-right"></i><span class="nav-up-name">進階搜尋</span>
+                    <i class="fa fa-angle-right"></i><span class="up-last" >醫生集中地</span>
+                </div>
+                <div class="home-search-box container">
                     <div class="div-border bordercolor">
                         <span class="text-outline-yishengxinxiang-color"
                               style="font-size:30px;color: white;position: absolute;left:-5px;top: -45px;font-family:MElleHK-Medium;">醫生集中地</span>

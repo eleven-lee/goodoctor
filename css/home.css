@@ -6,19 +6,19 @@
 
 @font-face {
     font-family: 'MElleHK-Medium';
-    src: url('../index_files/font/MElleHK-Medium.otf'),
-    url('../index_files/font/MElleHK-Medium.ttf') format('truetype'),
-    url('../index_files/font/MElleHK-Medium.woff') format('woff'),
-    url('../index_files/font/MElleHK-Medium.svg#webfontOTINA1xY') format('svg');
+    src: url('../index_files/font/MElleHK-Medium.otf');
+    /*url('../index_files/font/MElleHK-Medium.ttf') format('truetype'),*/
+    /*url('../index_files/font/MElleHK-Medium.woff') format('woff'),*/
+    /*url('../index_files/font/MElleHK-Medium.svg#webfontOTINA1xY') format('svg');*/
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'LiheiPro';
-    src: url('../index_files/font/LiheiPro.woff') format('woff'),
-    url('../index_files/font/LiheiPro.ttf') format('truetype'),
-    url('../index_files/font/LiheiPro.svg#webfontOTINA1xY') format('svg');
+    /*src: url('../index_files/font/LiheiPro.woff') format('woff'),*/
+    src: url('../index_files/font/LiheiPro.ttf') format('truetype');
+    /*url('../index_files/font/LiheiPro.svg#webfontOTINA1xY') format('svg');*/
     font-weight: normal;
     font-style: normal;
 }
@@ -28,6 +28,127 @@ body{
 }
 li {
     list-style: none;
+}
+
+.home-top-bg-diagonal{
+    padding:20px 0;
+    font-family: liheipro;
+}
+
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+}
+#footer{
+    margin-top:60px;
+}
+
+/****************** 医生信箱模块 ********************/
+.doctor-email{
+    width: 100%; background: #ffffff; margin-top:40px;  border: 8px solid #c7dfb2; border-radius: 8px;position: relative;
+    padding:10px 0;
+}
+.doctor-email .title{
+    color: white; position: absolute; left: 7px; top:-33px;
+    font-size: 30px;font-family: MElleHK-Medium;
+}
+.doctor-email-item-question,
+.doctor-email-item-answer{
+    margin:20px 10px; background:transparent;
+    border-radius:8px; font-size: 14px;
+    border: 1px solid #48ccc5; position: relative;
+}
+.doctor-email-item-answer{
+    border: 1px solid #f7ab24;
+}
+.doctor-email .inner{
+    margin: 10px;
+}
+.img-up-answer{
+    width: 90px;
+    position: absolute; top:-5px; left:-5px;
+}
+.doctor-email .avatar-name{
+    display:flex;
+}
+.doctor-email .avatar{
+    display:inline-block;
+    width:52px;
+    height: 52px;
+    margin-right:5px;
+    border-radius: 50%;
+    vertical-align: top;
+}
+.doctor-email .avatar img{
+    width:100%;
+    height: 100%;
+}
+
+.doctor-email .name-text{
+    display:inline-block;
+    flex:1;
+}
+.doctor-email .name-text .name{
+    color:#48ccc5;font-size: 16px;
+    height: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.doctor-email .name-text .text{
+    font-size: 14px;color: gray;
+}
+.doctor-email .content{
+    margin: 8px 0; color: gray;font-size:14px;
+}
+.doctor-email .datetime{
+    color: lightgray;font-size: 12px;
+    font-family: microsoft yahei;
+}
+.doctor-email .icon-question{
+    width: 30px; position: absolute; bottom: 2px; right: 10px; z-index: 2;
+}
+
+.doctor-email .bg-right-bottom{
+    width: 60px; height: 60px; position: absolute; bottom: 0; right: 0;background: #e4f4f9;
+    border-top-left-radius: 100%;border-bottom-right-radius: 8px;
+}
+
+/*******************************************************/
+
+
+
+.share-right-fixed{
+    background: white; width: 40px; height: 120px; right: 0; top: 200px; position: fixed; text-align: center; border-top-left-radius: 16px; border-bottom-left-radius: 16px;
+}
+.fa-facebook{
+    color: #334F8D; margin-top: 15px;
+}
+.fa-twitter{
+    color: #5ea7dc;margin-top: 12px;
+}
+.fa-youtube-play{
+    color: #D74439; margin-top: 10px;
+}
+
+.container-nav{
+    margin-bottom:20px;
+    text-align: right;
+}
+.fa-home{
+    vertical-align: top;
+    margin-top:3px;
+}
+.nav-up-name{
+    font-size:16px;
+}
+.fa-angle-right{
+    font-size:20px;
+    margin:0 5px;
+}
+.up-last{
+    font-size:16px;
+    color:#48ccc5;
 }
 
 .btn-answer {
@@ -276,11 +397,6 @@ li {
 .home-news .news-swiper .btn-prev,
 .home-news .news-swiper .btn-next {
     background-color: #c0dea5;
-}
-
-.container {
-    margin: 0 auto;
-    padding: 0;
 }
 
 .typeahead__field input{

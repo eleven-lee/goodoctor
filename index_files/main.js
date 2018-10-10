@@ -289,7 +289,7 @@ var page = {
     initHomeNews: function () {
         var homeNews = $('.home-news');
         var allTab = homeNews.find('.tab');
-
+        // console.log(allTab);
         var homeNewsSwiper = new Swiper('.home-news .swiper-container', {
             speed: 1000,
             spaceBetween: 100,

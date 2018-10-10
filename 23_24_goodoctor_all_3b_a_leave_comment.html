@@ -1,16 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="zh_hk">
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="32yToz6rUCkYdjnzpbSA4F8O3F8UDcIvI7BsSPjO">
-
     <link rel="canonical" href="http://goodoctor.html5.company/">
-
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="http://goodoctor.html5.company/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="http://goodoctor.html5.company/favicons/favicon-32x32.png">
@@ -23,6 +18,8 @@
 
 
     <link rel="stylesheet" href="./index_files/frontend.css">
+    <link rel="stylesheet" href="./index_files/jquery-ui-nochange/jquery-ui.css">
+    <link rel="stylesheet" href="./index_files/bootstrap.css">
     <link rel="stylesheet" href="./index_files/test.css">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/p37-38.css">
@@ -30,7 +27,10 @@
     <link rel="stylesheet" href="./css/p26.css">
     <link rel="stylesheet" href="./css/p29_31.css">
     <link rel="stylesheet" href="./css/p23-24.css">
+    <link rel="stylesheet" href="./index_files/font-awesome.css">
     <link rel="stylesheet" href="./css/home.css">
+    <!--移动端css引入-->
+    <link rel="stylesheet" type="text/css" href="./css/screen.css" media="screen and (max-width:768px)">
 
     <script src="./index_files/manifest.js"></script>
     <script src="./index_files/vendor.js"></script>
@@ -39,21 +39,20 @@
 
     <!--<script src="./index_files/swiper.min.js"></script>-->
     <!-- 日期-->
-    <link rel="stylesheet" href="./index_files/jquery-ui-nochange/jquery-ui.css">
+
     <script src="./index_files/jquery-ui-nochange/external/jquery/jquery.js"></script>
     <script src="./index_files/jquery-ui-nochange/jquery-ui.js"></script>
     <!--<script src="./index_files/jquery-2.1.0.min.js"></script>-->
     <script src="./index_files/p39-40.js"></script>
-    <link rel="stylesheet" href="./index_files/bootstrap.css">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-        crossorigin="anonymous">
-    <!--移动端css引入-->
-    <link rel="stylesheet" href="./css/mobilescreen.css" media="screen and (max-width:768px)">
+
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"-->
+        <!--crossorigin="anonymous">-->
 </head>
-
+<body class="" id="page-default">
   <div id="body-container">
         <div id="content-container">
+            <!---------------- header头部内容 -------------------->
             <div id="header">
                 <div class="container position-relative d-flex align-items-end">
                     <div class="nav-functions">
@@ -130,18 +129,16 @@
                 </div>
             </div>
             <div id="body" >
-                <div class="home-top-bg-diagonal pb-5" style="border-bottom: none; padding-bottom: 20px;font-family: liheipro;padding-top: 15px;">
-                    <div class="container write-review-swrapper" style="font-size:15px;color: #676766;margin-bottom: -50px; text-align: right ">
-                        <img src="./images/icon/grey_home_icon.png" alt style="width: 10px;height: 12px;margin-top:-5px;">
-                        <span class="all" style="font-size: 20px;">></span>
-                        <span>進階搜尋</span>
-                        <span class="all" style="font-size: 20px;">></span>
-                        <span>搜尋結果</span>
-                        <span class="all" style="font-size: 20px;">></span>
-                        <span class="up-last">陳凱怡醫生</span>
+                <div class="home-top-bg-diagonal bg-white">
+                    <!---------------- 头部导航 -------------------->
+                    <div class="container container-nav">
+                        <i class="fa fa-home fa-lg"></i>
+                        <i class="fa fa-angle-right"></i><span class="nav-up-name">進階搜尋</span>
+                        <i class="fa fa-angle-right"></i><span class="nav-up-name">搜尋結果</span>
+                        <i class="fa fa-angle-right"></i><span class="up-last" >陳凱怡醫生</span>
                     </div>
                     <!---->
-                    <div class="container d-flex justify-content-between" style="padding: 0px 0px;font-family: liheipro;margin-top: 50px;">
+                    <div class="container d-flex justify-content-between">
                         <!---->
                         <div class="left-release-questions">
                             <div class="bg-white" style="border: 8px solid #E5696A; border-radius: 8px; color: gray; position: relative; padding-bottom: 40px;">
@@ -950,7 +947,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <!-- Loading screen -->
 
@@ -968,7 +964,5 @@
         <!--<script src="./index_files/main.js"></script>-->
 
         </div>
-
 </body>
-
 </html>

@@ -23,14 +23,12 @@
     <link rel="stylesheet" href="./index_files/jquery-ui/jquery-ui.css">
     <link rel="stylesheet" href="./index_files/frontend_search.css">
     <link rel="stylesheet" href="./index_files/search.css">
-    <!--<link rel="stylesheet" href="./index_files/frontend.css">-->
     <link rel="stylesheet" href="./index_files/head.css">
-    <link rel="stylesheet" href="./index_files/bootstrap.css">
-    <!--<link rel="stylesheet" href="./css/p1-8.css">-->
+    <!--<link rel="stylesheet" href="./index_files/bootstrap.css">-->
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/p26.css">
-    <!--<link rel="stylesheet" href="./css/p39-40.css">-->
     <link rel="stylesheet" href="./css/p16.css">
+    <link rel="stylesheet" href="./index_files/font-awesome.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
 
@@ -41,10 +39,10 @@
     <script src="./index_files/p9-16.js"></script>
     <script src="./index_files/swiper.min.js"></script>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
-
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"-->
+          <!--integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">-->
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">-->
+    <link rel="stylesheet" href="./css/mobilescreen.css" media="screen and (max-width:768px) ">
 </head>
 <body class="" id="page-default">
 
@@ -62,44 +60,72 @@
                         <span class="align-top">撰寫醫評</span>
                     </a>
                 </div>
-                <a class="logo" href="http://goodoctor.html5.company/#">
-                </a>
+                <a class="logo" href="http://goodoctor.html5.company/#"></a>
                 <div class="header-menu">
                     <div class="mb-2">
                         <span class="text-theme-color font-weight-bold">GOODOCTOR</span> 綜合各科醫生資料，為大眾提供求醫經驗及醫評
                     </div>
                     <ul class="inline-list d-flex justify-content-around">
-                        <li><a href="./index.html"> <img src="images/header/home_icon.png" alt=""
-                                                         style="margin-bottom: 2px;"><br>
-                            首頁
-                        </a></li>
-                        <li><a href="./search.html"><img src="images/header/search_icon.png" alt=""
-                                                         style="margin-bottom: 2px;"><br>
-                            進階搜尋</a></li>
-                        <li><a href="./index.p23artical-index.html"><img src="images/header/feature_articles_icon.png"
-                                                                         alt="" style="margin-bottom: 2px;"><br>
-                            專題文章</a></li>
-                        <li><a href="./index.p31.html"><img src="images/header/read_good_reviews_icon.png" alt=""
-                                                            style="margin-bottom: 2px;"><br>
-                            睇睇好評</a></li>
-                        <li><a href="./index.p32.html"><img src="images/header/doctor_leaderboard_icon.png" alt=""
-                                                            style="margin-bottom: 2px;"><br>
-                            醫生排行榜</a></li>
-                        <li><a href="./index.p35.html"><img src="images/header/doctor_mailbox_icon.png" alt=""
-                                                            style="margin-bottom: 2px;"><br>
-                            醫生信箱</a></li>
-                        <li><a href="http://goodoctor.html5.company/#"><img src="images/header/patient_voice_icon.png"
-                                                                            alt="" style="margin-bottom: 2px;"><br>
-                            病人心聲</a></li>
+                        <li>
+                            <a href="./index.html">
+                                <img src="images/header/home_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                首頁
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./search.html">
+                                <img src="images/header/search_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                進階搜尋
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.p23artical-index.html">
+                                <img src="images/header/feature_articles_icon.png" alt=""
+                                     style="margin-bottom: 2px;"><br>
+                                專題文章
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.p31.html">
+                                <img src="images/header/read_good_reviews_icon.png" alt=""
+                                     style="margin-bottom: 2px;"><br>
+                                睇睇好評
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.p32.html">
+                                <img src="images/header/doctor_leaderboard_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                醫生排行榜
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.p35.html">
+                                <img src="images/header/doctor_mailbox_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                醫生信箱
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://goodoctor.html5.company/#">
+                                <img src="images/header/patient_voice_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                病人心聲
+                            </a>
+                        </li>
                     </ul>
+                </div>
+                <div class="header-search" style="display:none;">
+                    <div class="search">
+                        <div class="search-content">
+                            <input class="search-input" type="search" autofocus  placeholder="輸入關鍵字..." />
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+                    <i class="fa fa-list fa-2x" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
 
         <div id="body">
-            <div class="share" style="background: white; width: 40px; height: 120px; position: absolute;
-                    right: 0px; top: 200px; position: fixed; text-align: center; border-top-left-radius: 16px; border-bottom-left-radius: 16px;">
-
+            <div class="share" style="background: white; width: 40px;position: absolute; right: 0px; top: 200px; position: fixed; text-align: center; border-top-left-radius: 16px; border-bottom-left-radius: 16px;">
                 <a href="">
                     <div class="border-bottom box-shaw1">
                         <span style="color: #334F8D; margin-top: 15px;"><img
@@ -121,16 +147,13 @@
                 </a>
             </div>
             <div class="home-top-bg-diagonal" style="border-bottom: none; padding-top: 10px;font-family: liheipro;">
-                <div class="container">
-                    <div class="up">
-                        <img src="./images/icon/grey_home_icon.png" alt
-                             style="width: 15px;height: 15px;margin-left: 90%;">
-                        <span style="color: #c6cdd0">&nbsp;>&nbsp;</span>
-                        <span style="font-size: 14px;color: #48ccc5;font-family:MElleHK-Medium;">進階搜尋</span>
-                    </div>
+                <div class="container" style="font-size:15px;color: #676766;margin-bottom: -50px; text-align: right ">
+                    <img src="./images/icon/grey_home_icon.png" alt style="width: 10px;height: 12px;margin-top:-5px;">
+                    <span class="all">></span>
+                    <span class="up-last" style="color: #48ccc5;">進階搜尋</span>
                 </div>
                 <div class="container pt-4 d-flex align-items-stretch">
-                    <div class="container d-flex justify-content-between" style="height: 2100px;">
+                    <div class="container d-flex justify-content-between main-both">
                         <!---->
                         <div class="home-search-box" style="width:72%;">
                             <div class="search-box-bg-img"></div>
@@ -144,9 +167,8 @@
                                     <form action="http://goodoctor.html5.company/">
                                         <!---->
                                         <div class="further-search-category box-border border-radius bg-white "
-                                             style="margin-bottom: -10px;font-family: liheipro;">
-                                            <div class="specialistselect box-shadow-4side-5px bg-color-white brder-radius-8px padding-10px "
-                                                 style="height: 215px;">
+                                             style="font-family: liheipro;">
+                                            <div class="specialistselect box-shadow-4side-5px bg-color-white brder-radius-8px padding-10px ">
                                                 <div style="margin-left: 15px;">
                                                     <p class="text-theme-color keywords margin-left"
                                                        style="margin-top: 20px;">關鍵字 (疾病/醫療服務/醫生或診所名稱)</p>
@@ -154,7 +176,7 @@
                                                         <div class="outline-form-group border-theme-color dropdown-toggle"
                                                              id="search-districts-toggle" data-toggle="dropdown"
                                                              aria-haspopup="true" aria-expanded="false"
-                                                             style="width: 450px;margin-left: 10px; border: 1px solid #48ccc5;">
+                                                             style="width:80%;margin-left: 10px; border: 1px solid #48ccc5;">
                                                             <div class="icon icon-wrapper-49x49 icon-white-location bg-theme-color"></div>
                                                             <div class="input" data-placeholder="如:濕疹、產檢"
                                                                  style="color:#9899a3; ">如:濕疹、產檢
@@ -901,7 +923,6 @@
                                                                     </div>
 
                                                                 </div>
-
                                                             </div>
                                                         </div>
                                                     </div>
@@ -957,38 +978,28 @@
                                                         </table>
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </div>
-
                                         <div class="specialistselect" style="font-family: liheipro;">
-                                            <div class="specialistselect box-shadow-4side-5px bg-color-white brder-radius-8px padding-10px "
-                                                 style="height: 180px;">
+                                            <div class="specialistselect box-shadow-4side-5px bg-color-white brder-radius-8px padding-10px ">
                                                 <div class="specialistselect-intro" style="margin:10px 5%; ">
 
-                                                    <div class="dropdown dropdown-without-arrow specialists-select checkbox-select"
-                                                         style="margin-left:-1em; width: 42em;">
+                                                    <div class="dropdown dropdown-without-arrow specialists-select checkbox-select"style="margin-left:-1em; width:88%;">
                                                         <span class="text-theme-color h5 margin-left float-left">專科</span>
                                                         <span class="text-gray-color h7 margin-left float-left"
                                                               style="color: #989999;"> 已選擇:</span>
 
                                                         <div class="outline-form-group  dropdown-toggle"
                                                              id="search-specialists-toggle"
-                                                             style="width:33em; height:2em; background: transparent;"
+                                                             style="width:100px; height:2em; background: transparent;margin-left: 90%;"
                                                              data-toggle="dropdown" aria-haspopup="true"
                                                              aria-expanded="false">
-
                                                             <div class="input" data-placeholder=""
                                                                  style="padding-top: 2px; padding-left: 2px;">请点击选择:
                                                             </div>
-
-                                                            <div><a href=""
-                                                                    style="text-decoration: underline; color: #679bca;">所有專科</a>
-                                                            </div>
+                                                            <div><a class="zhuanke" href=""style="text-decoration: underline; color: #679bca;">所有專科</a></div>
                                                         </div>
-                                                        <div class="dropdown-menu m-0 p-0 border border-theme-color"
-                                                             aria-labelledby="search-specialists-toggle"
-                                                             style="width: 550px;">
+                                                        <div class="dropdown-menu m-0 p-0 border border-theme-color" aria-labelledby="search-specialists-toggle" >
                                                             <div class="tabs-container" style="width: 550px;">
                                                                 <div class="tabs">
                                                                     <div class="tab icon-white-western-medicine icon-border-color-default icon-text-color-default active"
@@ -2460,21 +2471,17 @@
 
                                                 </div>
 
-                                                <div class="home-hot-specialists position-relative"
-                                                     style="margin-top: 0px; width: 42em;">
-
-                                                    <div class="d-flex flex-wrap box-lg bg-white box">
+                                                <div class="home-hot-specialists position-relative" style="margin-top: 0px; width:100%;">
+                                                    <div class="d-flex flex-wrap box-lg box">
                                                         <!---->
-                                                        <div class="icon-specialist icon-general-medicine icon-bg-default"
-                                                             style="height: 80px; width: 72px;">
+                                                        <div class="icon-specialist icon-general-medicine icon-bg-default">
                                                             <div class="icon-wrapper-49x49 icon-circle icon icon-w-bg icon-49x49">
                                                                 <div class="icon icon-grey-cross icon-bg-transparent bg-transparent"></div>
                                                             </div>
                                                             <div class="label icon-text-color-default"
                                                                  style="margin-top: 0px;">普通科
                                                             </div>
-                                                            <div class="search-box"
-                                                                 style="width:105%; margin-left: -40px;">
+                                                            <div class="search-box" style="width:105%; margin-left: -40px;">
                                                                 <div class="w-100 icon-bg-default d-flex py-2 px-3 text-left icon-text-color-default"
                                                                      style="background-color: white;border: 3px solid #d6f7ff;">
                                                                     <div class="text-nowrap"
@@ -2493,16 +2500,12 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-
                                                         <div class="icon-specialist icon-pediatrics icon-bg-default">
-
                                                             <div class="icon-wrapper-49x49 icon-circle icon icon-w-bg icon-49x49">
                                                                 <div class="icon icon-grey-cross icon-bg-transparent bg-transparent"></div>
                                                             </div>
-
                                                             <div class="label icon-text-color-default">兒科</div>
-                                                            <div class="search-box"
-                                                                 style="width:105%; margin-left: -125px;">
+                                                            <div class="search-box" style="width:105%; margin-left: -120px;">
                                                                 <div class="w-100 icon-bg-default d-flex py-2 px-3 text-left icon-text-color-default"
                                                                      style="background-color: white;border: 3px solid #fffbda;">
                                                                     <div class="text-nowrap"
@@ -2527,8 +2530,7 @@
                                                                 <div class="icon icon-grey-cross icon-bg-transparent bg-transparent"></div>
                                                             </div>
                                                             <div class="label icon-text-color-default">婦產科</div>
-                                                            <div class="search-box"
-                                                                 style="width:105%; margin-left: -205px;">
+                                                            <div class="search-box"style="width:105%; margin-left: -198px;">
                                                                 <div class="w-100 icon-bg-default d-flex py-2 px-3 text-left icon-text-color-default"
                                                                      style="background-color: white;border: 3px solid #ffeff1;">
                                                                     <div class="text-nowrap"
@@ -2554,8 +2556,7 @@
                                                                 <div class="icon icon-grey-cross icon-bg-transparent bg-transparent"></div>
                                                             </div>
                                                             <div class="label icon-text-color-default">牙科</div>
-                                                            <div class="search-box"
-                                                                 style="width:105%; margin-left: -290px;">
+                                                            <div class="search-box" style="width:105%; margin-left: -272px;">
                                                                 <div class="w-100 icon-bg-default d-flex py-2 px-3 text-left icon-text-color-default"
                                                                      style="background-color: white;border: 3px solid #8cdff2;">
                                                                     <div class="text-nowrap"
@@ -2580,8 +2581,7 @@
                                                                 <div class="icon icon-grey-cross icon-bg-transparent bg-transparent"></div>
                                                             </div>
                                                             <div class="label icon-text-color-default">皮膚科</div>
-                                                            <div class="search-box"
-                                                                 style="width:105%; margin-left: -370px;">
+                                                            <div class="search-box search-box-mobilie-pifuke"style="width:105%; margin-left: -355px;">
                                                                 <div class="w-100 icon-bg-default d-flex py-2 px-3 text-left icon-text-color-default"
                                                                      style="background-color: white;border: 3px solid #adf0a0;">
                                                                     <div class="text-nowrap"
@@ -2606,8 +2606,7 @@
                                                                 <div class="icon icon-grey-cross icon-bg-transparent bg-transparent"></div>
                                                             </div>
                                                             <div class="label icon-text-color-default">眼科</div>
-                                                            <div class="search-box"
-                                                                 style="width:105%; margin-left: -450px;">
+                                                            <div class="search-box search-box-mobilie-yanke"style="width:105%; margin-left: -432px;">
                                                                 <div class="w-100 icon-bg-default d-flex py-2 px-3 text-left icon-text-color-default"
                                                                      style="background-color: white;border: 3px solid #9ce8be;">
                                                                     <div class="text-nowrap"
@@ -2632,8 +2631,7 @@
                                                                 <div class="icon icon-grey-cross icon-bg-transparent bg-transparent"></div>
                                                             </div>
                                                             <div class="label icon-text-color-default">骨科</div>
-                                                            <div class="search-box"
-                                                                 style="width:105%; margin-left: -535px;">
+                                                            <div class="search-box search-box-mobilie-guke" style="width:105%; margin-left: -510px;">
                                                                 <div class="w-100 icon-bg-default d-flex py-2 px-3 text-left icon-text-color-default"
                                                                      style="background-color: white;border: 3px solid #f8efd5;">
                                                                     <div class="text-nowrap"
@@ -2658,8 +2656,7 @@
                                                                 <div class="icon icon-grey-cross icon-bg-transparent bg-transparent"></div>
                                                             </div>
                                                             <div class="label icon-text-color-default">註冊中醫</div>
-                                                            <div class="search-box"
-                                                                 style="width:105%; margin-left: -615px;">
+                                                            <div class="search-box search-box-mobilie-zhucezhongyi" style="width:105%; margin-left: -587px;">
                                                                 <div class="w-100 icon-bg-default d-flex py-2 px-3 text-left icon-text-color-default"
                                                                      style="background-color: white;border: 3px solid #cfe9c5;">
                                                                     <div class="text-nowrap"
@@ -2682,9 +2679,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="detail-item-select"
-                                             style="width:100%; height: 200px;font-family: liheipro;">
-                                            <div class="leftpart " style="width:51%; height: 200px;  float: left; ">
+                                        <div class="detail-item-select details-clear" style="width:100%;font-family: liheipro;">
+                                            <div class="leftpart" style="width:51%; height: 200px;  float: left; ">
                                                 <div class="leftuppart " style="width:100%; height: 100px; ">
                                                     <div class="leftuppart1  box-shadow-4side-1px "
                                                          style="width:47%; height: 100px; margin-right:2%;border-radius: 10px; background-color: white; float: left; ">
@@ -2696,7 +2692,7 @@
                                                             </div>
                                                             <!-- <div class="fa fa-map-o" style="font-size: 42px; margin-left: 1em;margin-top: 0.5em; color: #48ccc5;"></div>
                                                                     -->
-                                                            <img src="./index_files/images/search-image/map-lacation.png"
+                                                            <img class="aear-dropdown" src="./index_files/images/search-image/map-lacation.png"
                                                                  style=" margin-left:20px; margin-top:15px;"/>
                                                         </div>
                                                         <div class="dropdown dropdown-without-arrow districts-select checkbox-select area-select-spec"
@@ -3304,7 +3300,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="rightpart box-shadow-4side-1px "
+                                            <div class="rightpart box-shadow-4side-1px"
                                                  style="width:46%; height: 220px;  float: left;   border-radius: 8px;margin-left: 20px;">
                                                 <div class="rightpart-up " style="width:100%; height: 100px; ">
                                                     <div class="rightpart-up-left" style="width:50%; height: 100px; border-radius:
@@ -3388,8 +3384,7 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="banner"
-                                 style="width: 100%; height: 360px;background: white;   margin-top: 40px; border: 6px solid #e5cce3; border-radius: 8px; ">
+                            <div class="banner"style="width: 100%; height: 360px;background: white;   margin-top: 40px; border: 6px solid #e5cce3; border-radius: 8px; ">
                                 <div id="demo" class="carousel slide" data-ride="carousel">
                                     <!-- 指示符 -->
                                     <ul class="carousel-indicators">
@@ -3446,7 +3441,7 @@
                                             補充品,支持身體有足夠的營養為胎兒健全發展做
                                             好營養準備。</div>
                                     </div>
-                                    <div style="text-align: center;  margin-top: 80px;color:#676766;">
+                                    <div class="part3-liaojie" style="text-align: center;  margin-top: 80px;color:#676766;">
                                         <span  style="margin-bottom: 5px;" >了解更多</span>
                                         <!-- <div><img  style="width: 7em; margin-top: -20px; " src="" alt=""></div> -->
                                         <div><img  style="width: 7em; margin-top: -30px; " src="./images/index-image/hook.png" alt=""></div>
@@ -3464,7 +3459,7 @@
                                             補充品,支持身體有足夠的營養為胎兒健全發展做
                                             好營養準備。</div>
                                     </div>
-                                    <div style="text-align: center;  margin-top: 80px;color:#676766;">
+                                    <div class="part3-liaojie" style="text-align: center;  margin-top: 80px;color:#676766;">
                                         <span style="margin-bottom: 5px;" >了解更多</span>
                                         <div><img  style="width: 7em; margin-top: -30px; " src="./images/index-image/hook.png" alt=""></div>
                                     </div>
@@ -3472,7 +3467,7 @@
                             </div>
                         </div>
                         <!---->
-                        <div class="right" style="width: 28%;color: gray; margin-top: -20px;">
+                        <div class="right " style="width: 28%;color: gray; margin-top: -20px;">
                             <div class="home-popular-search-box popular-search-box"
                                  style="width:299px;height: 400px; margin-left: 20px;">
                                 <!---->
@@ -3570,8 +3565,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="part3"
-                                 style="height: 690px; background: #ffffff;margin-left: 20px; margin-top:20px; border: 8px solid #e5bdd4; border-radius: 8px; position: relative;">
+                            <div class="part3" style="background: #ffffff;margin-left: 20px; margin-top:20px; border: 8px solid #e5bdd4; border-radius: 8px; position: relative;">
                                 <div class="xiangguanzhongxin-renqi1 pt-1">
                                     <span>人氣</span> <br>
                                     <span>之選</span>
@@ -3581,7 +3575,7 @@
                                     <span style="font-size: 20px;color:#676766;">相關專科中心</span>
                                 </div>
                                 <div class="item1 box-shadow-4side-5px"
-                                     style="border:1px solid #fffffe; margin:10px;padding:5px;border-radius:8px; ">
+                                     style="border:1px solid #fffffe; margin:10px;padding:5px;border-radius:8px; width:94%;">
                                     <div class="clearfix">
                                         <img src="./images/search-image/rqzx-2@3x.png" alt=""
                                              style="margin-right: 10px; float: left; width:70px;">
@@ -3633,7 +3627,7 @@
                                     </div>
                                 </div>
                                 <div class="item1 box-shadow-4side-5px"
-                                     style="border:1px solid #fffffe; margin:15px;border-radius:8px; width: 260px; height: 135px;">
+                                     style="border:1px solid #fffffe; margin:10px;padding:5px;border-radius:8px; width:94%;">
                                     <div class="clearfix">
                                         <img src="./images/search-image/rqzx-2@3x.png" alt=""
                                              style="margin-right: 10px; float: left; width:70px;">
@@ -3685,7 +3679,7 @@
                                     </div>
                                 </div>
                                 <div class="item1 box-shadow-4side-5px"
-                                     style="border:1px solid #fffffe; margin:15px;border-radius:8px; width: 260px; height: 135px;">
+                                     style="border:1px solid #fffffe; margin:10px;padding:5px;border-radius:8px; width:94%;">
                                     <div class="clearfix">
                                         <img src="./images/search-image/rqzx-2@3x.png" alt=""
                                              style="margin-right: 10px; float: left; width:70px;">
@@ -3737,7 +3731,7 @@
                                     </div>
                                 </div>
                                 <div class="item1 box-shadow-4side-5px"
-                                     style="border:1px solid #fffffe; margin:15px;border-radius:8px; width: 260px; height: 135px;">
+                                     style="border:1px solid #fffffe; margin:10px;padding:5px;border-radius:8px; width:94%;">
                                     <div class="clearfix">
                                         <img src="./images/search-image/rqzx-2@3x.png" alt=""
                                              style="margin-right: 10px; float: left; width:70px;">
@@ -3849,105 +3843,93 @@
                                 </div>
                             </div>
                             <div class="part5"
-                                 style=" height: 250px; background: #ffffff; margin-left: 20px; margin-top:20px; margin-bottom:120px;">
-                                <img style="width: 100%; height: 250px;" src="./images/search-image/adss.png" alt="">
+                                 style=" background: #ffffff; margin-left: 20px; margin-top:20px; margin-bottom:120px;">
+                                <img style="width: 100%;" src="./images/search-image/adss.png" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="footer" style="border-top:-10px;">
+            <div id="footer">
                 <div class="top">
                     <!---->
                     <div class="container pt-4">
                         <!---->
-                        <div class="bg-theme-color text-white rounded-top d-flex cursor-pointer "
+                        <div class="bg-theme-color text-white rounded-top d-flex cursor-pointer"
                              id="footer-back-to-top">
-                            <span class="icon icon-white-arrow-top d-inline-flex mr-2 "></span>
+                            <span class="icon icon-white-arrow-top d-inline-flex mr-2"></span>
                             置頂
                         </div>
                         <!---->
-                        <div class="box-lg d-flex p-3 bg-white align-items-stretch ">
+                        <div class="box-lg d-flex p-3 bg-white align-items-stretch">
                             <!---->
-                            <div class="w-50 d-flex border-right align-items-center ">
-                                <div class="icon icon-footer-opinion flex-shrink-0 "></div>
-                                <div class="flex-shrink-1 pl-3 ">
-                                    <div class="text-blue-1 ">
-                                        謝謝你使用
-                                        <span class="font-weight-bold ">GOODOCTOR</span>
+                            <div class="w-50 d-flex border-right align-items-center">
+                                <div class="icon icon-footer-opinion flex-shrink-0"></div>
+                                <div class="flex-shrink-1  pl-3">
+                                    <div class="text-blue-1">
+                                        謝謝你使用 <span class="font-weight-bold">GOODOCTOR</span>
                                     </div>
-                                    <div class="font-size-em-09 ">
+                                    <div class="font-size-em-09">
                                         如對GooDoctor網站有任何意見或查詢，歡迎電郵至info@goodoctor.com.hk，你的意見可幫助我們提升網站的質素。
                                     </div>
                                 </div>
                             </div>
                             <!---->
-                            <div class="pl-3 border-right d-flex align-items-center " style="width: 40% ">
+                            <div class="pl-3 border-right d-flex align-items-center" style="width: 40%">
                                 <div>
-                                    <div class="text-blue-1 ">醫評大募集!!</div>
-                                    <div class="font-size-em-09 ">
-                                        給好醫生一個好評讓大家都找到他/她，
-                                        <br>快來尋「醫」得「說」。
+                                    <div class="text-blue-1">醫評大募集!!</div>
+                                    <div class="font-size-em-09">
+                                        給好醫生一個好評讓大家都找到他/她，<br>快來尋「醫」得「說」。
                                     </div>
                                 </div>
                             </div>
                             <!---->
-                            <div class="pl-3 d-flex align-items-center ">
-                                <a href="http://goodoctor.html5.company/# ">
-                                    <div class="icon icon-footer-write-review "></div>
-                                    <div class="text-center w-100 p-2 ">撰寫醫評</div>
+                            <div class="pl-3 d-flex align-items-center">
+                                <a href="http://goodoctor.html5.company/#">
+                                    <div class="icon icon-footer-write-review"></div>
+                                    <div class="text-center w-100 p-2"
+                                         style="color: black;font-weight: bold;font-size: 15px;">撰寫醫評
+                                    </div>
                                 </a>
                             </div>
                             <!---->
                         </div>
                     </div>
                     <!---->
-                    <div class="container d-flex justify-content-between py-3 ">
-                        <div class="font-size-em-09 ">
+                    <div class="container d-flex justify-content-between py-3 copyright-info">
+                        <div class="font-size-em-09">
                             GooDoctor.com.hk會員所發表的全部內容均屬個人意見，並不代表GooDoctor.com.hk之言論及立場。
-                            <br> 如從而引起任何損失或法律糾紛，GooDoctor.com.hk概不負責。
+                            <br>
+                            如從而引起任何損失或法律糾紛，GooDoctor.com.hk概不負責。
                         </div>
-                        <div>
-                            <a href="http://goodoctor.html5.company/ "
-                               class="icon icon-footer-fb d-inline-block opacity-5 "></a>
-                            <a href="http://goodoctor.html5.company/ "
-                               class="icon icon-footer-twitter d-inline-block ml-3 opacity-5 "></a>
-                            <a href="http://goodoctor.html5.company/ "
-                               class="icon icon-footer-youtube d-inline-block ml-3 opacity-5 "></a>
+                        <div class="footer-share">
+                            <a href="http://goodoctor.html5.company/"
+                               class="icon icon-footer-fb d-inline-block opacity-5"></a>
+                            <a href="http://goodoctor.html5.company/"
+                               class="icon icon-footer-twitter d-inline-block ml-3 opacity-5"></a>
+                            <a href="http://goodoctor.html5.company/"
+                               class="icon icon-footer-youtube d-inline-block ml-3 opacity-5"></a>
                         </div>
                     </div>
                     <!---->
                 </div>
-                <div class="bottom font-size-em-09 ">
-                    <div class="container py-2 d-flex justify-content-between ">
+
+                <div class="bottom font-size-em-09">
+                    <div class="container py-2 d-flex justify-content-between">
                         <!---->
-                        <ul class="inline-list ">
-                            <li>
-                                <a href="http://goodoctor.html5.company/# ">關於我們</a>
-                            </li>
-                            <li>
-                                <a href="http://goodoctor.html5.company/# ">使用條款</a>
-                            </li>
-                            <li>
-                                <a href="http://goodoctor.html5.company/# ">免責聲明</a>
-                            </li>
-                            <li>
-                                <a href="http://goodoctor.html5.company/# ">私隱政策</a>
-                            </li>
-                            <li>
-                                <a href="http://goodoctor.html5.company/# ">醫評大募集</a>
-                            </li>
-                            <li>
-                                <a href="http://goodoctor.html5.company/# ">網站地圖</a>
-                            </li>
-                            <li>
-                                <a href="http://goodoctor.html5.company/# ">聯絡我們</a>
-                            </li>
+                        <ul class="inline-list">
+                            <li><a href="http://goodoctor.html5.company/#">關於我們</a></li>
+                            <li><a href="http://goodoctor.html5.company/#">使用條款</a></li>
+                            <li><a href="http://goodoctor.html5.company/#">免責聲明</a></li>
+                            <li><a href="http://goodoctor.html5.company/#">私隱政策</a></li>
+                            <li><a href="http://goodoctor.html5.company/#">醫評大募集</a></li>
+                            <li><a href="http://goodoctor.html5.company/#">網站地圖</a></li>
+                            <li><a href="http://goodoctor.html5.company/#">聯絡我們</a></li>
                         </ul>
                         <!---->
                         <div>
-                            <div class="d-inline-block ">Copyright © 2017 Good Doctor Limited</div>
-                            <div class="d-inline-block ml-2 ">版權所有 不得轉載</div>
+                            <div class="d-inline-block">Copyright ? 2017 Good Doctor Limited</div>
+                            <div class="d-inline-block ml-2">版權所有 不得轉載</div>
                         </div>
                     </div>
                 </div>
