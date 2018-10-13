@@ -33,6 +33,11 @@ li {
 .home-top-bg-diagonal{
     padding:20px 0;
     font-family: liheipro;
+    border-bottom: none;
+}
+
+.border-bottom-7px{
+    border-bottom: 7px solid #E2E2DE;
 }
 
 
@@ -40,13 +45,82 @@ li {
     margin: 0 auto;
     padding: 0;
 }
+.content-wrapper{
+    margin:60px auto;
+}
 #footer{
     margin-top:60px;
 }
 
+.left-release-questions{
+    flex:1;
+}
+
+/******************P45 專業治療及服務 ********************/
+
+.doctor-servers .colum1{
+    width:30%;
+}
+.doctor-servers .colum1 .p19-font-color{
+    /*font-size:1.4rem;*/
+    color:#676766;
+}
+.doctor-servers .colum2, .doctor-info .doctor-profile .colum2{
+    display:flex;
+    flex-wrap:wrap;
+    flex:1;
+}
+.doctor-servers .colum2 .colum2-item{
+    width:46%;
+    margin-right:8%;
+    line-height: 18px;
+    font-size:0;
+}
+.doctor-servers .colum2 .colum2-item:nth-child(2n){
+    margin-right:0;
+}
+.colum2 .colum2-item .colum2-item-name{
+    display:inline-block;
+    width:calc(100% - 65px);
+    height: 20px;
+    line-height: 20px;
+    font-size:16px;
+    overflow: hidden;
+}
+.colum2-item .left-arrow-box{
+    display:inline-block;
+    width:40px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: top;
+    margin-left:5px;
+    font-size:16px;
+}
+
+.colum2-item .icon-heart-red,.colum2-item .icon-heart-blue{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    vertical-align: top;
+}
+
+.colum2-item .icon-heart-red{
+    background-image:url("../images/icon/heart_num_icon.png");
+}
+.colum2-item .icon-heart-blue{
+    background-image:url("../images/search-image/heart-blue@3x.png");
+}
+
+/****************** 儿科 妇科专区 ********************/
+.part-baby-preg{
+    width: 100%;  margin-top: 20px; margin-bottom: 40px; font-family: liheipro;
+}
+
 /****************** 医生信箱模块 ********************/
 .doctor-email{
-    width: 100%; background: #ffffff; margin-top:40px;  border: 8px solid #c7dfb2; border-radius: 8px;position: relative;
+    width: 100%; background: #ffffff;border: 8px solid #c7dfb2; border-radius: 8px;position: relative;
     padding:10px 0;
 }
 .doctor-email .title{
@@ -58,6 +132,7 @@ li {
     margin:20px 10px; background:transparent;
     border-radius:8px; font-size: 14px;
     border: 1px solid #48ccc5; position: relative;
+    z-index: 5;
 }
 .doctor-email-item-answer{
     border: 1px solid #f7ab24;
@@ -101,6 +176,14 @@ li {
 .doctor-email .content{
     margin: 8px 0; color: gray;font-size:14px;
 }
+ .fa-clock-o{
+    color: #48ccc5;
+    margin-right: 5px;
+}
+ .tab-item-answer .fa-clock-o,
+.doctor-email-item-answer .fa-clock-o{
+    color:#f7ab24;
+}
 .doctor-email .datetime{
     color: lightgray;font-size: 12px;
     font-family: microsoft yahei;
@@ -112,17 +195,34 @@ li {
 .doctor-email .bg-right-bottom{
     width: 60px; height: 60px; position: absolute; bottom: 0; right: 0;background: #e4f4f9;
     border-top-left-radius: 100%;border-bottom-right-radius: 8px;
+    z-index: -1;
 }
+/*.Abackground{*/
+    /*z-index: -1;*/
+/*}*/
 
 /*******************************************************/
 
 
 
+
+
+/************************** 专科中心  人气之选 **********************************/
+
+.hot-medicine{
+    width: 100%; background: #ffffff; border: 8px solid #e5bdd4; border-radius: 8px; position: relative;
+    margin-bottom:  8%;
+}
+/************************************************************/
 .share-right-fixed{
     background: white; width: 40px; height: 120px; right: 0; top: 200px; position: fixed; text-align: center; border-top-left-radius: 16px; border-bottom-left-radius: 16px;
 }
 .fa-facebook{
     color: #334F8D; margin-top: 15px;
+}
+.login button .fa-facebook{
+    color: white;
+    margin-top: 0 !important;
 }
 .fa-twitter{
     color: #5ea7dc;margin-top: 12px;
@@ -130,7 +230,6 @@ li {
 .fa-youtube-play{
     color: #D74439; margin-top: 10px;
 }
-
 .container-nav{
     margin-bottom:20px;
     text-align: right;
@@ -524,11 +623,11 @@ li {
     width: 52%; height: 260px;background: white;
     border-radius: 8px;  float: left;   background: repeating-linear-gradient(-45deg, #e5cce3, #e5cce3 8px, #ead6e9 8px, #ead6e9 16px);
 }
-.home-part4 .home-part4-baby{
+.home-part4-baby{
     width:23%; height: 260px; background: white url(../images/search-image/boby.png) no-repeat center;  border: 5px solid #8dbce8; margin:0px 10px 0px 10px;
     border-radius: 8px; float: left; position: relative;
 }
-.home-part4 .home-part4-preg{
+.home-part4-preg{
     width: 23%; height: 260px; background: white url(../images/search-image/preg.png) no-repeat center;
     border: 5px solid #e5bdd4;border-radius: 8px; float: left;
 }
@@ -557,6 +656,56 @@ li {
     float: left;
     margin-right: 6px;
 }
-
-
+/*********************P45************************/
+.specialist-swrapper .home-hot-specialists .icon-specialist .search-box{
+    margin-left:-18%;
+}
 /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhvbWUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7R0FHRzs7QUFFSDtJQUNJLGlCQUFpQjtDQUNwQjtBQUNEO0lBQ0ksYUFBYTtJQUNiLFdBQVc7SUFDWCxTQUFTO0lBQ1QsVUFBVTtJQUNWLGdCQUFnQjtDQUNuQjtBQUNEO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtDQUN0QjtBQUNEO0lBQ0kscUJBQXFCO0lBQ3JCLFNBQVM7SUFDVCxVQUFVO0lBQ1YsZUFBZTtJQUNmLGlCQUFpQjtJQUNqQixtQkFBbUI7Q0FDdEI7QUFDRDtJQUNJLGtCQUFrQjtJQUNsQixxQkFBcUI7SUFDckIsV0FBVztJQUNYLFlBQVk7Q0FDZjtBQUNEO0lBQ0ksa0JBQWtCO0lBQ2xCLFFBQVE7SUFDUixNQUFNO0lBQ04sV0FBVztJQUNYLGFBQWE7SUFDYixxQkFBcUI7SUFDckIsMEJBQTBCO0lBQzFCLDRCQUE0QjtDQUMvQjtBQUNEO0lBQ0ksNkRBQTZEO0NBQ2hFOztBQUVEO0lBQ0ksV0FBVztJQUNYLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIseUJBQXlCO0NBQzVCO0FBQ0Q7SUFDSSx5QkFBeUI7Q0FDNUI7QUFDRDtJQUNJLHlCQUF5QjtDQUM1QjtBQUNEO0lBQ0kseUJBQXlCO0NBQzVCO0FBQ0Q7SUFDSSx5QkFBeUI7Q0FDNUI7QUFDRDtJQUNJLHlCQUF5QjtDQUM1QjtBQUNEO0lBQ0kseUJBQXlCO0NBQzVCOztBQUVEO0lBQ0kscUJBQXFCO0lBQ3JCLGdCQUFnQjtJQUNoQixXQUFXO0lBQ1gsYUFBYTtJQUNiLGtCQUFrQjtJQUNsQiwwQkFBMEI7SUFDMUIsNEJBQTRCO0NBQy9CO0FBQ0Q7SUFDSSxrREFBa0Q7Q0FDckQ7QUFDRDtJQUNJLGtEQUFrRDtDQUNyRDtBQUNEO0lBQ0ksa0RBQWtEO0NBQ3JEO0FBQ0Q7SUFDSSxrREFBa0Q7Q0FDckQ7QUFDRDtLQUNLLGtEQUFrRDtDQUN0RDtBQUNEO0lBQ0ksa0RBQWtEO0NBQ3JEOztBQUVEO0lBQ0ksZUFBZTtJQUNmLGtCQUFrQjtDQUNyQjs7QUFFRDs7O0lBR0kscUNBQXFDO0NBQ3hDO0FBQ0Q7OztJQUdJLG9DQUFvQztJQUNwQyxjQUFjO0lBQ2QscUJBQXFCO0NBQ3hCOztBQUVEOzs7SUFHSSxvQ0FBb0M7SUFDcEMsY0FBYztJQUNkLHFCQUFxQjtDQUN4Qjs7QUFFRDs7O0lBR0ksb0NBQW9DO0lBQ3BDLGNBQWM7SUFDZCxxQkFBcUI7Q0FDeEI7O0FBRUQ7OztJQUdJLG9DQUFvQztJQUNwQyxjQUFjO0lBQ2QscUJBQXFCO0NBQ3hCO0FBQ0Q7OztJQUdJLG9DQUFvQztJQUNwQyxjQUFjO0lBQ2QscUJBQXFCO0NBQ3hCOztBQUVEOzs7SUFHSSxvQ0FBb0M7SUFDcEMsY0FBYztJQUNkLHFCQUFxQjtDQUN4Qjs7QUFFRDtJQUNJLDhGQUE4RjtDQUNqRztBQUNEOztJQUVJLHlCQUF5QjtDQUM1QiIsImZpbGUiOiJob21lLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qXHJcbioqKiBhdXRob3I6aGVkZGlcclxuKioqIGRhdGV0aW1lOjIwMTguOS42XHJcbiAqL1xyXG5cclxubGkge1xyXG4gICAgbGlzdC1zdHlsZTogbm9uZTtcclxufVxyXG4ud2VzdC1tZWRpY2luZS13cmFwe1xyXG4gICAgZGlzcGxheTpmbGV4O1xyXG4gICAgd2lkdGg6MTAwJTtcclxuICAgIG1hcmdpbjowO1xyXG4gICAgcGFkZGluZzowO1xyXG4gICAgZmxleC13cmFwOiB3cmFwO1xyXG59XHJcbi53ZXN0LW1lZGljaW5lLWxpc3R7XHJcbiAgICB3aWR0aDozMy4zMyU7XHJcbiAgICBtYXJnaW4tYm90dG9tOjEwcHg7XHJcbn1cclxuLndlc3QtbWVkaWNpbmUtaXRlbXtcclxuICAgIGRpc3BsYXk6aW5saW5lLWJsb2NrO1xyXG4gICAgbWFyZ2luOjA7XHJcbiAgICBwYWRkaW5nOjA7XHJcbiAgICBmb250LXNpemU6MTJweDtcclxuICAgIGxpbmUtaGVpZ2h0OiAxLjY7XHJcbiAgICBib3JkZXItcmFkaXVzOjE1cHg7XHJcbn1cclxuLnNlY3Rpb257XHJcbiAgICBwb3NpdGlvbjpyZWxhdGl2ZTtcclxuICAgIGRpc3BsYXk6aW5saW5lLWJsb2NrO1xyXG4gICAgd2lkdGg6NzBweDtcclxuICAgIGhlaWdodDo4MHB4O1xyXG59XHJcbi5zZWN0aW9uIC5pY29uLXRhYnN7XHJcbiAgICBwb3NpdGlvbjphYnNvbHV0ZTtcclxuICAgIHJpZ2h0OjA7XHJcbiAgICB0b3A6MDtcclxuICAgIHdpZHRoOjE1cHg7XHJcbiAgICBoZWlnaHQ6IDE1cHg7XHJcbiAgICBkaXNwbGF5OmlubGluZS1ibG9jaztcclxuICAgIGJhY2tncm91bmQtc2l6ZToxNXB4IDE1cHg7XHJcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDpuby1yZXBlYXQ7XHJcbn1cclxuLnNlY3Rpb24gLmljb24tdGFicy5hY3RpdmV7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOnVybChcIi4uL2ltYWdlcy9pY29uLzIxMDIzOTQwMDc2NTM2MDc5LnBuZ1wiKTtcclxufVxyXG5cclxuLnNlY3Rpb24tdGl0bGV7XHJcbiAgICB3aWR0aDo3MHB4O1xyXG4gICAgaGVpZ2h0OiA4MHB4O1xyXG4gICAgYm9yZGVyLXJhZGl1czoxNXB4O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjojRDZGN0ZGO1xyXG59XHJcbi5zZWN0aW9uLXRpdGxlLnRpdGxlMXtcclxuICAgIGJhY2tncm91bmQtY29sb3I6I0Q2RjdGRjtcclxufVxyXG4uc2VjdGlvbi10aXRsZS50aXRsZTJ7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiM5Y2U4YmU7XHJcbn1cclxuLnNlY3Rpb24tdGl0bGUudGl0bGUze1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjojZWZhYmM3O1xyXG59XHJcbi5zZWN0aW9uLXRpdGxlLnRpdGxlNHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6I2ZmZmJkYTtcclxufVxyXG4uc2VjdGlvbi10aXRsZS50aXRsZTV7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiNmOGVmZDU7XHJcbn1cclxuLnNlY3Rpb24tdGl0bGUudGl0bGU2e1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjojZjRkMGMyO1xyXG59XHJcblxyXG4uc2VjdGlvbi1pY29ue1xyXG4gICAgZGlzcGxheTppbmxpbmUtYmxvY2s7XHJcbiAgICBtYXJnaW46NXB4IDEycHg7XHJcbiAgICB3aWR0aDo0MnB4O1xyXG4gICAgaGVpZ2h0OiA0MnB4O1xyXG4gICAgYm9yZGVyLXJhZGl1czo1MCU7XHJcbiAgICBiYWNrZ3JvdW5kLXNpemU6NDVweCA0NXB4O1xyXG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6bm8tcmVwZWF0O1xyXG59XHJcbi5zZWN0aW9uLWljb24uaWNvbjF7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOnVybChcIi4uL2ltYWdlcy9pY29uL2ljb24wMS5wbmdcIik7XHJcbn1cclxuLnNlY3Rpb24taWNvbi5pY29uMntcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiLi4vaW1hZ2VzL2ljb24vaWNvbjAyLnBuZ1wiKTtcclxufVxyXG4uc2VjdGlvbi1pY29uLmljb24ze1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCIuLi9pbWFnZXMvaWNvbi9pY29uMDMucG5nXCIpO1xyXG59XHJcbi5zZWN0aW9uLWljb24uaWNvbjR7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOnVybChcIi4uL2ltYWdlcy9pY29uL2ljb24wNC5wbmdcIik7XHJcbn1cclxuLnNlY3Rpb24taWNvbi5pY29uNXtcclxuICAgICBiYWNrZ3JvdW5kLWltYWdlOnVybChcIi4uL2ltYWdlcy9pY29uL2ljb24wNS5wbmdcIik7XHJcbn1cclxuLnNlY3Rpb24taWNvbi5pY29uNntcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiLi4vaW1hZ2VzL2ljb24vaWNvbjA2LnBuZ1wiKTtcclxufVxyXG5cclxuLnNlY3Rpb24tbmFtZXtcclxuICAgIGZvbnQtc2l6ZToxMnB4O1xyXG4gICAgdGV4dC1hbGlnbjpjZW50ZXI7XHJcbn1cclxuXHJcbi5ob21lLW5ld3MgLnRhYnMgLnRhYi5pY29uLWRvY3Rvci1pbnRlcnZpZXcsXHJcbi5ob21lLW5ld3MgLnRhYnMgLnRhYi5pY29uLWRvY3Rvci1pbnRlcnZpZXc6YmVmb3JlLFxyXG4uaG9tZS1uZXdzIC50YWJzIC50YWIuaWNvbi1kb2N0b3ItaW50ZXJ2aWV3OmFmdGVyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZmYgIWltcG9ydGFudDtcclxufVxyXG4uaG9tZS1uZXdzIC50YWJzIC50YWIuaWNvbi1kb2N0b3ItaW50ZXJ2aWV3LmFjdGl2ZSxcclxuLmhvbWUtbmV3cyAudGFicyAudGFiLmljb24tZG9jdG9yLWludGVydmlldy5hY3RpdmU6YmVmb3JlLFxyXG4uaG9tZS1uZXdzIC50YWJzIC50YWIuaWNvbi1kb2N0b3ItaW50ZXJ2aWV3LmFjdGl2ZTphZnRlcntcclxuICAgIGJhY2tncm91bmQtY29sb3I6I0MwREVBNSAhaW1wb3J0YW50O1xyXG4gICAgY29sb3I6I0MwREVBNTtcclxuICAgIGJvcmRlci1jb2xvcjojQzBERUE1O1xyXG59XHJcblxyXG4uaG9tZS1uZXdzIC50YWJzIC50YWIuaWNvbi13aGl0ZS1nZW5lcmFsLW1lZGljaW5lLmFjdGl2ZSxcclxuLmhvbWUtbmV3cyAudGFicyAudGFiLmljb24td2hpdGUtZ2VuZXJhbC1tZWRpY2luZS5hY3RpdmU6YmVmb3JlLFxyXG4uaG9tZS1uZXdzIC50YWJzIC50YWIuaWNvbi13aGl0ZS1nZW5lcmFsLW1lZGljaW5lLmFjdGl2ZTphZnRlcntcclxuICAgIGJhY2tncm91bmQtY29sb3I6IzQxYzFjYyAhaW1wb3J0YW50O1xyXG4gICAgY29sb3I6IzQxYzFjYztcclxuICAgIGJvcmRlci1jb2xvcjojNDFjMWNjO1xyXG59XHJcblxyXG4uaG9tZS1uZXdzIC50YWJzIC50YWIuaWNvbi13aGl0ZS1wZWRpYXRyaWNzLmFjdGl2ZSxcclxuLmhvbWUtbmV3cyAudGFicyAudGFiLmljb24td2hpdGUtcGVkaWF0cmljcy5hY3RpdmU6YmVmb3JlLFxyXG4uaG9tZS1uZXdzIC50YWJzIC50YWIuaWNvbi13aGl0ZS1wZWRpYXRyaWNzLmFjdGl2ZTphZnRlcntcclxuICAgIGJhY2tncm91bmQtY29sb3I6I2VhYWUyMCAhaW1wb3J0YW50O1xyXG4gICAgY29sb3I6I2VhYWUyMDtcclxuICAgIGJvcmRlci1jb2xvcjojZWFhZTIwO1xyXG59XHJcblxyXG4uaG9tZS1uZXdzIC50YWJzIC50YWIuaWNvbi13aGl0ZS1neW5lY29sb2d5LmFjdGl2ZSxcclxuLmhvbWUtbmV3cyAudGFicyAudGFiLmljb24td2hpdGUtZ3luZWNvbG9neS5hY3RpdmU6YmVmb3JlLFxyXG4uaG9tZS1uZXdzIC50YWJzIC50YWIuaWNvbi13aGl0ZS1neW5lY29sb2d5LmFjdGl2ZTphZnRlcntcclxuICAgIGJhY2tncm91bmQtY29sb3I6I2U1Njk2YSAhaW1wb3J0YW50O1xyXG4gICAgY29sb3I6I2U1Njk2YTtcclxuICAgIGJvcmRlci1jb2xvcjojZTU2OTZhO1xyXG59XHJcbi5ob21lLW5ld3MgLnRhYnMgLnRhYi5pY29uLXdoaXRlLWRlbnRpc3RyeS5hY3RpdmUsXHJcbi5ob21lLW5ld3MgLnRhYnMgLnRhYi5pY29uLXdoaXRlLWRlbnRpc3RyeS5hY3RpdmU6YmVmb3JlLFxyXG4uaG9tZS1uZXdzIC50YWJzIC50YWIuaWNvbi13aGl0ZS1kZW50aXN0cnkuYWN0aXZlOmFmdGVye1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjojMTBiYmUxICFpbXBvcnRhbnQ7XHJcbiAgICBjb2xvcjojMTBiYmUxO1xyXG4gICAgYm9yZGVyLWNvbG9yOiMxMGJiZTE7XHJcbn1cclxuXHJcbi5ob21lLW5ld3MgLnRhYnMgLnRhYi5pY29uLXdoaXRlLWRlcm1hdG9sb2d5LmFjdGl2ZSxcclxuLmhvbWUtbmV3cyAudGFicyAudGFiLmljb24td2hpdGUtZGVybWF0b2xvZ3kuYWN0aXZlOmJlZm9yZSxcclxuLmhvbWUtbmV3cyAudGFicyAudGFiLmljb24td2hpdGUtZGVybWF0b2xvZ3kuYWN0aXZlOmFmdGVye1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjojZGJhYmI4ICFpbXBvcnRhbnQ7XHJcbiAgICBjb2xvcjojZGJhYmI4O1xyXG4gICAgYm9yZGVyLWNvbG9yOiNkYmFiYjg7XHJcbn1cclxuXHJcbi5ob21lLW5ld3MgLm5ld3Mtc3dpcGVyIC5zd2lwZXItYm9yZGVye1xyXG4gICAgYmFja2dyb3VuZDogcmVwZWF0aW5nLWxpbmVhci1ncmFkaWVudCgtNDVkZWcsICNjMGRlYTUsI2MwZGVhNSA4cHgsICNhNmQwODAgOHB4LCAjYTZkMDgwIDE2cHgpO1xyXG59XHJcbi5ob21lLW5ld3MgLm5ld3Mtc3dpcGVyIC5idG4tcHJldixcclxuLmhvbWUtbmV3cyAubmV3cy1zd2lwZXIgLmJ0bi1uZXh0IHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6I2MwZGVhNTtcclxufSJdfQ== */
+    /*********P1-8-10.12**************/
+    .home-hot-specialists .icon-specialist .search-box{
+        width:120%;
+    }
+/****************************P17修改-10.09************************************************/
+.fenye>.pagination>li{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-right: 10px;
+    border: 1px solid #48ccc5;
+    padding-top: 1%;
+}
+.fenye>.pagination>li>a{
+    color: #676766;
+}
+.fenye>.pagination>li.active{
+    background: #48ccc5;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    margin-right: 10px;
+    border: 1px solid #48ccc5;
+}
+
+/**************************P36-修改-10.10*************************************************************************/
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.clearfix>.yishengtouxiang{
+    width:20%;
+    height: 74px;
+    margin-left: 3%;
+    float: left;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.clearfix>.yishengtouxiang+div{
+    padding-top: 4% !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.clearfix{
+    border-bottom:  0.5px dashed lightgray;
+}
+/*************P36-10.11******************************/
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.row3>.pt-4>.item-show-part3-2>.item-show-part3-2-rightcontent>div:not(:nth-child(3)){
+    float: left;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(3)>.further-search-category>.specialistselect>.specialistselect-intro{
+    margin:0 2% 2%;
+}

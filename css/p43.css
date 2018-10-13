@@ -12,12 +12,11 @@
 }
 
 .div-border {
-    margin-left: 4%;
     border-radius: 10px;
     background-color: #ffffff;
-    width: 98%;
     padding-bottom: 10px;
     position: relative;
+    margin-top:60px;
 }
 
 .bordercolor {
@@ -86,7 +85,6 @@
     border: 8px solid #c1dfa6;
     border-radius: 10px;
     background-color: white;
-    padding-bottom: 40px;
 }
 
 .left-part121 {
@@ -712,7 +710,7 @@
     color: #676766;
 }
 .specialist-center-swrapper{
-    width: 100%;padding: 10px 0; border: 8px solid #d8c1b0;background-color: white;border-radius: 10px;margin-top: -40px;margin-bottom: 15px;
+    width: 100%;padding: 10px 0; border: 8px solid #d8c1b0;background-color: white;border-radius: 10px;margin-bottom: 15px;
 }
 .doctor-building-swrapper>.justify-content-between>.home-search-box>.left>.left-part1>.left-part11>.details>.address{
     float: left;

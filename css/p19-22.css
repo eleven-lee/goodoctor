@@ -195,7 +195,7 @@ color: #679bca;
   width: 70%;
 }
 .big-div-right-width{
-  width:25%;font-size: 14px;
+  width:29%;font-size: 14px;
 }
 .huifu-div1{
     width: calc(100% + 30px);
@@ -366,24 +366,24 @@ color: #679bca;
   width:100%;
   padding: 10px 0;
 }
-.doctor-info .doctor-servers .colum1{
+.doctor-servers .colum1{
     width:30%;
 }
-.doctor-info .doctor-profile .colum1{
+.doctor-profile .colum1{
     width:25%;
 }
-.doctor-info .doctor-servers .colum2, .doctor-info .doctor-profile .colum2{
+.doctor-servers .colum2, .doctor-info .doctor-profile .colum2{
     display:flex;
     flex-wrap:wrap;
     flex:1;
 }
-.doctor-info .doctor-servers .colum2 .colum2-item{
+.doctor-servers .colum2 .colum2-item{
     width:46%;
     margin-right:8%;
     line-height: 18px;
     font-size:0;
 }
-.doctor-info .doctor-servers .colum2 .colum2-item:nth-child(2n){
+ .doctor-servers .colum2 .colum2-item:nth-child(2n){
     margin-right:0;
 }
 .colum2 .colum2-item .colum2-item-name{
@@ -631,8 +631,8 @@ color: #679bca;
 }
 
 .tab-pane-list .tab-pane-item:nth-child(odd) .left-arrow-bigbox::before{
-    border-color: transparent #fffcdc transparent transparent;
-}
+     border-color: transparent #fffcdc transparent transparent;
+ }
 .tab-pane-list .tab-pane-item:nth-child(even) .right{
     /*background: #EBFAFC;*/
 }
@@ -653,6 +653,10 @@ color: #679bca;
 }
 #appreciation .tab-pane-list .tab-pane-item:nth-child(4n+4) .right,
 #appreciation .tab-pane-list .tab-pane-item:nth-child(4) .right{
+    background: #EBFAFC url("../images/p19/thankyoublue@2x.png") no-repeat bottom 53px left;
+}
+#appreciation .tab-pane-list .tab-pane-item:nth-child(4n+5) .right,
+#appreciation .tab-pane-list .tab-pane-item:nth-child(4n+5) .right{
     background: #EBFAFC url("../images/p19/thankyoublue@2x.png") no-repeat bottom 53px left;
 }
 
@@ -722,4 +726,13 @@ color: #679bca;
     text-align: center;
     background:#e5696a;
     z-index: 999;
+}
+/**********P29-10.13****************/
+.tab-pane-list .tab-pane-item:nth-child(4n+1) .left-arrow-bigbox::before,
+.tab-pane-list .tab-pane-item:nth-child(4n+3) .left-arrow-bigbox::before{
+    border-color: transparent #fffcdc transparent transparent;
+}
+.tab-pane-list .tab-pane-item:nth-child(4n+2) .left-arrow-bigbox::before,
+.tab-pane-list .tab-pane-item:nth-child(4n+5) .left-arrow-bigbox::before{
+    border-color: transparent #EBFAFC transparent transparent;
 }

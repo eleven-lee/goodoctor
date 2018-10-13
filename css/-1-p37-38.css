@@ -7,12 +7,12 @@
     background-color: white;
 }
 .yishengtouxiang{
-    width:20%;
-    height: 90px;
-    /*border-bottom: 1px dashed gainsboro;*/
+    width: 94%;
+    height: 80px;
+    border-bottom: 1px dashed gainsboro;
     margin-left: 3%;
-    /*margin-top: 20px;*/
-    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
  }
  .border-theme-color-2px {
     border: 1px solid #48ccc5;
@@ -123,13 +123,4 @@ form {
 }
 textarea {
     display: block;
-}
-    .release-questions>.clearfix{
-        margin-top: 4%;
-        border-bottom: 1px dashed gainsboro;
-        width: 96%;
-        margin-left: 2%;
-    }
-.post-question>.home-top-bg-diagonal>.justify-content-between>.release-questions>.clearfix>.yishengtouxiang+div{
-    padding-top: 4% !important;
 }

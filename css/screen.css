@@ -217,7 +217,7 @@ a{
     width:calc(100% - 20px) !important;
 }
 
-.home-news .news-swiper .swiper-slide{
+.index-wrapper .home-news .news-swiper .swiper-slide{
     width:100% !important;
     padding:0 10%;
 }
@@ -368,7 +368,7 @@ a{
     width:100%;
     margin-bottom:20px;
 }
-.home-part4 .home-part4-baby, .home-part4 .home-part4-preg{
+.home-part4-baby, .home-part4-preg{
     width:80%;
     margin: 0 auto 20px;
 }
@@ -479,10 +479,10 @@ a{
 #home-bottom-third-container .home-disease-decoding .left div img{
     /*margin-left:0 !important;*/
 }
-.home-part4 .banner, .home-part4 .home-part4-baby{
+.home-part4-baby{
     background-size:100% 100%;
 }
-.home-part4 .home-part4-preg{
+.home-part4-preg{
     background-size:300% auto;
 }
 
@@ -602,11 +602,11 @@ a{
     margin-left:30px;
 }
 
-.doctor-info .doctor-servers .colum2 .colum2-item{
+.doctor-servers .colum2 .colum2-item{
     width:47%;
     margin-right:6%;
 }
-.doctor-detail-wrapper .doctor-servers .colum2-item .colum2-item-name{
+ .doctor-servers .colum2-item .colum2-item-name{
     width:calc(100% - 55px);
     font-size:1.4rem;
 }
@@ -644,7 +644,7 @@ a{
     padding:0;
     font-size:1.4rem;
 }
-.doctor-detail-wrapper .doctor-info .doctor-servers .colum2{
+ .doctor-servers .colum2{
     font-size:0;
 }
 .doctor-detail-wrapper .doctor-info .doctor-title-content{
@@ -655,12 +655,15 @@ a{
 .doctor-detail-wrapper .share-part .nav-tabs a .fa{
     display:none !important;
 }
-.doctor-info .doctor-servers{
+.doctor-servers{
     flex-wrap:wrap;
 }
 .doctor-detail-wrapper .doctor-info .d-flex .colum1,
 .doctor-servers .colum1{
     width:100%;
+}
+.doctor-servers .colum1 .p19-font-color{
+    font-size:1.4rem;
 }
 .doctor-info .fa-chevron-down,
 .btn-thumbs-up{
@@ -850,8 +853,9 @@ a{
 }
 .home-top-bg-diagonal{
     padding-top:0 !important;
+    /*overflow: hidden;*/
 }
-.home-top-bg-diagonal.bg-white{
+.home-top-bg-diagonal{
     background:#ffffff;
 }
 .doctor-detail-wrapper .home-top-bg-diagonal .part1 .title{
@@ -866,9 +870,6 @@ a{
 .home-news .news{
     padding:10px;
 }
-
-
-
 /***********************************  mobilescreen.css  **********************************************************/
 
 #search-districts-toggle{
@@ -939,7 +940,6 @@ a{
 .home-top-bg-diagonal>.container:nth-child(1) .up,.home-top-bg-diagonal>.container:nth-child(1) .search-wrapper-up{
     margin-left:-66%;
 }
-
 .home-top-bg-diagonal>.align-items-stretch{
     /*margin-top: 60px !important;*/
 }
@@ -951,6 +951,8 @@ a{
 .home-search-box>.search-box-bg-img{
     display: none;
 }
+.search-results .condition-select-left>.hot-medicine,
+.search-results .condition-select-left>.doctor-email,
 .search-wrapper{
     display: none;
 }
@@ -1164,14 +1166,18 @@ a{
 .fenye>.number:last-child{
     padding-top: 8px;
 }
+/********P17-10.12********************************/
+.search-wrapper+form>.condition-select .search-wrapper-center>.item-show-part3-1 .item1{
+    width: 100% !important;
+}
 /********************************P45-9.27**************************************************************************/
 .home-top-bg-diagonal>.container:nth-child(1)>.up{
     float: left;
     margin-bottom: 10%;
 }
-/*.home-top-bg-diagonal>.container>.bordercolor> span,.home-top-bg-diagonal>.container>.bordercolor> img{*/
-/*margin-top: 4%;*/
-/*}*/
+.part-baby-preg{
+    display:none;
+}
 .div-border{
     width: 100% !important;
     margin-left: 0 !important;
@@ -1190,14 +1196,25 @@ a{
     margin-left: 10px !important;
     margin-top: 10px !important;
 }
+
+.specialist-swrapper .home-search-box{
+    margin-top:0;
+}
+.specialist-center-wrapper-swiper .news-swiper .swiper-wrapper .swiper-slide:not(:first-child){
+    /*display:none !important;*/
+}
+.specialist-swrapper .content-right{
+    display:none;
+}
+
 .div-border,
-.home-top-bg-diagonal>.container>.justify-content-between>.right>.part3,
-.home-top-bg-diagonal>.container>.justify-content-between>.right>.part4,
-.home-top-bg-diagonal>.justify-content-between>.home-search-box>.left .specialist-center-swrapper,
-.home-top-bg-diagonal>.justify-content-between>.home-search-box>.left .left-part1,
-.home-top-bg-diagonal>.justify-content-between>.right>.part3,
-.home-top-bg-diagonal>.justify-content-between>.right>.part4,
-.home-top-bg-diagonal>.justify-content-between>.left-release-questions>.bg-white{
+.home-top-bg-diagonal .container>.justify-content-between>.right>.part3,
+.home-top-bg-diagonal .container>.justify-content-between>.right>.part4,
+.home-top-bg-diagonal .justify-content-between>.home-search-box>.left .specialist-center-swrapper,
+.home-top-bg-diagonal .justify-content-between>.home-search-box>.left .left-part1,
+.home-top-bg-diagonal .justify-content-between>.right>.part3,
+.home-top-bg-diagonal .justify-content-between>.right>.part4,
+.home-top-bg-diagonal .justify-content-between>.left-release-questions>.bg-white{
     border-width: 8px 0 !important;
     border-radius: 0 !important;
 }
@@ -1338,8 +1355,11 @@ form>.districts-select+.border-1px-solid-lightgray+.btn{
     display: none !important;
 }
 .specialist-center-wrapper-swiper-home-hot-specialists>.icon-specialist>.search-box{
-    margin-top: -18% !important;
-    margin-left: 2% !important;
+    width:100%;
+    margin-left:0;
+    padding:0 10px;
+    /*margin-top: -21% !important;*/
+    /*margin-left: 2% !important;*/
 }
 /***********box********/
 /*.specialist-center-wrapper-swiper-box{*/
@@ -1351,18 +1371,17 @@ form>.districts-select+.border-1px-solid-lightgray+.btn{
 /*}*/
 /****************/
 .specialist-center-wrapper-swiper-home-hot-specialists>.icon-general-medicine>.search-box{
-    margin-top: -52% !important;
+    /*margin-top: -52% !important;*/
 }
 .center-page{
     flex-wrap: wrap;
-    margin-top: -24%;
+    margin-top: 18%;
 }
 .center-page>div:nth-child(1){
     margin-top: 0 !important;
 }
 .center-page div{
     width: 100% !important;
-
 }
 .center-page>div:nth-child(2){
     position: relative;
@@ -1389,17 +1408,21 @@ form>.districts-select+.border-1px-solid-lightgray+.btn{
 .condition-select>.condition-select-right>.mt-4>.left{
     margin-left: 0 !important;
 }
+/**********10.12-科室切换box******************************/
+.specialist-swrapper .home-hot-specialists .icon-specialist .search-box{
+    margin-left: 0 !important;
+}
+
 /******************************P23-24-09.29**********************************************************************************/
 .home-top-bg-diagonal>.write-review-swrapper{
     text-align: left !important;
 }
-.home-top-bg-diagonal>.write-review-swrapper,
 .left-release-questions>.bg-white>.text-outline-p23-color{
     margin-left: 8% !important;
 }
 .left-release-questions{
     width: 100% !important;
-    margin-top: 8%;
+    margin-top: -2%;
 }
 .write-review-swrapper+.justify-content-between{
     margin-bottom: 10%;
@@ -1536,7 +1559,22 @@ form>.districts-select+.border-1px-solid-lightgray+.btn{
 .lunbo-div2>#demo1>.carousel-indicators{
     display: none !important;
 }
-
+/********P25-10.13医生详情的修改******************************/
+.divbackground>div:last-child>.right>.part-down>.part-down-up> .left,
+.divbackground>div:last-child>.right>.part-down>.part-down-down> .left{
+    margin-bottom: 4% !important;
+}
+.divbackground>div:last-child>.right>.part-down>.part-down-up> .left>img:nth-child(1){
+    right: 10% !important;
+}
+.divbackground>div:last-child>.right>.part-down>.part-down-up> .left>img:nth-child(1),
+.divbackground>div:last-child>.right>.part-down>.part-down-down> .left>img:nth-child(1){
+    right: 30% !important;
+}
+.divbackground>div:last-child>.right>.part-down>.part-down-up> .left:nth-child(2),
+.divbackground>div:last-child>.right>.part-down>.part-down-down> .left:nth-child(2){
+    margin-left: 0 !important;
+}
 /*************************P44-10.08******************************************************************************************/
 .doctor-group-swrapper>.justify-content-between>.right>div:first-child{
     margin-left: 0 !important;
@@ -1595,6 +1633,11 @@ form>.districts-select+.border-1px-solid-lightgray+.btn{
 .doctor-group-swrapper>.justify-content-between{
     margin-bottom: 10% !important;
 }
+/********10.12-rightmargin-top***************/
+    .doctor-group-swrapper>.justify-content-between>.right{
+        margin-top: 4% !important;
+    }
+
 /****************************P43-10.08*****************************************************************************/
 .left-part11>div{
     margin-left: 2% !important;
@@ -1662,6 +1705,12 @@ form>.districts-select+.border-1px-solid-lightgray+.btn{
 .doctor-building-swrapper>.justify-content-between>.right>.part4>.item1{
     margin: 20px 14px !important;
 }
+/************P43-10.12part3及右側隱藏隐藏****************************/
+.doctor-building-swrapper .right>div:not(:nth-child(1)),
+.doctor-building-swrapper .part3{
+    display: none !important;
+}
+
 /****************************P39-10.09*****************************************************************************/
 .huozuodiv,.huoyoudiv{
     width: 38% !important;
@@ -1694,7 +1743,9 @@ form>.districts-select+.border-1px-solid-lightgray+.btn{
 }
 /*****************P41-42-10.09*************************************************************************************/
 .members-only>.justify-content-between>div:nth-child(1){
-    left: 8% !important;
+    left: 6% !important;
+    margin-left: -8% !important;
+    margin-top: 6% !important;
 }
 .members-only>.justify-content-between>.box-border{
     border-width: 8px 0 !important;
@@ -1707,13 +1758,434 @@ form>.districts-select+.border-1px-solid-lightgray+.btn{
 .members-only>.justify-content-between>.box-border>.d-flex>.home-doctor-leaderboard-box{
     flex-wrap: wrap;
 }
-.members-only>.justify-content-between>.box-border>.d-flex>.home-doctor-leaderboard-box>div{
-    width: 100% !important;
-}
+/**************添加横向滚动条********************/
 .members-only>.justify-content-between>.box-border>.d-flex>.home-doctor-leaderboard-box>.tab-header1>li{
     display: inline-block;
+    white-space: nowrap;
+
+}
+.members-only>.justify-content-between>.box-border>.d-flex>.home-doctor-leaderboard-box>.tab-header1,
+.members-only>.justify-content-between>.box-border>.d-flex>.home-doctor-leaderboard-box>.tab-content-container{
+    width: 100% !important;
+}
+.members-only>.justify-content-between>.box-border>.d-flex>.home-doctor-leaderboard-box>.tab-header1{
+    display: inline;
+    white-space: nowrap;
+    overflow-x: scroll;
 }
 .members-only>.justify-content-between>.box-border>.d-flex>.home-doctor-leaderboard-box>.tab-header1>li>div>img{
     margin-left: 0 !important;
-    margin-right: ;
+    display: none !important;
 }
+.members-only>.justify-content-between>.box-border>.d-flex>.home-doctor-leaderboard-box .tabs .tab.active{
+    border-left: 0 !important;
+    border-top: 4px solid;
+}
+.members-only>.justify-content-between>.box-border>.d-flex>.home-doctor-leaderboard-box .tabs .tab.active:after{
+    top: 4% !important;
+    left: 50% !important;
+    transform:rotate(90deg);
+    border-color: #2CB7DF;
+}
+.members-only>.justify-content-between>.box-border>.d-flex>.home-doctor-leaderboard-box>.tab-content-container>.first-content>div:nth-child(2)>.table tr>td:nth-child(2),
+.members-only>.justify-content-between>.box-border>.d-flex>.home-doctor-leaderboard-box>.tab-content-container>.first-content>div:nth-child(2)>.table tr>td:nth-child(4){
+    display: none !important;
+}
+.members-only>.justify-content-between>.box-border>.d-flex>.home-doctor-leaderboard-box>.tab-content-container>.tab-content:nth-child(5)>div:nth-child(2)>div:nth-child(2){
+    width:24% !important;
+    height: 76px !important;
+}
+.members-only>.justify-content-between>.box-border>.d-flex>.home-doctor-leaderboard-box>.tab-content-container>.tab-content:nth-child(5)>div:nth-child(2)>div:nth-child(2)>button{
+    width: 100% !important;
+    margin-left: 0 !important;
+}
+.members-only>.justify-content-between>.box-border>.d-flex>.home-doctor-leaderboard-box>.tab-content-container>.tab-content:nth-child(5)>div:nth-child(2)>.left{
+    width: 70% !important;
+}
+.members-only>.justify-content-between>.box-border>.d-flex>.home-doctor-leaderboard-box>.tab-content-container>ul .icon-wrapper-20x20{
+    width: 2.1rem !important;
+    height: 2.1rem !important;
+}
+.members-only .home-doctor-leaderboard-box>.tab-content-container>.tab-content:nth-child(1)>div:nth-child(2)>.table>tbody>tr>td:last-child>div{
+    margin-left: 0 !important;
+}
+/****************************P37-38-10.10**************************************************************************/
+.post-question>.home-top-bg-diagonal>.justify-content-between>.release-questions{
+    padding: 4% 4% 4% 0 !important;
+    width: 100% !important;
+}
+.post-question>.home-top-bg-diagonal>.justify-content-between>.release-questions>h2{
+    top: -3% !important;
+    left: 8% !important;
+}
+.release-questions .yishengtouxiang{
+    /*width: 30% !important;*/
+    height: 40px !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.clearfix>.yishengtouxiang+div,
+.post-question>.home-top-bg-diagonal>.justify-content-between>.release-questions>.clearfix>.yishengtouxiang+div{
+    font-size: 14px !important;
+}
+.post-question>.home-top-bg-diagonal>.justify-content-between>.right>.home-popular-search-box{
+    display: none !important;
+}
+.post-question>.home-top-bg-diagonal>.justify-content-between>.right>.thanks{
+    margin-top: 10% !important;
+    height: auto !important;
+    margin-left: 0 !important;
+}
+.post-question>.container>.up{
+    float: left !important;
+    margin-left: 8%;
+}
+.post-question>.home-top-bg-diagonal{
+    padding-top: 0 !important;
+}
+.post-question>.home-top-bg-diagonal>.justify-content-between>.wenti{
+    border-width: 8px 0 !important;
+    border-radius: 0 !important;
+}
+/**********************P36-10.10***********************************************************************************/
+.doctor-mailbox-3>.justify-content-between{
+    flex-wrap: wrap;
+}
+.doctor-mailbox-3>.justify-content-between>div{
+    width: 100% !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-left,
+.doctor-mailbox-3>.justify-content-between>.flex-right,
+.doctor-mailbox-3>.justify-content-between>.flex-center>.part3{
+    display: none !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part{
+    border-width: 8px 0 !important;
+    border-radius: 0 !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center{
+    margin: 0 !important;
+}
+.doctor-mailbox-3>.container>.up{
+    margin-left: 8% !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>h3{
+    margin-left: 8% !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.clearfix>.yishengtouxiang{
+    height: 36px !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect .pl-4{
+    padding-left: 0 !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.ml-3>.up{
+    margin-right: 0 !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.ml-3,
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.ml-3>.row2>.down{
+    margin-left: 0 !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.row3>div:nth-child(1){
+    width: 28% !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.row3>.up-arrow-bigbox-orange>img:first-child{
+    width: 24% !important;
+    left: -1.2% !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.row3>.pt-4>.item-show-part3-2>.item-show-part3-2-rightcontent{
+    flex-wrap: wrap;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.row3>.pt-4>.item-show-part3-2>.item-show-part3-2-rightcontent>div{
+    width: 100% !important;
+}
+.doctor-mailbox-3 .remenwenti{
+    height: auto;
+    padding: 10px 0 !important;
+}
+.doctor-mailbox-3 .remenwenti img{
+    margin-left: 26% !important;
+}
+.doctor-mailbox-3 .further-search-category>.specialistselect>.specialistselect-intro>.mt-2>button>span>div,
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(10)>.mt-2>button>span>div{
+    margin-top: -20% !important;
+}
+.wenhaodiv{
+    width: 14% !important;
+    height: 10% !important;
+}
+.wenhao{
+    width: 5% !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(3)>.further-search-category>.specialistselect>.specialistselect-intro{
+    margin: 0 !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(3)>.further-search-category>.specialistselect>.specialistselect-intro>div:nth-child(1)+img{
+    width: 26% !important;
+}
+.doctor-mailbox-3 .further-search-category>.specialistselect>.specialistselect-intro span{
+    font-size: 1rem !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(3)>.further-search-category>.specialistselect>.specialistselect-intro>div:nth-child(3)>form>div{
+    width: 64% !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(3)>
+.further-search-category>.specialistselect>.specialistselect-intro>div:nth-child(3)>form>div>.input-group>div:first-child{
+    padding-top: 7% !important;
+}
+/**********P39內容距離修改**********************/
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect{
+    margin-left: 10px !important;
+}
+.doctor-mailbox-3>.justify-content-between{
+    margin-top: 14%;
+}
+/*********************P35-10.11*************************************************************************************/
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(13)>.mt-2>button>span>div{
+    margin-top: -20% !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.color-gray{
+    flex-wrap: wrap;
+    height: 0 !important;
+    padding: 8% 6px 20% 6px !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.color-gray>div:nth-child(1){
+    width: 100% !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.color-gray>div:not(:nth-child(1)){
+    width: 30% !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.box-shadow-4side-5px{
+    padding: 10px 4% !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.color-gray+div>div:last-child{
+    flex-wrap: wrap;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.color-gray+div>div:last-child>div{
+    width: 100% !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>.color-gray+div>img:first-child{
+    width: 20% !important;
+    height: 20% !important;
+}
+/****************P34-10.11*****************************************************************************************/
+.doctor-mailbox-3>.justify-content-between>.flex-center>.lunbo-div>.yishengpaihangbang{
+    left: 8% !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.lunbo-div{
+    margin-top: 2% !important;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(4),
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(5),
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(6),
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(7){
+    flex-wrap: wrap;
+}
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(4)>div:nth-child(2),
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(5)>div:nth-child(2),
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(6)>div:nth-child(2),
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(7)>div:nth-child(2),
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(4)>div:last-child,
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(5)>div:last-child,
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(6)>div:last-child,
+.doctor-mailbox-3>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(7)>div:last-child{
+    width: 100% !important;
+}
+.doctor-mailbox-1 .wenhaodiv{
+    height: 20% !important;
+}
+/*****************P32-10.12****************************************************************************************/
+.doctor-ranking>.justify-content-between>.flex-left,
+.doctor-ranking>.justify-content-between>.flex-right,
+.doctor-ranking>.justify-content-between>.flex-center>.part3{
+    display: none !important;
+}
+.doctor-ranking>.justify-content-between{
+    flex-wrap: wrap;
+}
+.doctor-ranking>.justify-content-between>.flex-center,
+.doctor-ranking>.justify-content-between>.flex-right{
+    width: 100% !important;
+}
+.doctor-ranking>.container:nth-child(1)>.up{
+    margin-left: 8% !important;
+}
+.doctor-ranking>.justify-content-between>.flex-center{
+    margin: 30px 0 !important;
+}
+.doctor-ranking>.justify-content-between>.flex-center>.share-part{
+    border-width: 8px 0 !important;
+    border-radius: 0 !important;
+}
+.doctor-ranking>.justify-content-between>.flex-center>.lunbo-div>.yishengpaihangbang{
+    margin-left: 8% !important;
+}
+.doctor-ranking>.justify-content-between>.flex-center>.share-part>.specialistselect>.fourdiv>div{
+    width: 100% !important;
+}
+/************医生详细信息模块********************/
+.doctor-ranking>.justify-content-between>.flex-center>.share-part>.specialistselect>.sixdiv>div>.p32-div-div1,
+.doctor-ranking>.justify-content-between>.flex-center>.share-part>.specialistselect>.sixdiv>div>.p32-div-div1-bottom,
+.doctor-ranking>.justify-content-between>.flex-center>.share-part>.specialistselect>.sixdiv>div{
+    width:100% !important;
+}
+.doctor-ranking>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(1)>span:last-child{
+    display: none !important;
+}
+.doctor-ranking>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(2)>.further-search-category>.specialistselect>.specialistselect-intro{
+    margin-top: 0 !important;
+    flex-wrap: wrap;
+    padding: 8% 0 !important;
+}
+.doctor-ranking>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(2)>.further-search-category>.specialistselect>.specialistselect-intro>img{
+    width: 24% !important;
+}
+.doctor-ranking>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(2)>.further-search-category>.specialistselect>.specialistselect-intro span{
+    font-size: 16px !important;
+}
+.doctor-ranking>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(2)>.further-search-category>.specialistselect>.specialistselect-intro>div{
+    width: 100% !important;
+}
+.doctor-ranking>.justify-content-between>.flex-center>.share-part>.specialistselect>div:nth-child(2)>.further-search-category>.specialistselect>.specialistselect-intro>div:last-child{
+    margin-left: -5.6% !important;
+    margin-top: 2% !important;
+}
+/*.doctor-ranking>.justify-content-between>.flex-center>.share-part>.specialistselect{*/
+/*margin-left: 10% !important;*/
+/*}*/
+/************P32-10.13輪播和上邊的距離****************************/
+.doctor-ranking>.justify-content-between>.flex-center>.lunbo-div{
+    margin-top: 0 !important;
+}
+/****************P26-10.12******************************************************************************************/
+.feature-article>.justify-content-between{
+    flex-wrap: wrap;
+}
+.feature-article>.justify-content-between>.flex-left,
+.feature-article>.justify-content-between>.flex-center,
+.feature-article>.justify-content-between>.flex-right{
+    width: 100% !important;
+}
+.feature-article>.justify-content-between>.flex-center>.lunbo-div,
+.feature-article>.justify-content-between>.flex-center>.part3,
+.feature-article>.justify-content-between>.flex-right{
+    display: none !important;
+}
+.feature-article>.container>.up{
+    margin-left: 8% !important;
+}
+.feature-article>.justify-content-between>.flex-left>.flex-wrap{
+    display: inline !important;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.feature-article>.justify-content-between>.flex-left>.box>.left_tab{
+    display: inline-block;
+    white-space: nowrap;
+}
+.feature-article>.justify-content-between>.flex-left{
+    margin-top: -6% !important;
+}
+.feature-article>.justify-content-between>.flex-center{
+    margin: 0 !important;
+}
+.feature-article>.justify-content-between>.flex-center>.share-part{
+    border-width: 8px 0 !important;
+    border-radius: 0 !important;
+    margin-top: 2% !important;
+}
+.feature-article>.justify-content-between>.flex-left>.box>.left_tab:after{
+    top: 96% !important;
+    right: 50%;
+    transform:rotate(90deg);
+}
+.feature-article>.justify-content-between>.flex-center>.share-part>.specialistselect{
+    margin-left: 2.6% !important;
+}
+.feature-article>.justify-content-between>.flex-center>.share-part>.specialistselect>.specialistselect-intro{
+    margin: 0 !important;
+}
+.feature-article>.justify-content-between>.flex-center>.share-part>.specialistselect>.mb-1{
+    margin-top: 2% !important;
+    margin-left: 0 !important;
+}
+.feature-article>.justify-content-between>.flex-center>.share-part>.specialistselect>.tab-item>div:first-child{
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    padding-bottom: 14% !important;
+    height: auto;
+}
+.feature-article>.justify-content-between>.flex-center>.share-part>.specialistselect>.tab-item>div:first-child>div:last-child>div:last-child{
+    margin-left: 0 !important;
+    margin-top: 2% !important;
+}
+.feature-article>.justify-content-between>.flex-center>.share-part>.specialistselect>.tab-item>.clearfix>div,
+.feature-article .select_li button{
+    width: 100% !important;
+}
+.feature-article>.justify-content-between>.flex-center>.share-part>.specialistselect>.tab-item>div:nth-child(2){
+    margin-top: 10px !important;
+}
+.feature-article>.justify-content-between>.flex-center>.share-part>.specialistselect>.tab-item>div:nth-child(2)>img{
+    margin-left: 0 !important;
+}
+.feature-article>.justify-content-between>.flex-center>.share-part>.specialistselect>.tab-item>.clearfix>div:last-child{
+    margin-top: 6% !important;
+    margin-left: 0 !important;
+}
+.feature-article>.justify-content-between>.flex-center>.share-part>.specialistselect>.tab-item:last-child>div:first-child{
+    padding-bottom:20% !important;
+}
+.feature-article>.justify-content-between>.flex-center>.share-part>.specialistselect>.tab-item:last-child>div:first-child>div:last-child{
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+}
+/***********************P29-10.13*************************************************************************************/
+    .titi-praise>.justify-content-between>div:first-child,
+    .titi-praise>.justify-content-between>.home-search-box>.part3,
+    .titi-praise>.justify-content-between>.right{
+        display: none !important;
+    }
+.titi-praise>.container:first-child>.p29-lunbo-border img:nth-child(1){
+    width: 100% !important;
+}
+.titi-praise>.container:first-child>.p29-lunbo-border{
+    margin-top: 10%;
+}
+.p29-lunbo-border>span:first-child{
+    left: 6% !important;
+}
+.p29-lunbo-border>.lunbo-title-img{
+    left: 40% !important;
+}
+.titi-praise .share-part .nav-tabs{
+    height: 40px;
+    line-height: 38px;
+}
+.titi-praise .share-part #myTabContent>.tab-pane>.row1{
+    flex-wrap: wrap;
+}
+.titi-praise .share-part #myTabContent>.tab-pane>.row1>div{
+    width: 100% !important;
+    text-align: left !important;
+}
+.titi-praise .share-part #myTabContent>.tab-pane>.row1>.dropdown{
+    width: 50% !important;
+    margin-top: 2% !important;
+    margin-left: 0 !important;
+}
+.titi-praise .share-part #myTabContent>.tab-pane>.row1>div:last-child{
+    margin-top: 6% !important;
+}
+.titi-praise .share-part #myTabContent>.tab-pane>.row1>div:last-child>.input-group{
+    margin-left: 0 !important;
+}
+.titi-praise .share-part{
+    border-width: 8px 0 !important;
+    border-radius: 0 !important;
+}
+.titi-praise .share-part #myTabContent>.tab-pane>.tab-pane-list>.item-show-part3{
+    margin-bottom: 4% !important;
+}
+.advanced-search .justify-content-between .home-search-box{
+    margin-top: 0 !important;
+}
+
+

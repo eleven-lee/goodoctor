@@ -42,7 +42,11 @@
     <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"-->
           <!--integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">-->
     <!--<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">-->
-    <link rel="stylesheet" href="./css/mobilescreen.css" media="screen and (max-width:768px) ">
+
+    <link rel="stylesheet" href="./index_files/font-awesome.css">
+    <!--移动端css引入-->
+    <link rel="stylesheet" href="./css/screen.css" media="screen and (max-width:768px)">
+
 </head>
 <body class="" id="page-default">
 
@@ -123,7 +127,6 @@
                 </div>
             </div>
         </div>
-
         <div id="body">
             <div class="share" style="background: white; width: 40px;position: absolute; right: 0px; top: 200px; position: fixed; text-align: center; border-top-left-radius: 16px; border-bottom-left-radius: 16px;">
                 <a href="">
@@ -146,11 +149,14 @@
                     </div>
                 </a>
             </div>
-            <div class="home-top-bg-diagonal" style="border-bottom: none; padding-top: 10px;font-family: liheipro;">
-                <div class="container" style="font-size:15px;color: #676766;margin-bottom: -50px; text-align: right ">
-                    <img src="./images/icon/grey_home_icon.png" alt style="width: 10px;height: 12px;margin-top:-5px;">
-                    <span class="all">></span>
-                    <span class="up-last" style="color: #48ccc5;">進階搜尋</span>
+            <div class="home-top-bg-diagonal advanced-search" style="border-bottom: none; padding-top: 10px;font-family: liheipro;">
+                <div class="container">
+                    <!---------------- 头部导航 -------------------->
+                    <div class="container-nav">
+                        <i class="fa fa-home fa-lg"></i>
+                        <i class="fa fa-angle-right"></i><span class="nav-up-name">進階搜尋</span>
+                        <i class="fa fa-angle-right"></i><span class="up-last" >醫生集中地</span>
+                    </div>
                 </div>
                 <div class="container pt-4 d-flex align-items-stretch">
                     <div class="container d-flex justify-content-between main-both">

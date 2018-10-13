@@ -33,6 +33,11 @@
     <!--<link rel="stylesheet" href="./index_files/bootstrap.css">-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./index_files/font-awesome.css">
+    <!--移动端css引入-->
+    <link rel="stylesheet" href="./css/screen.css" media="screen and (max-width:768px)">
+
 </head>
 <body class="" id="page-default">
     <div id="body-container">
@@ -44,17 +49,12 @@
                             <img src="images/icon/login_icon.png" alt="">
                             <span class="align-top">登入/註冊</span>
                         </a>
-                        <a href="http://goodoctor.html5.company/#" class="edit_icon">
+                        <a href="./p36register.html">
                             <img src="images/icon/edit_icon.png" alt="">
                             <span class="align-top">撰寫醫評</span>
                         </a>
                     </div>
-
-                    <div class="test"></div>
-                    <a class="logo" href="http://goodoctor.html5.company/#">
-                        <!-- <img src="images/logo.png" alt="" style="margin-top: 10px; margin-left: 30px;"> -->
-                    </a>
-
+                    <a class="logo" href="http://goodoctor.html5.company/#"></a>
                     <div class="header-menu">
                         <div class="mb-2">
                             <span class="text-theme-color font-weight-bold">GOODOCTOR</span> 綜合各科醫生資料，為大眾提供求醫經驗及醫評
@@ -62,60 +62,69 @@
                         <ul class="inline-list d-flex justify-content-around">
                             <li>
                                 <a href="./index.html">
-                                    <img src="images/header/home_icon.png" alt="" style="margin-bottom: 2px;">
-                                    <br> 首頁
+                                    <img src="images/header/home_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                    首頁
                                 </a>
                             </li>
                             <li>
                                 <a href="./search.html">
-                                    <img src="images/header/search_icon.png" alt="" style="margin-bottom: 2px;">
-                                    <br> 進階搜尋
+                                    <img src="images/header/search_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                    進階搜尋
                                 </a>
                             </li>
                             <li>
                                 <a href="./index.p23artical-index.html">
-                                    <img src="images/header/feature_articles_icon.png" alt="" style="margin-bottom: 2px;">
-                                    <br> 專題文章
+                                    <img src="images/header/feature_articles_icon.png" alt=""
+                                         style="margin-bottom: 2px;"><br>
+                                    專題文章
                                 </a>
                             </li>
                             <li>
                                 <a href="./index.p31.html">
-                                    <img src="images/header/read_good_reviews_icon.png" alt="" style="margin-bottom: 2px;">
-                                    <br> 睇睇好評
+                                    <img src="images/header/read_good_reviews_icon.png" alt=""
+                                         style="margin-bottom: 2px;"><br>
+                                    睇睇好評
                                 </a>
                             </li>
                             <li>
                                 <a href="./index.p32.html">
-                                    <img src="images/header/doctor_leaderboard_icon.png" alt="" style="margin-bottom: 2px;">
-                                    <br> 醫生排行榜
+                                    <img src="images/header/doctor_leaderboard_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                    醫生排行榜
                                 </a>
                             </li>
                             <li>
                                 <a href="./index.p35.html">
-                                    <img src="images/header/doctor_mailbox_icon.png" alt="" style="margin-bottom: 2px;">
-                                    <br> 醫生信箱
+                                    <img src="images/header/doctor_mailbox_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                    醫生信箱
                                 </a>
                             </li>
                             <li>
                                 <a href="http://goodoctor.html5.company/#">
-                                    <img src="images/header/patient_voice_icon.png" alt="" style="margin-bottom: 2px;">
-                                    <br> 病人心聲
+                                    <img src="images/header/patient_voice_icon.png" alt="" style="margin-bottom: 2px;"><br>
+                                    病人心聲
                                 </a>
                             </li>
-
                         </ul>
+                    </div>
+                    <div class="header-search" style="display:none;">
+                        <div class="search">
+                            <div class="search-content">
+                                <input class="search-input" type="search" autofocus  placeholder="輸入關鍵字..." />
+                                <i class="fa fa-search"></i>
+                            </div>
+                        </div>
+                        <i class="fa fa-list fa-2x" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
             <div id="body">
-                <div class="home-top-bg-diagonal pb-5" style="padding-top: 50px; border-bottom: none;font-family: liheipro;">
+                <div class="home-top-bg-diagonal pb-5 doctor-ranking" style="padding-top: 50px; border-bottom: none;font-family: liheipro;">
                     <div class="container">
-                        <div class="up">
-                            <img src="./images/icon/grey_home_icon.png" alt style="width: 10px;height: 12px">
-                            <span class="all">&nbsp;>&nbsp;</span>
-                            <span>進階搜尋</span>
-                            <span class="all">&nbsp;>&nbsp;</span>
-                            <span class="up-last">醫生集中地</span>
+                        <!---------------- 头部导航 -------------------->
+                        <div class="container-nav">
+                            <i class="fa fa-home fa-lg"></i>
+                            <i class="fa fa-angle-right"></i><span class="nav-up-name">進階搜尋</span>
+                            <i class="fa fa-angle-right"></i><span class="up-last" >醫生集中地</span>
                         </div>
                     </div>
                     <div class="container d-flex justify-content-between">
@@ -273,22 +282,22 @@
                                 </div>
                             </div>
                             <div class="share-part align-items-stretch" style="width: 100%;background: white;margin-top: 30px; border: 8px solid #48ccc5; border-radius: 8px; float: left;margin-bottom: 20px;">
-                                <div class="specialistselect bg-white brder-radius-8px padding-10px " style="position: relative; width: 95%;margin-left: 15px;margin-top: 10px;">
-                                    <div style="width: 90%;height: 90px;border-bottom: 1px dashed gainsboro;">
+                                <div class="specialistselect bg-white brder-radius-8px padding-10px " style="position: relative; width: 95%;margin-left: 2%;margin-top: 10px;">
+                                    <div style="width: 98%;border-bottom: 1px dashed gainsboro;padding: 10px 0;">
                                         <img src="./images/index-image/824794626907865143.png" alt style="width: 40px;height: 30px;">
-                                        <span style="font-size: 25px;margin-left: 10px;">心臟科醫生排行榜</span>
+                                        <span style="font-size: 25px;margin-left: 10px;">綜合醫生排行榜</span>
                                         <br>
                                         <span style="font-size: 15px;color: #c8c7c7;margin-left: 55px;">醫生排行榜是根據好評，人氣，瀏覽量及時間性作出調整。</span>
                                     </div>
                                     <div style="margin-top: 20px;">
                                         <div class="further-search-category box-border border-radius bg-white">
                                             <div class="specialistselect box-shadow-4side-5px bg-color-white brder-radius-8px padding-10px " style="position: relative;">
-                                                <div class="specialistselect-intro margin-30px" style="height: 70px;">
+                                                <div class="specialistselect-intro margin-30px" style="padding:0;">
                                                     <div style="margin-top: -20px;margin-left: -15px;">
                                                         <span class="fa fa-caret-right" style="color: #48ccc5;"></span>
                                                         <span class="color-black font-size-12em" style="font-size: 20px;">快速搜尋</span>
                                                     </div>
-                                                    <img src="./images/search_box_top_right_bg.png" alt="" style="position: absolute; right: 0px; top: 0px; width: 120px;">
+                                                    <img src="./images/search_box_top_right_bg.png" alt="" style="position: absolute; right: 0px; top: 0px; width: 20%;">
                                                     <div class="w-100 mt-20px height-40px" style="margin-left: -15px;">
                                                         <form action="" method="post">
                                                             <div class="dropdown" style="float: left;">
@@ -984,7 +993,6 @@
                                         <div style="font-size: 0.8em; color: gray;">
                                             大部份懷孕中的婦女都會透過均衡飲食或服用營養 補充品,支持身體有足夠的營養為胎兒健全發展做 好營養準備。
                                         </div>
-
                                     </div>
                                     <div style="text-align: center;  margin-top: 80px;color:#676766;">
                                         <span style="margin-bottom: 5px;">了解更多</span>
@@ -994,33 +1002,23 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                                 <div class="part3-preg" style="width: 49%; height: 360px;
                         background: white url(./images/p19/preg.png) no-repeat center;   border: 5px solid #e5bdd4;
                         border-radius: 8px; float: left;
                        ">
-
-
                                     <div style="text-align: center; border-top: 1px solid #e5bdd4;
                                             border-bottom: 2px solid #e5bdd4;  color: #e5696a;
                                            width: 100px; margin: 20px auto;">婦科專區 </div>
-
                                     <div style="padding:0px 30px;">
-
                                         <div style="font-size: 1.2em;color: gray;">
                                             嬰兒
                                             <br>爬行學行問題?</div>
-
                                         <div style="width: 80px; height:2px; border-top: 2px solid #e5bdd4;
                                         margin-top: 20px; margin-bottom: 20px;"></div>
-
                                         <div style="font-size: 0.8em; color: gray;">
                                             大部份懷孕中的婦女都會透過均衡飲食或服用營養 補充品,支持身體有足夠的營養為胎兒健全發展做 好營養準備。
                                         </div>
-
                                     </div>
-
                                     <div style="text-align: center;  margin-top: 80px;color:#676766;">
                                         <span style="margin-bottom: 5px;">了解更多</span>
                                         <!-- <div><img  style="width: 7em; margin-top: -20px; " src="" alt=""></div> -->
@@ -1029,8 +1027,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
                         <!-- 右侧内容展示 -->
@@ -1412,13 +1408,13 @@
                     </div>
                 </div>
             </div>
-
             <div id="footer">
                 <div class="top">
                     <!---->
                     <div class="container pt-4">
                         <!---->
-                        <div class="bg-theme-color text-white rounded-top d-flex cursor-pointer" id="footer-back-to-top">
+                        <div class="bg-theme-color text-white rounded-top d-flex cursor-pointer"
+                             id="footer-back-to-top">
                             <span class="icon icon-white-arrow-top d-inline-flex mr-2"></span>
                             置頂
                         </div>
@@ -1429,8 +1425,7 @@
                                 <div class="icon icon-footer-opinion flex-shrink-0"></div>
                                 <div class="flex-shrink-1  pl-3">
                                     <div class="text-blue-1">
-                                        謝謝你使用
-                                        <span class="font-weight-bold">GOODOCTOR</span>
+                                        謝謝你使用 <span class="font-weight-bold">GOODOCTOR</span>
                                     </div>
                                     <div class="font-size-em-09">
                                         如對GooDoctor網站有任何意見或查詢，歡迎電郵至info@goodoctor.com.hk，你的意見可幫助我們提升網站的質素。
@@ -1442,8 +1437,7 @@
                                 <div>
                                     <div class="text-blue-1">醫評大募集!!</div>
                                     <div class="font-size-em-09">
-                                        給好醫生一個好評讓大家都找到他/她，
-                                        <br>快來尋「醫」得「說」。
+                                        給好醫生一個好評讓大家都找到他/她，<br>快來尋「醫」得「說」。
                                     </div>
                                 </div>
                             </div>
@@ -1451,22 +1445,28 @@
                             <div class="pl-3 d-flex align-items-center">
                                 <a href="http://goodoctor.html5.company/#">
                                     <div class="icon icon-footer-write-review"></div>
-                                    <div class="text-center w-100 p-2">撰寫醫評</div>
+                                    <div class="text-center w-100 p-2"
+                                         style="color: black;font-weight: bold;font-size: 15px;">撰寫醫評
+                                    </div>
                                 </a>
                             </div>
                             <!---->
                         </div>
                     </div>
                     <!---->
-                    <div class="container d-flex justify-content-between py-3">
+                    <div class="container d-flex justify-content-between py-3 copyright-info">
                         <div class="font-size-em-09">
                             GooDoctor.com.hk會員所發表的全部內容均屬個人意見，並不代表GooDoctor.com.hk之言論及立場。
-                            <br> 如從而引起任何損失或法律糾紛，GooDoctor.com.hk概不負責。
+                            <br>
+                            如從而引起任何損失或法律糾紛，GooDoctor.com.hk概不負責。
                         </div>
-                        <div>
-                            <a href="http://goodoctor.html5.company/" class="icon icon-footer-fb d-inline-block opacity-5"></a>
-                            <a href="http://goodoctor.html5.company/" class="icon icon-footer-twitter d-inline-block ml-3 opacity-5"></a>
-                            <a href="http://goodoctor.html5.company/" class="icon icon-footer-youtube d-inline-block ml-3 opacity-5"></a>
+                        <div class="footer-share">
+                            <a href="http://goodoctor.html5.company/"
+                               class="icon icon-footer-fb d-inline-block opacity-5"></a>
+                            <a href="http://goodoctor.html5.company/"
+                               class="icon icon-footer-twitter d-inline-block ml-3 opacity-5"></a>
+                            <a href="http://goodoctor.html5.company/"
+                               class="icon icon-footer-youtube d-inline-block ml-3 opacity-5"></a>
                         </div>
                     </div>
                     <!---->
@@ -1476,27 +1476,13 @@
                     <div class="container py-2 d-flex justify-content-between">
                         <!---->
                         <ul class="inline-list">
-                            <li>
-                                <a href="http://goodoctor.html5.company/#">關於我們</a>
-                            </li>
-                            <li>
-                                <a href="http://goodoctor.html5.company/#">使用條款</a>
-                            </li>
-                            <li>
-                                <a href="http://goodoctor.html5.company/#">免責聲明</a>
-                            </li>
-                            <li>
-                                <a href="http://goodoctor.html5.company/#">私隱政策</a>
-                            </li>
-                            <li>
-                                <a href="http://goodoctor.html5.company/#">醫評大募集</a>
-                            </li>
-                            <li>
-                                <a href="http://goodoctor.html5.company/#">網站地圖</a>
-                            </li>
-                            <li>
-                                <a href="http://goodoctor.html5.company/#">聯絡我們</a>
-                            </li>
+                            <li><a href="http://goodoctor.html5.company/#">關於我們</a></li>
+                            <li><a href="http://goodoctor.html5.company/#">使用條款</a></li>
+                            <li><a href="http://goodoctor.html5.company/#">免責聲明</a></li>
+                            <li><a href="http://goodoctor.html5.company/#">私隱政策</a></li>
+                            <li><a href="http://goodoctor.html5.company/#">醫評大募集</a></li>
+                            <li><a href="http://goodoctor.html5.company/#">網站地圖</a></li>
+                            <li><a href="http://goodoctor.html5.company/#">聯絡我們</a></li>
                         </ul>
                         <!---->
                         <div>
@@ -1515,8 +1501,7 @@
         </div>
     </div>
             <!-- SVG Resources -->
-            <div style="border: 0; clip: rect(0px 0px 0px 0px); height: 0; overflow: hidden; padding: 0; position: absolute; width: 0;">
-            </div>
+            <div style="border: 0; clip: rect(0px 0px 0px 0px); height: 0; overflow: hidden; padding: 0; position: absolute; width: 0;"> </div>
             <script src="./index_files/main.js"></script>
 </body>
 
