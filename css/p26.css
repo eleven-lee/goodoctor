@@ -323,7 +323,8 @@
     -moz-appearance: none;
     border:grey;
     outline: none;
-
+    color:grey;
+    line-height: 2;
 }
 .pt-1 .practice-list::-ms-expand{
     display:none;
