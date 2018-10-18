@@ -30,8 +30,8 @@
     <link rel="stylesheet" href="./css/p16.css">
     <link rel="stylesheet" href="./css/p1-8.css">
     <link rel="stylesheet" href="./css/p18.css">
+    <link rel="stylesheet" href="./index_files/font-awesome.css">
     <link rel="stylesheet" href="./css/home.css">
-
     <link rel="stylesheet" href="./index_files/head.css">
     <!--<script src="./index_files/header.js"></script>-->
 
@@ -41,9 +41,9 @@
     <!--<script src="./index_files/frontend.js"></script>-->
 
     <!--<link rel="stylesheet" href="./index_files/bootstrap.css">-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"-->
+        <!--crossorigin="anonymous">-->
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">-->
     <!-- 地图 -->
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=tPwHnSuAdU1abrdhyREBMfTMv7Ggmhpy"></script>
 </head>
@@ -1540,13 +1540,13 @@
                                                             <img src="./images/index-image/vertical-bar@3x.png" alt style="height: 20px;margin-top: -5px;">
                                                         </div>
                                                         <div class="input py-0" style="float: left;">
-                                                            <label class="cursor-pointer icon-checkbox mb-0" for="search_is_doctor" style="width:50px;">
+                                                            <label class="cursor-pointer icon-checkbox mb-0" for="search_is_doctor">
                                                                 <input type="checkbox" id="search_is_doctor" name="search_is_doctor" class="d-none">
                                                                 <span class="d-block icon icon-w-bg icon-border-doctor"></span>
                                                                 <span class="icon icon-tick icon-circle" ></span>
                                                                 <span class="d-block text-center input-name">醫生</span>
                                                             </label>
-                                                            <label class="mb-0 ml-2 cursor-pointer icon-checkbox" for="search_is_specialist_center">
+                                                            <label class="mb-0 cursor-pointer icon-checkbox" for="search_is_specialist_center">
                                                                 <input type="checkbox" id="search_is_specialist_center" name="search_is_specialist_center" class="d-none">
                                                                 <span class="d-block icon icon-w-bg icon-border-specialist-center" style="display:inline-block"></span>
                                                                 <span class="icon icon-tick icon-circle" ></span>
@@ -1587,15 +1587,16 @@
                                                     <!-- 右边具体内容呈现 -->
                                                     <div class="condition-select-right align-items-end" style="width:38%; background: transparent;font-size: 12px;font-family: liheipro;margin-left: 2%;">
                                                         <!-- 展示提示 -->
-                                                        <div class="item-show-part2" style="margin-top: 15px;font-size: 12px;">
-                                                            有關
-                                                            <span class="box-shadow-4side-2px color-name-blue">濕疹 </span> 的推荐医生共36位，正展示第 1 - 8 位醫生
+                                                        <div class="item-show-part2 color-gray"
+                                                             style="margin-top: 15px;margin-bottom: 20px;"> 有關
+                                                            <span class="box-shadow-4side-2px color-name-blue" style="padding:2px 5px;">濕疹</span>
+                                                            的推荐医生共 <em class="num-family">36</em> 位，正顯示第 <em class="num-family">1 - 8</em> 位醫生
                                                         </div>
                                                         <!-- -->
                                                         <!-- -->
                                                         <!-- -->
-                                                        <div class="box-shadow-4side-5px doctor-item clearfix">
-                                                            <div style="width: 10%;float: left;margin-left: 5px;margin-top: 20px;">
+                                                        <div class="box-shadow-4side-5px doctor-item pb-2 clearfix">
+                                                            <div style="width: 10%;float: left;margin-left: 5px;margin-top: 10px;">
                                                                 <div class="item-show-part3-2-leftimg  width-80px height-80px  margin-5px brder-radius-100 " style=" background: #f4f4f4 url(./images/icon/doctor-male-icon.png) center no-repeat; background-size: 20px 20px; width: 30px;height:30px;">
                                                                 </div>
                                                                 <a href="">
@@ -1604,7 +1605,7 @@
                                                                     </div>
                                                                 </a>
                                                             </div>
-                                                            <div style="width: 60%;float: left;margin-top: 10px;margin-left:15px;">
+                                                            <div style="width: 60%;float: left;margin-top: 10px;margin-left:15px; line-height: 2;">
                                                                 <div>
                                                                     <span class="color-name-blue font-size-12em" style="font-size: 12px;">何麗容 Ho Lai Yung, Connia</span>
                                                                 </div>
@@ -1629,71 +1630,71 @@
                                                                         style="width: 10px;height: 10px;">
                                                                 </span>
                                                                 <a href="">
-                                                                    <div class="share bg-theme-color brder-radius-5px color-white d-inline-block" style="width: 50px; height: 18px;vertical-align: middle;">
+                                                                    <div class="share bg-theme-color brder-radius-5px color-white d-inline-block" style="width: 50px; height: 18px;line-height:18px;vertical-align: middle;">
                                                                         <span>
-                                                                            <img src="./images/p16/p16share@2x.png" alt="" style="width: 10px;margin-left: 5px;">
+                                                                            <img src="./images/p16/p16share@2x.png" alt="" style="width: 10px;margin-left: 5px;margin-top:-5px;">
                                                                         </span>
-                                                                        <span style="font-size: 10px;">分享</span>
+                                                                        <span style="font-size: 10px;vertical-align: middle;">分享</span>
                                                                     </div>
                                                                 </a>
                                                                 <div style="font-size: 10px;">
                                                                     <span>
                                                                         <img src="./images/p16/p16heart-listen@2x.png" alt=""
-                                                                            style="width: 15px;">
+                                                                            style="width: 14px;">
                                                                     </span>
-                                                                    <span class="border-right">皮膚及性病科&nbsp;&nbsp;</span>
+                                                                    <span>皮膚及性病科&nbsp;&nbsp;</span>
                                                                     <span class="border-right">&nbsp;男&nbsp;</span>
                                                                     <span>&nbsp;&nbsp;將軍澳</span>
                                                                 </div>
                                                                 <div style="font-size: 10px;margin-top:3px;">
                                                                     <span>
-                                                                        <img src="./images/p16/p16location@2x.png" alt="" style="width: 10px;height: 10px;">
+                                                                        <img src="./images/p16/p16location@2x.png" alt="" style="width: 14px;height: 14px;vertical-align: middle;">
                                                                     </span>
                                                                     <span class="color-name-blue">尖沙咀堪富利士道8號格蘭中心9樓903室</span>
                                                                 </div>
                                                                 <div style="font-size: 10px;">
                                                                     <span>
-                                                                        <img src="./images/icon/phone.png" alt="" style="width: 10px;height: 10px;">
+                                                                        <img src="./images/icon/phone.png" alt="" style="width: 14px;height: 14px;">
                                                                     </span>
-                                                                    <span class="border-right">2417 3883&nbsp;</span>
+                                                                    <span class="border-right num-family">2417 3883&nbsp;</span>
                                                                     <span>
-                                                                        <img src="./images/icon/dollar.png" alt="" style="width: 10px;height: 10px;">
+                                                                        <img src="./images/icon/dollar.png" alt="" style="width: 14px;height: 14px;">
                                                                     </span>
-                                                                    <span>$400-$600</span>
+                                                                    <span class="num-family">$400-$600</span>
                                                                 </div>
                                                                 <div style="font-size: 10px;height: 15px;  margin-top:3px;">
                                                                     <span>
                                                                         <img src="./images/p16/p16heart-listen@2x.png" alt=""
-                                                                            style="width: 10px;height: 10px;">
+                                                                            style="width: 14px;">
                                                                     </span>
-                                                                    <span class="border-right">醫生專科分類</span>
+                                                                    <span >醫生專科分類</span>
                                                                 </div>
                                                                 <div style="font-size: 10px;margin-left: 15px;">
                                                                     <span>
                                                                         <img src="./images/search-image/crown@3x.png" alt=""
-                                                                            style="width: 10px;height: 10px;">
+                                                                            style="width: 14px;">
                                                                     </span>
-                                                                    <span style="color:#989696">心律</span>
+                                                                    <span style="color:#989696;">心律</span>
                                                                 </div>
                                                                 <div style="font-size: 10px;">
-                                                                    <img src="./images/search-image/plus@3x.png" alt="" style="width:10px;height: 10px;">
+                                                                    <img src="./images/search-image/plus@3x.png" alt="" style="width:14px;">
                                                                     <span>專科治療服務</span>
                                                                 </div>
                                                                 <div style="font-size: 10px;width: 300px;margin-left: 15px;">
-                                                                    <img src="./images/search-image/crown@3x.png" alt="" style="width:10px;">
+                                                                    <img src="./images/search-image/crown@3x.png" alt="" style="width:14px;">
                                                                     <span style="color: #2eb8f6; background: #ddeaf3;">濕疹</span>
-                                                                    <img src="./images/icon/heart_num_icon.png" alt="" style="width:10px;">
+                                                                    <img src="./images/icon/heart_num_icon.png" alt="" style="width:14px;">
                                                                     <span class="left-arrow-box" style="font-size: 10px;">102</span>
-                                                                    <img src="./images/search-image/crown@3x.png" alt="" style="width:10px;">
+                                                                    <img src="./images/search-image/crown@3x.png" alt="" style="width:14px;">
                                                                     <span style="color: #679bca;">牛皮癬</span>
-                                                                    <img src="./images/search-image/heart-blue@3x.png" alt="" style="width:10px;">
+                                                                    <img src="./images/search-image/heart-blue@3x.png" alt="" style="width:14px;">
                                                                     <span class="left-arrow-box" style="font-size: 10px;">10</span>
-                                                                    <img src="./images/search-image/crown@3x.png" alt="" style="width:10px;">
+                                                                    <img src="./images/search-image/crown@3x.png" alt="" style="width:14px;">
                                                                     <span style="color: #679bca;">暗瘡</span>
                                                                     <span class="left-arrow-box" style="font-size: 10px;">102</span>
                                                                 </div>
                                                                 <div style="font-size: 10px;">
-                                                                    <img src="./images/icon/bookmark.png" alt="" style="width:10px;">
+                                                                    <img src="./images/icon/bookmark.png" alt="" style="width:14px;">
                                                                     <span>關於</span>
                                                                     <span style="color: #2eb8f6; background: #ddeaf3;">濕疹</span>
                                                                     <span>的分享及費用</span>
@@ -1702,20 +1703,20 @@
                                                                     <span>
                                                                         <img src="./images/icon/good.png" alt="" style="width:20px; ">
                                                                     </span>
-                                                                    <span>5 個分享</span>
+                                                                    <span style="margin-top:3px;display:inline-block;"> <em class="num-family">5</em> 個分享</span>
                                                                     <span>
                                                                         <img src="./images/icon/dollar.png" alt="" style="width:15px;margin-left: 10px; ">
                                                                     </span>
-                                                                    <span>參考費用 $500 - $600</span>
+                                                                    <span style="margin-top:3px;display:inline-block;">參考費用 <em class="num-family">$500 - $600</em></span>
                                                                     <span>
                                                                         <img src="./images/search-image/heart-blue@3x.png" alt=""
-                                                                            style="width: 10px;">
+                                                                            style="width: 14px;">
                                                                     </span>
                                                                     <span class="left-arrow-box">10</span>
                                                                 </div>
                                                             </div>
-                                                            <div style="height: 100px;margin-left: 75%;">
-                                                                <div style="margin-top: 45px;margin-right: -10px;height:100px;">
+                                                            <div style="margin-left: 75%;">
+                                                                <div style="margin-top: 45px;margin-right: -10px;">
                                                                     <div class="renqi pt-1" style="font-size: 8px;margin-left: 72px;">
                                                                         <span>人氣</span>
                                                                         <br>
@@ -1749,105 +1750,102 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="box-shadow-4side-5px doctor-item clearfix" >
-                                                            <div style="width: 10%;float: left;margin-left: 5px;margin-top: 20px;">
-                                                                <div class="item-show-part3-2-leftimg  width-80px height-80px  margin-5px brder-radius-100 "
-                                                                     style=" background: #f4f4f4 url(./images/icon/doctor-male-icon.png) center no-repeat; background-size: 20px 20px; width: 30px;height:30px;">
+                                                        <div class="box-shadow-4side-5px doctor-item pb-2 clearfix">
+                                                            <div style="width: 10%;float: left;margin-left: 5px;margin-top: 10px;">
+                                                                <div class="item-show-part3-2-leftimg  width-80px height-80px  margin-5px brder-radius-100 " style=" background: #f4f4f4 url(./images/icon/doctor-male-icon.png) center no-repeat; background-size: 20px 20px; width: 30px;height:30px;">
                                                                 </div>
                                                                 <a href="">
-                                                                    <div class="align-middle text-center" style="background: #8dbde8; width: 50px; height: 20px;color: white; border-radius: 3px; text-decoration: none;">
-                                                                        <span style="font-size: 10px;">網上預約</span>
+                                                                    <div class="align-middle text-center" style="background: #8dbde8; width: 50px; height: 18px;color: white; border-radius: 3px; text-decoration: none;">
+                                                                        <span style="font-size: 5px;">網上預約</span>
                                                                     </div>
                                                                 </a>
                                                             </div>
-                                                            <div style="width: 70%;float: left;margin-top: 10px;margin-left:15px;">
-                                                                <div style="margin-bottom: 5px;">
-                                                                    <span class="color-name-blue font-size-12em" style="font-size: 12px;">陳國強 Chan Kwok Keung, Aldous</span>
+                                                            <div style="width: 60%;float: left;margin-top: 10px;margin-left:15px; line-height: 2;">
+                                                                <div>
+                                                                    <span class="color-name-blue font-size-12em" style="font-size: 12px;">何麗容 Ho Lai Yung, Connia</span>
                                                                 </div>
                                                                 <span>
                                                                     <img src="./images/search-image/star@3x.png" alt="" class="width-15px"
-                                                                        style="width: 10px;height: 10px;">
+                                                                         style="width: 10px;height: 10px;">
                                                                 </span>
                                                                 <span>
                                                                     <img src="./images/search-image/star@3x.png" alt="" class="width-15px"
-                                                                        style="width: 10px;height: 10px;">
+                                                                         style="width: 10px;height: 10px;">
                                                                 </span>
                                                                 <span>
                                                                     <img src="./images/search-image/star@3x.png" alt="" class="width-15px"
-                                                                        style="width: 10px;height: 10px;">
+                                                                         style="width: 10px;height: 10px;">
                                                                 </span>
                                                                 <span>
                                                                     <img src="./images/search-image/star@3x.png" alt="" class="width-15px"
-                                                                        style="width: 10px;height: 10px;">
+                                                                         style="width: 10px;height: 10px;">
                                                                 </span>
                                                                 <span>
                                                                     <img src="./images/search-image/star-w@3x.png" alt="" class="width-15px"
-                                                                        style="width: 10px;height: 10px;">
+                                                                         style="width: 10px;height: 10px;">
                                                                 </span>
                                                                 <a href="">
-                                                                    <div class="share bg-theme-color brder-radius-5px color-white d-inline-block" style="width: 50px; height: 18px;vertical-align: middle;">
+                                                                    <div class="share bg-theme-color brder-radius-5px color-white d-inline-block" style="width: 50px; height: 18px; line-height:18px;vertical-align: middle;">
                                                                         <span>
-                                                                            <img src="./images/p16/p16share@2x.png" alt="" style="width: 10px;margin-left: 5px;">
+                                                                            <img src="./images/p16/p16share@2x.png" alt="" style="width: 10px;margin-left: 5px;margin-top:-5px;">
                                                                         </span>
-                                                                        <span style="font-size: 10px;">分享</span>
+                                                                        <span style="font-size: 10px;vertical-align: middle;">分享</span>
                                                                     </div>
                                                                 </a>
-                                                                <div style="font-size: 10px;margin-top: 5px;">
+                                                                <div style="font-size: 10px;">
                                                                     <span>
                                                                         <img src="./images/p16/p16heart-listen@2x.png" alt=""
-                                                                            style="width: 15px;">
+                                                                             style="width: 14px;">
                                                                     </span>
-                                                                    <span class="border-right">皮膚及性病科&nbsp;</span>
+                                                                    <span class="border-right">皮膚及性病科&nbsp;&nbsp;</span>
                                                                     <span class="border-right">&nbsp;男&nbsp;</span>
-                                                                    <span>&nbsp;將軍澳&nbsp;</span>
+                                                                    <span>&nbsp;&nbsp;將軍澳</span>
                                                                 </div>
-                                                                <div style="font-size: 10px;margin-top: 5px;">
+                                                                <div style="font-size: 10px;margin-top:3px;">
                                                                     <span>
-                                                                        <img src="./images/p16/p16location@2x.png" alt="" style="width: 10px;height: 10px;">
+                                                                        <img src="./images/p16/p16location@2x.png" alt="" style="width: 14px;height: 14px;vertical-align: middle;">
                                                                     </span>
-                                                                    <span class="color-name-blue">尖沙咀堪富利士道8號格蘭中心9樓903
-                                                                        <br>&nbsp;&nbsp;室</span>
+                                                                    <span class="color-name-blue">尖沙咀堪富利士道8號格蘭中心9樓903室</span>
                                                                 </div>
                                                                 <div style="font-size: 10px;">
                                                                     <span>
-                                                                        <img src="./images/icon/phone.png" alt="" style="width: 10px;height: 10px;">
+                                                                        <img src="./images/icon/phone.png" alt="" style="width: 14px;height: 14px;">
                                                                     </span>
-                                                                    <span class="border-right">2417 3883&nbsp;</span>
+                                                                    <span class="border-right num-family">2417 3883&nbsp;</span>
                                                                     <span>
-                                                                        <img src="./images/icon/dollar.png" alt="" style="width: 10px;height: 10px;">
+                                                                        <img src="./images/icon/dollar.png" alt="" style="width: 14px;height: 14px;">
                                                                     </span>
-                                                                    <span>$400-$600</span>
+                                                                    <span class="num-family">$400-$600</span>
                                                                 </div>
                                                             </div>
-                                                            <div style="border-left: 1px dashed gainsboro;width: 1px;height: 110px;float: left;margin-top: 20px;margin-left: -40px;"></div>
-                                                            <div style="margin-left: 75.5%;">
+                                                            <div style="margin-left: 75%;">
                                                                 <div style="margin-top: 45px;margin-right: -10px;">
                                                                     <div class="renqi pt-1" style="font-size: 8px;margin-left: 72px;">
                                                                         <span>人氣</span>
                                                                         <br>
                                                                         <span>之選</span>
                                                                     </div>
-                                                                    <div style="padding-left: 3px;">
-                                                                        <div style="margin-top: -28px;">
+                                                                    <div style="border-left: 1px dashed gainsboro;padding-left: 3px;">
+                                                                        <div style="margin-top: -25px;">
                                                                             <span>
-                                                                                <img src="./images/icon/good.png" alt style="width: 35px;height: 25px;margin-left: -35px;margin-top: -15px;"> </span>
+                                                                                <img src="./images/icon/good.png" alt style="width: 35px;height: 25px;margin-top: -15px;"> </span>
                                                                             <div class="d-inline-block mt-4" style="font-size: 10px;">
                                                                                 <span>分享</span>
                                                                                 <span class="color-name-blue">(12)</span>
                                                                             </div>
                                                                             <br>
                                                                         </div>
-                                                                        <div class="ml-3 mt-2" style="font-size: 10px;">
-                                                                            <span style="color: #2eb8f6; background: #ddeaf3;margin-left: -20px;">濕疹</span>
+                                                                        <div class="ml-3 mt-2" style="font-size: 12px;">
+                                                                            <span style="color: #2eb8f6; background: #ddeaf3;">濕疹</span>
                                                                             <span class="color-name-blue">(2)</span>
                                                                             <br>
-                                                                            <span style="color: gray;margin-left: -20px;">牛皮癬</span>
+                                                                            <span style="color: gray;">牛皮癬</span>
                                                                             <span class="color-name-blue">(8)</span>
                                                                             <br>
-                                                                            <span style="color: gray;margin-left: -20px;">暗瘡</span>
+                                                                            <span style="color: gray;">暗瘡</span>
                                                                             <span class="color-name-blue">(1)</span>
                                                                             <br>
-                                                                            <span style="color: gray;margin-left: -20px;">脫髮</span>
+                                                                            <span style="color: gray;">脫髮</span>
                                                                             <span class="color-name-blue">(2)</span>
                                                                             <br>
                                                                         </div>
@@ -1855,20 +1853,19 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="box-shadow-4side-5px doctor-item clearfix" >
-                                                            <div style="width: 10%;float: left;margin-left: 5px;margin-top: 20px;">
-                                                                <div class="item-show-part3-2-leftimg  width-80px height-80px  margin-5px brder-radius-100 "
-                                                                     style=" background: #f4f4f4 url(./images/icon/doctor-male-icon.png) center no-repeat; background-size: 20px 20px; width: 30px;height:30px;">
+                                                        <div class="box-shadow-4side-5px doctor-item pb-2 clearfix">
+                                                            <div style="width: 10%;float: left;margin-left: 5px;margin-top: 10px;">
+                                                                <div class="item-show-part3-2-leftimg  width-80px height-80px  margin-5px brder-radius-100 " style=" background: #f4f4f4 url(./images/icon/doctor-male-icon.png) center no-repeat; background-size: 20px 20px; width: 30px;height:30px;">
                                                                 </div>
                                                                 <a href="">
-                                                                    <div class="align-middle text-center" style="background: #8dbde8; width: 50px; height: 20px;color: white; border-radius: 3px; text-decoration: none;">
-                                                                        <span style="font-size: 10px;">網上預約</span>
+                                                                    <div class="align-middle text-center" style="background: #8dbde8; width: 50px; height: 18px;color: white; border-radius: 3px; text-decoration: none;">
+                                                                        <span style="font-size: 5px;">網上預約</span>
                                                                     </div>
                                                                 </a>
                                                             </div>
-                                                            <div style="width: 70%;float: left;margin-top: 10px;margin-left:15px;">
-                                                                <div style="margin-bottom: 5px;">
-                                                                    <span class="color-name-blue font-size-12em" style="font-size: 12px;">陳國強 Chan Kwok Keung, Aldous</span>
+                                                            <div style="width: 60%;float: left;margin-top: 10px;margin-left:15px; line-height: 2;">
+                                                                <div>
+                                                                    <span class="color-name-blue font-size-12em" style="font-size: 12px;">何麗容 Ho Lai Yung, Connia</span>
                                                                 </div>
                                                                 <span>
                                                                     <img src="./images/search-image/star@3x.png" alt="" class="width-15px"
@@ -1891,69 +1888,67 @@
                                                                          style="width: 10px;height: 10px;">
                                                                 </span>
                                                                 <a href="">
-                                                                    <div class="share bg-theme-color brder-radius-5px color-white d-inline-block" style="width: 50px; height: 18px;vertical-align: middle;">
+                                                                    <div class="share bg-theme-color brder-radius-5px color-white d-inline-block" style="width: 50px; height: 18px; line-height:18px;vertical-align: middle;">
                                                                         <span>
-                                                                            <img src="./images/p16/p16share@2x.png" alt="" style="width: 10px;margin-left: 5px;">
+                                                                            <img src="./images/p16/p16share@2x.png" alt="" style="width: 10px;margin-left: 5px;margin-top:-5px;">
                                                                         </span>
-                                                                        <span style="font-size: 10px;">分享</span>
+                                                                        <span style="font-size: 10px;vertical-align: middle;">分享</span>
                                                                     </div>
                                                                 </a>
-                                                                <div style="font-size: 10px;margin-top: 5px;">
+                                                                <div style="font-size: 10px;">
                                                                     <span>
                                                                         <img src="./images/p16/p16heart-listen@2x.png" alt=""
-                                                                             style="width: 15px;">
+                                                                             style="width: 14px;">
                                                                     </span>
-                                                                    <span class="border-right">皮膚及性病科&nbsp;</span>
+                                                                    <span class="border-right">皮膚及性病科&nbsp;&nbsp;</span>
                                                                     <span class="border-right">&nbsp;男&nbsp;</span>
-                                                                    <span>&nbsp;將軍澳&nbsp;</span>
+                                                                    <span>&nbsp;&nbsp;將軍澳</span>
                                                                 </div>
-                                                                <div style="font-size: 10px;margin-top: 5px;">
+                                                                <div style="font-size: 10px;margin-top:3px;">
                                                                     <span>
-                                                                        <img src="./images/p16/p16location@2x.png" alt="" style="width: 10px;height: 10px;">
+                                                                        <img src="./images/p16/p16location@2x.png" alt="" style="width: 14px;height: 14px;vertical-align: middle;">
                                                                     </span>
-                                                                    <span class="color-name-blue">尖沙咀堪富利士道8號格蘭中心9樓903
-                                                                        <br>&nbsp;&nbsp;室</span>
+                                                                    <span class="color-name-blue">尖沙咀堪富利士道8號格蘭中心9樓903室</span>
                                                                 </div>
                                                                 <div style="font-size: 10px;">
                                                                     <span>
-                                                                        <img src="./images/icon/phone.png" alt="" style="width: 10px;height: 10px;">
+                                                                        <img src="./images/icon/phone.png" alt="" style="width: 14px;height: 14px;">
                                                                     </span>
-                                                                    <span class="border-right">2417 3883&nbsp;</span>
+                                                                    <span class="border-right num-family">2417 3883&nbsp;</span>
                                                                     <span>
-                                                                        <img src="./images/icon/dollar.png" alt="" style="width: 10px;height: 10px;">
+                                                                        <img src="./images/icon/dollar.png" alt="" style="width: 14px;height: 14px;">
                                                                     </span>
-                                                                    <span>$400-$600</span>
+                                                                    <span class="num-family">$400-$600</span>
                                                                 </div>
                                                             </div>
-                                                            <div style="border-left: 1px dashed gainsboro;width: 1px;height: 110px;float: left;margin-top: 20px;margin-left: -40px;"></div>
-                                                            <div style="margin-left: 75.5%;">
+                                                            <div style="margin-left: 75%;">
                                                                 <div style="margin-top: 45px;margin-right: -10px;">
                                                                     <div class="renqi pt-1" style="font-size: 8px;margin-left: 72px;">
                                                                         <span>人氣</span>
                                                                         <br>
                                                                         <span>之選</span>
                                                                     </div>
-                                                                    <div style="padding-left: 3px;">
-                                                                        <div style="margin-top: -28px;">
+                                                                    <div style="border-left: 1px dashed gainsboro;padding-left: 3px;">
+                                                                        <div style="margin-top: -25px;">
                                                                             <span>
-                                                                                <img src="./images/icon/good.png" alt style="width: 35px;height: 25px;margin-left: -35px;margin-top: -15px;"> </span>
+                                                                                <img src="./images/icon/good.png" alt style="width: 35px;height: 25px;margin-top: -15px;"> </span>
                                                                             <div class="d-inline-block mt-4" style="font-size: 10px;">
                                                                                 <span>分享</span>
                                                                                 <span class="color-name-blue">(12)</span>
                                                                             </div>
                                                                             <br>
                                                                         </div>
-                                                                        <div class="ml-3 mt-2" style="font-size: 10px;">
-                                                                            <span style="color: #2eb8f6; background: #ddeaf3;margin-left: -20px;">濕疹</span>
+                                                                        <div class="ml-3 mt-2" style="font-size: 12px;">
+                                                                            <span style="color: #2eb8f6; background: #ddeaf3;">濕疹</span>
                                                                             <span class="color-name-blue">(2)</span>
                                                                             <br>
-                                                                            <span style="color: gray;margin-left: -20px;">牛皮癬</span>
+                                                                            <span style="color: gray;">牛皮癬</span>
                                                                             <span class="color-name-blue">(8)</span>
                                                                             <br>
-                                                                            <span style="color: gray;margin-left: -20px;">暗瘡</span>
+                                                                            <span style="color: gray;">暗瘡</span>
                                                                             <span class="color-name-blue">(1)</span>
                                                                             <br>
-                                                                            <span style="color: gray;margin-left: -20px;">脫髮</span>
+                                                                            <span style="color: gray;">脫髮</span>
                                                                             <span class="color-name-blue">(2)</span>
                                                                             <br>
                                                                         </div>
@@ -1970,16 +1965,16 @@
                                                             <div class="left mr-4" style="width: 50%; margin-left: -15px;">
                                                                 <img src="./images/p16/p16-4@2x.png" alt="" style="height: 150px;width:210px; background:transparent;">
                                                             </div>
-                                                            <div class="right pl-4" style="width: 45%; color: #6db868;">
+                                                            <div class="right pl-4 pb-2" style="color: #6db868;">
                                                                 <div style="margin-left:-20px;">
                                                                     <div class="up mt-2 mr-4 pb-2" style="border-bottom: 2px dotted #6db868;">
                                                                         <img src="./images/p16/p16-hand-right@2x.png" alt="" style="width: 25px;">
-                                                                        <span style="font-size: 15px;">皮膚科專題</span>
+                                                                        <span style="font-size: 16px;vertical-align: middle;">皮膚科專題</span>
                                                                         <br>
                                                                         <span style="font-size: 8px;">春回大地,萬物滋長,立春,代表即將踏入春季。往後的天 氣會...
                                                                         </span>
                                                                     </div>
-                                                                    <div class="down d-flex">
+                                                                    <div class="down d-flex mt-2">
                                                                         <div class="left">
                                                                             <span style="font-size: 1.0em; color: #4c4c4c;">皮膚及性病科</span>
                                                                             <br>
@@ -2002,20 +1997,19 @@
 
                                                             </div>
                                                         </div>
-                                                        <div class="box-shadow-4side-5px doctor-item clearfix" >
-                                                            <div style="width: 10%;float: left;margin-left: 5px;margin-top: 20px;">
-                                                                <div class="item-show-part3-2-leftimg  width-80px height-80px  margin-5px brder-radius-100 "
-                                                                     style=" background: #f4f4f4 url(./images/icon/doctor-male-icon.png) center no-repeat; background-size: 20px 20px; width: 30px;height:30px;">
+                                                        <div class="box-shadow-4side-5px doctor-item pb-2 clearfix">
+                                                            <div style="width: 10%;float: left;margin-left: 5px;margin-top: 10px;">
+                                                                <div class="item-show-part3-2-leftimg  width-80px height-80px  margin-5px brder-radius-100 " style=" background: #f4f4f4 url(./images/icon/doctor-male-icon.png) center no-repeat; background-size: 20px 20px; width: 30px;height:30px;">
                                                                 </div>
                                                                 <a href="">
-                                                                    <div class="align-middle text-center" style="background: #8dbde8; width: 50px; height: 20px;color: white; border-radius: 3px; text-decoration: none;">
-                                                                        <span style="font-size: 10px;">網上預約</span>
+                                                                    <div class="align-middle text-center" style="background: #8dbde8; width: 50px; height: 18px;color: white; border-radius: 3px; text-decoration: none;">
+                                                                        <span style="font-size: 5px;">網上預約</span>
                                                                     </div>
                                                                 </a>
                                                             </div>
-                                                            <div style="width: 70%;float: left;margin-top: 10px;margin-left:15px;">
-                                                                <div style="margin-bottom: 5px;">
-                                                                    <span class="color-name-blue font-size-12em" style="font-size: 12px;">陳國強 Chan Kwok Keung, Aldous</span>
+                                                            <div style="width: 60%;float: left;margin-top: 10px;margin-left:15px; line-height: 2;">
+                                                                <div>
+                                                                    <span class="color-name-blue font-size-12em" style="font-size: 12px;">何麗容 Ho Lai Yung, Connia</span>
                                                                 </div>
                                                                 <span>
                                                                     <img src="./images/search-image/star@3x.png" alt="" class="width-15px"
@@ -2038,69 +2032,67 @@
                                                                          style="width: 10px;height: 10px;">
                                                                 </span>
                                                                 <a href="">
-                                                                    <div class="share bg-theme-color brder-radius-5px color-white d-inline-block" style="width: 50px; height: 18px;vertical-align: middle;">
+                                                                    <div class="share bg-theme-color brder-radius-5px color-white d-inline-block" style="width: 50px; height: 18px; line-height:18px;vertical-align: middle;">
                                                                         <span>
-                                                                            <img src="./images/p16/p16share@2x.png" alt="" style="width: 10px;margin-left: 5px;">
+                                                                            <img src="./images/p16/p16share@2x.png" alt="" style="width: 10px;margin-left: 5px;margin-top:-5px;">
                                                                         </span>
-                                                                        <span style="font-size: 10px;">分享</span>
+                                                                        <span style="font-size: 10px;vertical-align: middle;">分享</span>
                                                                     </div>
                                                                 </a>
-                                                                <div style="font-size: 10px;margin-top: 5px;">
+                                                                <div style="font-size: 10px;">
                                                                     <span>
                                                                         <img src="./images/p16/p16heart-listen@2x.png" alt=""
-                                                                             style="width: 15px;">
+                                                                             style="width: 14px;">
                                                                     </span>
-                                                                    <span class="border-right">皮膚及性病科&nbsp;</span>
+                                                                    <span class="border-right">皮膚及性病科&nbsp;&nbsp;</span>
                                                                     <span class="border-right">&nbsp;男&nbsp;</span>
-                                                                    <span>&nbsp;將軍澳&nbsp;</span>
+                                                                    <span>&nbsp;&nbsp;將軍澳</span>
                                                                 </div>
-                                                                <div style="font-size: 10px;margin-top: 5px;">
+                                                                <div style="font-size: 10px;margin-top:3px;">
                                                                     <span>
-                                                                        <img src="./images/p16/p16location@2x.png" alt="" style="width: 10px;height: 10px;">
+                                                                        <img src="./images/p16/p16location@2x.png" alt="" style="width: 14px;height: 14px;vertical-align: middle;">
                                                                     </span>
-                                                                    <span class="color-name-blue">尖沙咀堪富利士道8號格蘭中心9樓903
-                                                                        <br>&nbsp;&nbsp;室</span>
+                                                                    <span class="color-name-blue">尖沙咀堪富利士道8號格蘭中心9樓903室</span>
                                                                 </div>
                                                                 <div style="font-size: 10px;">
                                                                     <span>
-                                                                        <img src="./images/icon/phone.png" alt="" style="width: 10px;height: 10px;">
+                                                                        <img src="./images/icon/phone.png" alt="" style="width: 14px;height: 14px;">
                                                                     </span>
-                                                                    <span class="border-right">2417 3883&nbsp;</span>
+                                                                    <span class="border-right num-family">2417 3883&nbsp;</span>
                                                                     <span>
-                                                                        <img src="./images/icon/dollar.png" alt="" style="width: 10px;height: 10px;">
+                                                                        <img src="./images/icon/dollar.png" alt="" style="width: 14px;height: 14px;">
                                                                     </span>
-                                                                    <span>$400-$600</span>
+                                                                    <span class="num-family">$400-$600</span>
                                                                 </div>
                                                             </div>
-                                                            <div style="border-left: 1px dashed gainsboro;width: 1px;height: 110px;float: left;margin-top: 20px;margin-left: -40px;"></div>
-                                                            <div style="margin-left: 75.5%;">
+                                                            <div style="margin-left: 75%;">
                                                                 <div style="margin-top: 45px;margin-right: -10px;">
                                                                     <div class="renqi pt-1" style="font-size: 8px;margin-left: 72px;">
                                                                         <span>人氣</span>
                                                                         <br>
                                                                         <span>之選</span>
                                                                     </div>
-                                                                    <div style="padding-left: 3px;">
-                                                                        <div style="margin-top: -28px;">
+                                                                    <div style="border-left: 1px dashed gainsboro;padding-left: 3px;">
+                                                                        <div style="margin-top: -25px;">
                                                                             <span>
-                                                                                <img src="./images/icon/good.png" alt style="width: 35px;height: 25px;margin-left: -35px;margin-top: -15px;"> </span>
+                                                                                <img src="./images/icon/good.png" alt style="width: 35px;height: 25px;margin-top: -15px;"> </span>
                                                                             <div class="d-inline-block mt-4" style="font-size: 10px;">
                                                                                 <span>分享</span>
                                                                                 <span class="color-name-blue">(12)</span>
                                                                             </div>
                                                                             <br>
                                                                         </div>
-                                                                        <div class="ml-3 mt-2" style="font-size: 10px;">
-                                                                            <span style="color: #2eb8f6; background: #ddeaf3;margin-left: -20px;">濕疹</span>
+                                                                        <div class="ml-3 mt-2" style="font-size: 12px;">
+                                                                            <span style="color: #2eb8f6; background: #ddeaf3;">濕疹</span>
                                                                             <span class="color-name-blue">(2)</span>
                                                                             <br>
-                                                                            <span style="color: gray;margin-left: -20px;">牛皮癬</span>
+                                                                            <span style="color: gray;">牛皮癬</span>
                                                                             <span class="color-name-blue">(8)</span>
                                                                             <br>
-                                                                            <span style="color: gray;margin-left: -20px;">暗瘡</span>
+                                                                            <span style="color: gray;">暗瘡</span>
                                                                             <span class="color-name-blue">(1)</span>
                                                                             <br>
-                                                                            <span style="color: gray;margin-left: -20px;">脫髮</span>
+                                                                            <span style="color: gray;">脫髮</span>
                                                                             <span class="color-name-blue">(2)</span>
                                                                             <br>
                                                                         </div>

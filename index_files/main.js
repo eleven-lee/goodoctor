@@ -52,11 +52,18 @@ var page = {
            content.toggleClass('on');
         });
 
+        // card
+        $('.card-item').on('click',function () {
+          $(this).siblings().find('.card-shade').removeClass('active');
+          $(this).find('.card-shade').toggleClass('active');
+        });
+
         // $('.slide-up-down').on('click',function () {
         //   $(this).previousSibling('.doctor-info-content').css('height','auto');
         //   $(this).find('.text').html('显示较少医生资料');
         //   $(this).find('i').removeClass('fa-chevron-up')
         // });
+
     },
 
     // 下拉提示层
@@ -338,6 +345,8 @@ var page = {
                         linearColor = "-o-repeating-linear-gradient(-45deg, " + currentColor + "," + currentColor + " 8px, " + darkenColor + " 8px," + darkenColor + " 16px)";
                     }
                     $('.swiper-border').css("background", linearColor);
+                    $('.news-swiper .rank').css("background-color", currentColor);
+                    $('.news-swiper .rank').css("color", darkenColor);
                     $('.news-swiper .btn-prev').css("background-color", currentColor);
                     $('.news-swiper .btn-next').css("background-color", currentColor);
                 }

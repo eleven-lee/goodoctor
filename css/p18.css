@@ -70,23 +70,37 @@
  
 .icon-border-doctor.icon, .icon-border-specialist-center.icon {
   background: #FFFFFF;
-  width: 30px;
-  height: 30px;
+  width: 55px;
+  height: 48px;
   display:inline-block;
+  margin-bottom: 5px;
+}
+.icon-checkbox .icon-border-doctor.icon,
+.icon-checkbox .icon-border-specialist-center.icon{
+  width:32px;
+  height: 28px;
 }
 
 .icon-border-doctor.icon::after, .icon-border-specialist-center.icon::after {
-  width: 30px;
-  height: 30px;
-  background-size: 32px 32px;
+  width: 55px;
+  height: 48px;
+  background-size: 58px 50px;
 }
-
+.icon-checkbox .icon-border-doctor.icon::after,
+.icon-checkbox .icon-border-specialist-center.icon::after{
+  width:32px;
+  height: 28px;
+  background-size: 32px 28px;
+}
 
 .condition-select-right .doctor-item{
   width:100%;
   border-radius: 5px;
   margin-top: -40px;
-  padding-bottom:5px;
+}
+.condition-select-right .doctor-item span{
+  vertical-align: middle;
+  display: inline-block;
 }
 
 .input-name{
@@ -94,5 +108,5 @@
 }
 
 .icon-checkbox .icon-tick.icon{
-  right:8px;
+  right:0;
 }
